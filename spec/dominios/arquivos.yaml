@@ -1,0 +1,38 @@
+dominio: arquivos
+prefixo: ARQ
+resumo: "Gerenciador de arquivos com abas local/remota/conexões, servidores FTP/WebDAV locais, clientes SFTP, sincronização e backup."
+entidades:
+  Conexao: [tipo, host, porta, usuario, credencial]
+  Item: [caminho, nome, tamanho, ehDiretorio, modificadoEm]
+  SessaoServidor: [tipo, porta, ativa]
+estados:
+  SessaoServidor: "parado -> ativo -> parado"
+permissoes:
+  usuario: [navegar arquivos, subir servidores, conectar remotes, sincronizar, extrair APK, limpar cache]
+regras:
+  ARQ-R01: "FileManager organiza acesso em abas Local, Remoto e Conexões"
+  ARQ-R02: "servidor FTP escuta na porta 2221 por padrão, com bind no IP Wi-Fi do dispositivo"
+  ARQ-R03: "FTP exige USER e PASS; senha comparada em tempo constante; sem auth responde 530"
+  ARQ-R04: "servidor WebDAV escuta na porta 8080 e exige Basic auth; sem credencial responde 401"
+  ARQ-R05: "WebDAV decodifica credencial Basic Base64 e valida antes de qualquer método"
+  ARQ-R06: "conexões remotas suportam protocolos FTP, FTPS, SFTP, WebDAV e SMB"
+  ARQ-R07: "GoogleDriveProvider lista, baixa, sobe e apaga arquivos via Drive API após OAuth"
+  ARQ-R08: "sincronização e backup são disparados manualmente pelo usuário"
+  ARQ-R09: "AppExtractor extrai APK de apps instalados (QUERY_ALL_PACKAGES)"
+  ARQ-R10: "CacheCleaner abre as configurações de armazenamento do sistema; não limpa cache de terceiros"
+  ARQ-R11: "exclusão de arquivo é direta via provider.delete; falha mostra toast"
+  ARQ-R12: "listagem de mídia usa MediaStore respeitando scoped storage (MediaStoreHelper)"
+  ARQ-R13: "cabeçalho HTTP do InternalHttpFileServer é limitado a 16KB e 64 linhas"
+  ARQ-R14: "token de arquivo servido expira após o TTL configurado (padrão 15 minutos)"
+  ARQ-R15: "RemoteFileClient acessa SFTP via JSch (Session + ChannelSftp)"
+casos_de_uso:
+  CU01: "usuário sobe FTP e acessa do PC -> ARQ-R02, ARQ-R03"
+  CU02: "usuário sobe WebDAV -> ARQ-R04, ARQ-R05"
+  CU03: "usuário conecta SFTP -> ARQ-R06"
+  CU04: "usuário sincroniza com Drive -> ARQ-R07"
+  CU05: "usuário apaga arquivo -> ARQ-R11"
+bordas:
+  - "sem Basic auth -> ARQ-R05"
+  - "senha FTP errada -> ARQ-R03"
+  - "cabeçalho >16KB -> ARQ-R13"
+  - "token expirado -> ARQ-R14"

@@ -1,0 +1,39 @@
+# Spec raiz. Uma frase por item. Texto com ": " precisa de aspas.
+porte: G
+visao: "Canivete suíço Android offline-first com ~45 ferramentas locais: rede, arquivos, mídia, cofre, OBD-II, produtividade e controle remoto."
+usuarios:
+  usuario: "dono do dispositivo; único ator; sem contas nem papéis remotos"
+escopo:
+  - "ferramentas de rede local (scanner, ping, Wi-Fi, speed test)"
+  - "gerenciador de arquivos com servidores FTP/WebDAV e clientes remotos"
+  - "mídia: player, gravadores, transcrição e cast DLNA/Chromecast/Roku"
+  - "cofre de senhas e TOTP com biometria"
+  - "informações e testes de hardware do dispositivo"
+  - "scanner OBD-II via adaptador ELM327 Bluetooth"
+  - "produtividade: notas, kanban, compras, alarmes, calculadoras"
+  - "documentos: PDF, EPUB, editor de texto, quadro branco"
+  - "comunicação: SMS, QR code, chat local P2P, mesh, controle remoto droidlink"
+  - "plataforma: dashboard, plugins/miniapps, deep links, histórico, configurações"
+fora_de_escopo:
+  - "contas, login ou sincronização multiusuário em servidor próprio"
+  - "publicação/distribuição (Play Store) e telemetria de uso"
+  - "backend ou API pública para clientes externos"
+  - "suporte a iOS ou desktop"
+dominios: [plataforma, rede, chat, arquivos, midia, cofre, dispositivo, obd2, produtividade, documentos, comunicacao, droidlink, extras]
+nao_funcionais:
+  NF01: "minSdk 24 e targetSdk 36; app nativo Android em Kotlin + Jetpack Compose"
+  NF02: "funciona offline; internet só é usada por integrações opt-in (Drive, Mailtrap, speed test)"
+  NF03: "banco Room net_toolbox_db v6 é cifrado por SQLCipher com passphrase do DatabaseKeyManager"
+  NF04: "version.properties é incrementado (<major>.<minor>.<build>) antes de cada build"
+  NF05: "dados do usuário permanecem no dispositivo por padrão; exportação é sempre ação explícita"
+  NF06: "servidores embutidos (FTP, WebDAV, HTTP interno) fazem bind apenas no IP Wi-Fi local"
+premissas:
+  P01: "usuário único sem contas; autenticação significa biometria/PIN local do cofre"
+  P02: "spec documenta comportamento as-is aprovado como baseline pelo usuário"
+  P03: "operação do app se resume ao dispositivo; não há ambiente de homologação/produção separado"
+duvidas: []
+packs_descartados:
+  auth: "sem contas/login; autenticação local do cofre está no domínio cofre"
+  multi-tenant: "app local de usuário único"
+  pagamentos: "sem cobrança ou comércio"
+  operacao: "app Android local sem backend/deploy; operação é o ciclo de build do APK"

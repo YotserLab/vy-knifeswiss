@@ -1,0 +1,35 @@
+dominio: plataforma
+prefixo: PLAT
+resumo: "Shell do app: dashboard, navegação, plugins/miniapps, deep links, histórico, configurações e versionamento."
+entidades:
+  Plugin: [id, nome, categoria, entryPoint, permissoes]
+  HistoryLog: [id, ferramenta, acao, timestamp]
+  Versao: [versionCode, versionName]
+estados:
+  Plugin: "instalado -> habilitado <-> desabilitado | desinstalado"
+permissoes:
+  usuario: [abrir ferramentas, instalar/remover miniapps, limpar histórico, configurar app]
+regras:
+  PLAT-R01: "deep link vyknifeswiss://tool/<route> abre a ferramenta registrada com essa rota"
+  PLAT-R02: "deep link vyknifeswiss://oauth é consumido pelo fluxo OAuth do Google Drive"
+  PLAT-R03: "todo plugin tem manifest plugin.json com id, name, category, entryPoint e permissions"
+  PLAT-R04: "instalação de miniapp é rejeitada quando manifest.id está em branco"
+  PLAT-R05: "categoria de plugin ausente ou inválida no manifest cai em PluginCategory.COMMUNITY"
+  PLAT-R06: "plugins web rodam em WebView e acessam o app só pela ponte VyPluginBridge"
+  PLAT-R07: "version.properties mantém versionName <major>.<minor>.<build> e versionCode, incrementados antes de build"
+  PLAT-R08: "ações das ferramentas são gravadas em HistoryLog e listadas na tela Histórico"
+  PLAT-R09: "a tela Histórico permite limpar todos os registros"
+  PLAT-R10: "dashboard agrupa ferramentas por PluginCategory a partir do NativePluginRegistry"
+  PLAT-R11: "toda tela de ferramenta oferece retorno por botão na barra superior e/ou BackHandler"
+  PLAT-R12: "upgrade de schema Room sem migração apaga e recria o banco (fallbackToDestructiveMigration)"
+  PLAT-R13: "miniapp instalado fica habilitado por padrão e pode ser desabilitado sem desinstalar"
+  PLAT-R14: "o app declara android:largeHeap=true para telas que carregam muitos ícones de apps"
+casos_de_uso:
+  CU01: "usuário toca ferramenta no dashboard -> PLAT-R10, PLAT-R11"
+  CU02: "usuário abre vyknifeswiss://tool/port_scanner -> PLAT-R01"
+  CU03: "usuário instala miniapp da loja -> PLAT-R03, PLAT-R04, PLAT-R13"
+  CU04: "usuário consulta e limpa histórico -> PLAT-R08, PLAT-R09"
+bordas:
+  - "manifest sem id -> PLAT-R04"
+  - "plugin sem category -> PLAT-R05"
+  - "upgrade de banco sem migration -> PLAT-R12"

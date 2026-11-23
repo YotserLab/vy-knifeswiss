@@ -1,0 +1,41 @@
+dominio: chat
+prefixo: CHAT
+resumo: "Chat local P2P na mesma rede (descoberta UDP, mensagens TCP, áudio UDP) e camada mesh multi-hop com store-and-forward."
+entidades:
+  Peer: [ip, nome, ultimoContato]
+  Mensagem: [id, remetente, destinatario, conteudo, timestamp]
+  Arquivo: [nome, tamanho, mime, tokenServido]
+  MeshMessage: [id, ttlHopsRemaining, ttlTempo, rota]
+estados:
+  Peer: "descoberto -> conectado -> ausente"
+  MeshMessage: "criada -> encaminhada -> entregue | expirada"
+permissoes:
+  usuario: [conversar com peers, enviar arquivos, chamada de áudio, conectar por IP manual]
+regras:
+  CHAT-R01: "descoberta de peers usa UDP broadcast na porta 9988 com bind IPv4 0.0.0.0"
+  CHAT-R02: "handshake e mensagens usam TCP na porta 9989 com bind IPv4 0.0.0.0"
+  CHAT-R03: "áudio de chamada usa UDP na porta 9990"
+  CHAT-R04: "sweepLocalSubnet varre a sub-rede /24 para achar peers quando broadcast é filtrado"
+  CHAT-R05: "presença é mantida por handshake HANDSHAKE/PING/PONG sobre TCP"
+  CHAT-R06: "conexão manual por IP é oferecida no topo e na tela de conversas vazias"
+  CHAT-R07: "arquivos de até 2MB são enviados inline codificados em Base64 na mensagem"
+  CHAT-R08: "arquivos acima de 2MB são servidos via InternalHttpFileServer com token na URL"
+  CHAT-R09: "resposta do servidor de arquivo envia Content-Length exato do arquivo"
+  CHAT-R10: "conversas e arquivos não saem da rede local; não há servidor intermediário"
+  CHAT-R11: "mesh decrementa ttlHopsRemaining a cada forward e descarta mensagem quando chega a 0"
+  CHAT-R12: "mesh descarta sem encaminhar mensagem cujo TTL de tempo expirou"
+  CHAT-R13: "StoreAndForward retém mensagens para peers offline e limpa as expiradas por TTL"
+  CHAT-R14: "mesh elege um nó coordenador via CoordinatorElection"
+  CHAT-R15: "texto de mensagens é cifrado com AES-256-GCM por LocalChatCrypto usando passphrase fixa embutida"
+casos_de_uso:
+  CU01: "usuário conversa com peer na mesma rede -> CHAT-R01, CHAT-R02, CHAT-R05"
+  CU02: "usuário envia foto de 1MB -> CHAT-R07"
+  CU03: "usuário envia vídeo de 50MB -> CHAT-R08, CHAT-R09"
+  CU04: "roteador bloqueia broadcast -> CHAT-R04, CHAT-R06"
+  CU05: "mensagem mesh atravessa hops -> CHAT-R11, CHAT-R12, CHAT-R13"
+  CU06: "usuário envia texto -> CHAT-R15"
+bordas:
+  - "broadcast filtrado -> CHAT-R04"
+  - "arquivo >2MB -> CHAT-R08"
+  - "peer offline -> CHAT-R13"
+  - "TTL zerado -> CHAT-R11"

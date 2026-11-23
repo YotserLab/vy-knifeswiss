@@ -1,0 +1,35 @@
+dominio: dispositivo
+prefixo: DEV
+resumo: "Telemetria e testes de hardware do aparelho (DeviceInfo em 14 abas), bússola, nível, terminal e lançador de atividades."
+entidades:
+  AbaInfo: [nome, dadosColetados]
+  TesteHardware: [nome, sensorOuAtuador, resultado]
+  LeituraSensor: [tipo, eixos, unidade]
+estados:
+  TesteHardware: "untested -> passed | failed"
+permissoes:
+  usuario: [ver telemetria, executar testes de hardware, usar terminal e ferramentas de sensor]
+regras:
+  DEV-R01: "DeviceInfo lê telemetria real do sistema/hardware, sem dados simulados"
+  DEV-R02: "DeviceInfo expõe 14 abas de telemetria e testes, de Dashboard a Tests"
+  DEV-R03: "aba CPU detecta o SoC e mostra frequência por núcleo lida de /sys ao vivo"
+  DEV-R04: "aba Sensors lista sensores do SensorManager com valores X/Y/Z em tempo real"
+  DEV-R05: "suíte Tests tem 10 testes interativos: tela, multitouch, lanterna, alto-falante, fone, microfone, proximidade, luz, acelerômetro e vibração"
+  DEV-R06: "relatório do DeviceInfo pode ser exportado a partir da tela principal"
+  DEV-R07: "Compass mostra azimute 0-360 graus e o ponto cardeal derivado do azimute"
+  DEV-R08: "BubbleLevel usa sensores de orientação para indicar inclinação"
+  DEV-R09: "Terminal executa comandos num shell interno estilo Termux"
+  DEV-R10: "botão SSH no Terminal dispara com.termux.RUN_COMMAND apontando /data/data/com.termux/files/usr/bin/ssh"
+  DEV-R11: "ActivityLauncher lista activities de apps instalados e permite lançá-las"
+  DEV-R12: "lista de apps usa ícone placeholder; drawables de apps não são carregados na UI"
+  DEV-R13: "sem sensor disponível, a ferramenta informa ausência em vez de quebrar"
+  DEV-R14: "aba Apps separa apps de usuário e de sistema e oferece busca por texto"
+casos_de_uso:
+  CU01: "usuário explora telemetria -> DEV-R01, DEV-R02, DEV-R03, DEV-R04"
+  CU02: "usuário testa hardware -> DEV-R05"
+  CU03: "usuário usa bússola -> DEV-R07, DEV-R13"
+  CU04: "usuário abre ssh no Termux -> DEV-R10"
+bordas:
+  - "sensor ausente -> DEV-R13"
+  - "muitos apps instalados -> DEV-R12"
+  - "Termux não instalado -> DEV-R10"

@@ -1,0 +1,33 @@
+dominio: produtividade
+prefixo: PROD
+resumo: "Notas, kanban, lista de compras, alarmes inteligentes e calculadoras (HP-48G, preço, calorias)."
+entidades:
+  KanbanColumn: [id, name, position]
+  KanbanNote: [id, title, content, columnId, position, colorHex, timestamp]
+  ShoppingItem: [id, lista, nome, comprado]
+  SmartAlarm: [id, titulo, disparoEm]
+estados:
+  KanbanNote: "criada -> movida entre colunas -> excluída"
+permissoes:
+  usuario: [gerenciar notas/kanban/compras/alarmes, usar calculadoras]
+regras:
+  PROD-R01: "colunas do kanban são nomeadas e ordenadas por position"
+  PROD-R02: "nota do kanban pertence a uma coluna (columnId), tem posição e cor em colorHex"
+  PROD-R03: "cor padrão de nota kanban nova é #FFF9C4"
+  PROD-R04: "notas rápidas são persistidas no Room e listadas via getAllNotes"
+  PROD-R05: "lista de compras aceita itens pré-cadastrados de DefaultShoppingItems"
+  PROD-R06: "SmartAlarm usa o calendário do sistema (READ/WRITE_CALENDAR)"
+  PROD-R07: "dados de produtividade ficam no mesmo banco SQLCipher do app"
+  PROD-R08: "Hp48gCalculator emula a lógica RPN da HP-48G"
+  PROD-R09: "PriceCalculator compara custo por quantidade entre produtos"
+  PROD-R10: "CalorieCalculator estima calorias e proteína por peso usando tabela local de alimentos por 100g"
+  PROD-R11: "calculadoras não enviam dados para fora do dispositivo"
+  PROD-R12: "na HP-48G, ENTER com buffer vazio duplica o topo da pilha RPN"
+casos_de_uso:
+  CU01: "usuário organiza kanban -> PROD-R01, PROD-R02, PROD-R03"
+  CU02: "usuário monta lista de compras -> PROD-R05"
+  CU03: "usuário agenda alarme -> PROD-R06"
+  CU04: "usuário usa calculadoras -> PROD-R08, PROD-R09, PROD-R10, PROD-R11"
+bordas:
+  - "kanban vazio -> PROD-R01"
+  - "sem permissão de calendário -> PROD-R06"

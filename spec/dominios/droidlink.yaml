@@ -1,0 +1,35 @@
+dominio: droidlink
+prefixo: DLK
+resumo: "Controle remoto entre dois aparelhos na rede: protocolo binário WireFrame, sessão cifrada AES-GCM e input via acessibilidade."
+entidades:
+  WireFrame: [versao, tipo, requestId, payload]
+  SessaoDroidLink: [host, porta, papel, cifrada]
+  PerfilConexao: [host, porta, label]
+estados:
+  SessaoDroidLink: "ociosa -> conectando -> ativa -> encerrada | erro"
+permissoes:
+  usuario: [hospedar sessão como servidor, conectar como cliente, controlar dispositivo remoto]
+regras:
+  DLK-R01: "WireFrame tem header de 10 bytes: version(1) + type(1) + requestId(4) + payloadLen(4)"
+  DLK-R02: "versão de protocolo atual é 1; frame com versão diferente é rejeitado no decode"
+  DLK-R03: "payloadLen máximo por frame é 64MiB; decode lança erro acima disso"
+  DLK-R04: "FrameType é identificado por código byte; fromCode mapeia código para o tipo"
+  DLK-R05: "chave de sessão deriva da senha por PBKDF2-HMAC-SHA256, 100 mil iterações, 256 bits"
+  DLK-R06: "frames cifrados usam AES/GCM/NoPadding com IV de 12 bytes e tag de 128 bits"
+  DLK-R07: "autenticação de sessão usa HMAC-SHA256 sobre nonce com comparação em tempo constante"
+  DLK-R08: "nonce e salt são 16 bytes gerados por SecureRandom"
+  DLK-R09: "servidor escuta em porta configurável, padrão 8989, protegido por senha de exibição"
+  DLK-R10: "cliente conecta por IP + porta + senha; aceita IP local e Tailscale 100.x"
+  DLK-R11: "input remoto no servidor é injetado via RemoteInputAccessibilityService"
+  DLK-R12: "conexões recentes são persistidas em DroidLinkConnectionHistory"
+  DLK-R13: "áudio do servidor é capturado e transmitido ao cliente (DroidLinkAudioCapture)"
+  DLK-R14: "autenticação aceita senha efêmera por sessão ou senha fixa salva em SecurePrefs; HMAC é verificado contra ambas as chaves derivadas"
+  DLK-R15: "DroidLinkSettings cobre áudio, vídeo (qualityMode/targetFps) e permissões remotas: input, ações, arquivos e tela acordada"
+casos_de_uso:
+  CU01: "usuário hospeda sessão -> DLK-R09, DLK-R05, DLK-R07"
+  CU02: "usuário conecta e controla outro aparelho -> DLK-R10, DLK-R11"
+  CU03: "frames trafegam cifrados -> DLK-R01, DLK-R03, DLK-R06, DLK-R08"
+bordas:
+  - "frame >64MiB -> DLK-R03"
+  - "HMAC inválido -> DLK-R07"
+  - "versão estranha -> DLK-R02"

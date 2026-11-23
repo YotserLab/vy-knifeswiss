@@ -1,0 +1,107 @@
+# Respostas: "sim ID[, ID]" (cita regra PED-R01, NF01 ou P01) | "na: motivo" | "?" (pendente)
+
+# --- pack base: sempre (todo app)
+base.01: "sim P01"   # Quem são os atores/papéis e o que cada um pode fazer?
+base.02: "sim PLAT-R10, PLAT-R01"   # Qual o fluxo principal ponta a ponta (caminho feliz)?
+base.03: "sim COF-R03, CHAT-R11"   # Quais entidades têm ciclo de vida e quais transições são proibidas?
+base.04: "sim PLAT-R04, DLK-R03, ARQ-R03"   # Quais dados são obrigatórios, únicos ou validados (formato, limites)?
+base.05: "sim OBD-R12, DEV-R13, CHAT-R04"   # O que acontece em falhas (validação, rede, serviço externo) e o que o usuário vê?
+base.06: "sim OBD-R04, ARQ-R11, PLAT-R09"   # Há operações destrutivas? Exclusão lógica ou física, e há confirmação?
+base.07: "sim PROD-R09, OBD-R11"   # Há cálculos ou valores sensíveis (dinheiro, datas, arredondamento, moeda)?
+base.08: "sim CHAT-R06, PROD-R05"   # Como se comporta o primeiro acesso / estado sem dados?
+base.09: "sim NF04"   # Como o app é configurado e implantado (variáveis, segredos, ambientes)?
+base.10: "sim P02"   # Qual o critério de pronto do MVP (o que precisa funcionar para entregar)?
+
+# --- pack seguranca: sempre (todo app)
+seguranca.01: "sim ARQ-R13, DLK-R03, DLK-R02"   # Toda entrada externa é validada no servidor (tipo, tamanho, formato)?
+seguranca.02: "sim ARQ-R03, ARQ-R04, DLK-R07"   # Autorização é checada por recurso/ação no backend, e não só escondida na UI?
+seguranca.03: "sim COF-R02"   # Segredos e chaves ficam fora do código e do repositório?
+seguranca.04: "sim DOC-R04, DLK-R03"   # Proteção contra injeção (SQL/comando) e XSS nas saídas renderizadas?
+seguranca.05: "na: servidores locais são HTTP/FTP sem cookies nem sessão web; auth por senha"   # CSRF/CORS/cookies (HttpOnly, Secure, SameSite) definidos para a forma de sessão usada?
+seguranca.06: "na: servidores sob demanda só na LAN; sem endpoints públicos"   # Rate limit ou proteção contra abuso nos endpoints sensíveis?
+seguranca.07: "sim COF-R07"   # Dados sensíveis são mascarados em logs e respostas de erro?
+seguranca.08: "sim NF01"   # Dependências são fixadas e há plano para atualizar vulnerabilidades?
+
+# --- pack api: backend expõe API (REST/GraphQL) para clientes
+api.01: "sim DLK-R02"   # Versionamento e política de mudanças incompatíveis?
+api.02: "sim ARQ-R03, ARQ-R04, CHAT-R09"   # Formato padrão de erro (código, mensagem, campos inválidos) e códigos HTTP?
+api.03: "sim ARQ-R03, ARQ-R04, ARQ-R14"   # Autenticação e escopos por endpoint?
+api.04: "na: servidores de arquivo sem coleções paginadas"   # Paginação, filtros e limites máximos padronizados?
+api.05: "na: LAN sob demanda; sem rate limit"   # Rate limit e cabeçalhos informativos?
+api.06: "na: sem operações de criação via API"   # Idempotency-Key em operações de criação/pagamento?
+api.07: "na: servidores mínimos embarcados, sem API pública"   # Documentação (OpenAPI) mantida junto do código?
+
+# --- pack arquivos: upload, download ou geração de arquivos
+arquivos.01: "sim CHAT-R07, CHAT-R08, MED-R05"   # Tipos, extensões e tamanho máximo aceitos?
+arquivos.02: "sim CHAT-R08, ARQ-R14"   # Onde são armazenados e como o acesso é protegido (URL assinada, permissão)?
+arquivos.03: "na: arquivos do próprio usuário no aparelho; sem antivírus"   # Validação do conteúdo real (não só a extensão) e varredura de malware?
+arquivos.04: "na: sem pipeline assíncrono de processamento de arquivos"   # Processamento assíncrono (miniaturas, OCR, conversão): estados e falhas?
+arquivos.05: "na: usuário único sem quotas"   # Limites por usuário/plano e o que acontece ao exceder?
+arquivos.06: "sim ARQ-R14"   # Remoção: arquivos órfãos e quando o registro é apagado?
+arquivos.07: "sim MED-R02, MED-R04"   # Nome, colisão e caracteres especiais?
+
+# --- pack auditoria: ações sensíveis, administrativas ou financeiras
+auditoria.01: "sim PLAT-R08"   # Quais ações são registradas (quem, o quê, quando, antes/depois)?
+auditoria.02: "na: histórico é apagável pelo usuário; não é trilha de auditoria"   # O registro é imutável e quem pode consultá-lo?
+auditoria.03: "na: histórico local sem política de retenção"   # Retenção do histórico e exportação?
+auditoria.04: "na: app local sem tracing distribuído"   # Correlação entre registro de auditoria e request/trace id?
+
+# --- pack dados: app que persiste dados
+dados.01: "na: usuário único, sem edição concorrente"   # Edição simultânea: como evitar sobrescrita (versão/lock otimista)?
+dados.02: "na: ações locais sem retry de rede"   # Criações idempotentes (duplo clique, retry) e chaves de idempotência?
+dados.03: "na: operações multi-entidade são importações locais pontuais do usuário"   # Operações que alteram várias entidades são atômicas (transação)? E se falhar no meio?
+dados.04: "sim PROD-R02"   # Datas guardadas em UTC e exibidas no fuso do usuário? Datas só de dia vs. instante?
+dados.05: "na: exclusões são físicas"   # Exclusão lógica: efeito em unicidade, listagens, relações e restauração?
+dados.06: "sim PLAT-R12"   # Migrações e backfill: ordem, reversão e dados existentes?
+dados.07: "sim COF-R09, COF-R10, ARQ-R08"   # Retenção, backup e restauração?
+dados.08: "sim PROD-R01"   # Identificadores (uuid/sequencial) e o que é exposto ao cliente?
+dados.09: "sim PROD-R02"   # Integridade: chaves estrangeiras, cascata e restrições de unicidade?
+
+# --- pack integracoes: APIs, webhooks ou serviços externos
+integracoes.01: "sim ARQ-R07, COM-R07, MED-R07"   # Quais sistemas externos e para que cada um é usado?
+integracoes.02: "sim PLAT-R02, ARQ-R07"   # Autenticação, limites de uso e rotação de credenciais?
+integracoes.03: "sim RED-R10"   # Timeout, retry com backoff e idempotência nas chamadas?
+integracoes.04: "sim MED-R13, OBD-R12, CHAT-R04"   # Comportamento quando o serviço externo está fora (fallback/degradação)?
+integracoes.05: "na: sem webhooks de entrada"   # Webhooks de entrada: assinatura, ordem e duplicidade de eventos?
+integracoes.06: "na: sem webhooks de saída"   # Webhooks de saída: retentativas, falhas permanentes e visibilidade ao usuário?
+integracoes.07: "na: integrações validadas em dispositivo real"   # Sandbox/mocks para desenvolvimento e testes?
+integracoes.08: "sim MED-R12"   # Versão e mudança de contrato do terceiro?
+
+# --- pack lgpd: dados pessoais de pessoas no Brasil
+lgpd.01: "sim NF05, P01"   # Quais dados pessoais são coletados e para que finalidade (inventário)?
+lgpd.02: "sim MED-R04, COF-R03"   # Base legal ou consentimento: como é pedido e registrado?
+lgpd.03: "sim COF-R09, OBD-R08, DEV-R06"   # Titular pode acessar/exportar seus dados?
+lgpd.04: "sim ARQ-R11, PLAT-R09"   # Titular pode corrigir e excluir/anonimizar seus dados? Efeitos em registros ligados?
+lgpd.05: "sim ARQ-R14"   # Prazo de retenção por tipo de dado?
+lgpd.06: "sim NF02"   # Compartilhamento com terceiros/operadores e onde ficam os dados?
+lgpd.07: "sim COF-R07"   # Logs e analytics sem dados pessoais desnecessários?
+lgpd.08: "na: ferramenta técnica sem público infantil"   # Menores de idade: o público inclui? Regras de consentimento?
+lgpd.09: "na: dados ficam no aparelho do próprio titular; não há operador"   # Canal do titular e procedimento para incidente de segurança?
+
+# --- pack listagens: telas ou endpoints que listam, buscam ou filtram dados
+listagens.01: "na: listas locais carregam completas em LazyColumn; sem paginação"   # Paginação (cursor ou página), tamanho padrão e máximo?
+listagens.02: "sim PROD-R01"   # Ordenação padrão estável e quais campos são ordenáveis?
+listagens.03: "sim DEV-R14"   # Filtros disponíveis e combinação entre eles?
+listagens.04: "sim DEV-R14"   # Busca textual: campos, acentos, maiúsculas/minúsculas, mínimo de caracteres?
+listagens.05: "sim CHAT-R06"   # Estado vazio e estado sem resultados da busca?
+listagens.06: "sim OBD-R08, DEV-R06, COF-R09"   # Exportação (CSV/PDF): limites e permissões?
+listagens.07: "sim DEV-R12"   # Desempenho com volume alto (índices, limites)?
+
+# --- pack notificacoes: e-mail, push, SMS, WhatsApp ou avisos in-app
+notificacoes.01: "sim MED-R03, PROD-R06"   # Quais eventos disparam notificação e para quem?
+notificacoes.02: "na: notificações seguem canais/opt-out do Android"   # Canais por evento e preferências/opt-out do usuário?
+notificacoes.03: "na: sem templates customizados"   # Conteúdo/templates, idioma e variáveis obrigatórias?
+notificacoes.04: "na: sem envio remoto de notificações"   # Falha de envio: retentativa, limite e registro?
+notificacoes.05: "na: notificações locais pontuais"   # Duplicidade e agrupamento (digest, rate limit por usuário)?
+notificacoes.06: "sim PROD-R06"   # Horário e fuso do destinatário (janela silenciosa)?
+notificacoes.07: "na: não há notificações de marketing"   # Notificações obrigatórias (transacionais) vs. opcionais (marketing)?
+
+# --- pack ui: app com interface de usuário
+ui.01: "sim OBD-R12, CHAT-R06, DEV-R13"   # Todas as telas têm estados de carregando, vazio, erro e sucesso?
+ui.02: "sim DLK-R10"   # Validação de formulários: quando ocorre e mensagens por campo?
+ui.03: "sim OBD-R04"   # nem toda destrutiva confirma: delete de arquivo é direto (ARQ-R11)   # Ações destrutivas pedem confirmação e permitem desfazer quando possível?
+ui.04: "sim DLK-R10"   # Duplo clique/reenvio é bloqueado durante a requisição?
+ui.05: "sim COF-R03, PLAT-R01"   # Rotas protegidas, redirecionamento pós-login e página 404?
+ui.06: "na: escopo phone; sem requisito formal de acessibilidade no baseline"   # Responsividade (mobile) e acessibilidade básica (teclado, contraste, rótulos)?
+ui.07: "na: UI em pt-BR fixo, sem i18n"   # Idioma e formatos (pt-BR, data, moeda); há previsão de i18n?
+ui.08: "sim COF-R05, ARQ-R14"   # Sessão expirada no meio de uma ação: o que acontece com o que o usuário digitou?

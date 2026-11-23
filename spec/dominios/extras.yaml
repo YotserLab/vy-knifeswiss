@@ -1,0 +1,35 @@
+dominio: extras
+prefixo: EXT
+resumo: "Ferramentas auxiliares de sistema: guia anti-encerramento, janela flutuante do chat, busca global, equalizador, gravação de tela, monitor Wi-Fi, info de rede, sobre e ajustes."
+entidades:
+  GuiaPowerOff: [fabricante, titulo, passos]
+estados: "na: ferramentas pontuais sem ciclo de vida compartilhado"
+permissoes:
+  usuario: [consultar guias, abrir busca/bubble, gravar tela, monitorar wifi, ver sobre/ajustes]
+regras:
+  EXT-R01: "PowerOff Protection mostra guia por fabricante/marca e atalhos para configurações do sistema"
+  EXT-R02: "Local Chat pode abrir em janela flutuante (documentLaunchMode=always, allowEmbedded, redimensionável)"
+  EXT-R03: "GlobalSearch busca arquivos no armazenamento com filtros por tipo (docs, imagens, vídeos, áudio)"
+  EXT-R04: "player aplica equalizador global via audiofx.Equalizer na audioSessionId, persistindo bandas"
+  EXT-R05: "ScreenRecorder grava a tela via MediaProjectionManager + MediaRecorder"
+  EXT-R06: "WifiMonitor lista redes próximas usando SCAN_RESULTS_AVAILABLE_ACTION do WifiManager"
+  EXT-R07: "NetworkInfo mostra estado de conectividade via ConnectivityManager"
+  EXT-R08: "About exibe BuildConfig.VERSION_NAME e VERSION_CODE do app"
+  EXT-R09: "ajustes por ferramenta persistem em SharedPreferences tool_settings"
+  EXT-R10: "Dev Settings abre as opções de desenvolvedor do sistema quando o intent existe"
+  EXT-R11: "MediaManager lista mídia das pastas padrão filtrando por extensão (mp3, mp4, jpg...)"
+  EXT-R12: "Mesh Info permite ativar mesh e forçar coordenador via prefs local_chat_prefs"
+  EXT-R13: "histórico do chat local persiste peers e mensagens via LocalChatStorage"
+  EXT-R14: "servidor HTTP interno renova o TTL do token hospedado via renew() durante a sessão"
+  EXT-R15: "download de arquivo grava em .tmp e só renomeia para o nome final quando completo"
+casos_de_uso:
+  CU01: "usuário evita que o SO mate o app -> EXT-R01"
+  CU02: "usuário conversa em janela flutuante -> EXT-R02"
+  CU03: "usuário busca arquivo -> EXT-R03"
+  CU04: "usuário ajusta áudio/grava tela -> EXT-R04, EXT-R05"
+  CU05: "usuário inspeciona rede e versão -> EXT-R06, EXT-R07, EXT-R08"
+  CU06: "usuário ajusta preferências e mesh -> EXT-R09, EXT-R10, EXT-R12, EXT-R13"
+  CU07: "usuário navega pela mídia do dispositivo -> EXT-R11"
+bordas:
+  - "fabricante desconhecido -> EXT-R01"
+  - "Wi-Fi scan sem resultados atualizados -> EXT-R06"

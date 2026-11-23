@@ -1,0 +1,34 @@
+dominio: rede
+prefixo: RED
+resumo: "Ferramentas de diagnóstico de rede local: Wi-Fi monitor, port scanner, ping, subnet scanner, speed test e info de rede."
+entidades:
+  ScanResult: [host, porta, aberta, servico]
+  SpeedTestResult: [pingMs, downloadMbps, uploadMbps, jitterMs]
+  HostAtivo: [ip, latencia, fabricanteOui]
+estados: "na: resultados de scan são efêmeros, sem ciclo de vida persistido"
+permissoes:
+  usuario: [escanear portas/sub-rede, pingar host, medir velocidade, ver info de rede e Wi-Fi]
+regras:
+  RED-R01: "SubnetScanner varre a sub-rede /24 derivada do IPv4 local"
+  RED-R02: "descoberta de hosts usa NetworkUtils.ping com 4 pacotes por host"
+  RED-R03: "resultados de ping no scan são cacheados em memória com timestamp (ScanCache)"
+  RED-R04: "PortScanner oferece lista de 15 portas comuns pré-definidas"
+  RED-R05: "teste de porta usa Socket.connect com timeout de 600ms"
+  RED-R06: "porta aberta é rotulada com serviço conhecido do mapa de NetworkUtils"
+  RED-R07: "PingScreen executa ping ICMP no host informado e exibe saída por pacote"
+  RED-R08: "SpeedTest reporta ping em ms (média), download e upload em Mbps e jitter em ms"
+  RED-R09: "teste de upload usa payload de 2MB"
+  RED-R10: "conexões do SpeedTest usam connectTimeout de 3s"
+  RED-R11: "WifiMonitor exibe dados da rede Wi-Fi atual e exige ACCESS_FINE_LOCATION"
+  RED-R12: "PortScanner e NetworkTest aceitam deep link com host pré-preenchido (rota _with_host)"
+  RED-R13: "scans de rede rodam sob demanda; não há varredura agendada em background"
+  RED-R14: "fabricante do adaptador é inferido por tabela OUI dos 3 primeiros bytes do MAC"
+casos_de_uso:
+  CU01: "usuário escaneia sub-rede -> RED-R01, RED-R02, RED-R03, RED-R14"
+  CU02: "usuário escaneia portas de um host -> RED-R04, RED-R05, RED-R06"
+  CU03: "usuário mede velocidade -> RED-R08, RED-R09, RED-R10"
+  CU04: "deep link com host -> RED-R12"
+bordas:
+  - "host inalcançável -> RED-R02"
+  - "sem permissão de localização -> RED-R11"
+  - "scan repetido usa cache -> RED-R03"

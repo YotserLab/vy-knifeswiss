@@ -1,0 +1,195 @@
+T01:
+  regras:
+  - PLAT-R01
+  - PLAT-R02
+  - PLAT-R03
+  - PLAT-R04
+  - PLAT-R05
+  - PLAT-R06
+  - PLAT-R07
+  - PLAT-R08
+  - PLAT-R09
+  - PLAT-R10
+  - PLAT-R11
+  - PLAT-R12
+  - PLAT-R13
+  - PLAT-R14
+  titulo: 'Plataforma: comentários de regra no código + testes'
+T02:
+  regras:
+  - RED-R01
+  - RED-R02
+  - RED-R03
+  - RED-R04
+  - RED-R05
+  - RED-R06
+  - RED-R07
+  - RED-R08
+  - RED-R09
+  - RED-R10
+  - RED-R11
+  - RED-R12
+  - RED-R13
+  - RED-R14
+  titulo: 'Rede: comentários de regra no código + testes'
+T03:
+  regras:
+  - CHAT-R01
+  - CHAT-R02
+  - CHAT-R03
+  - CHAT-R04
+  - CHAT-R05
+  - CHAT-R06
+  - CHAT-R07
+  - CHAT-R08
+  - CHAT-R09
+  - CHAT-R10
+  - CHAT-R11
+  - CHAT-R12
+  - CHAT-R13
+  - CHAT-R14
+  - CHAT-R15
+  titulo: 'Chat/Mesh: comentários de regra no código + testes'
+T04:
+  regras:
+  - ARQ-R01
+  - ARQ-R02
+  - ARQ-R03
+  - ARQ-R04
+  - ARQ-R05
+  - ARQ-R06
+  - ARQ-R07
+  - ARQ-R08
+  - ARQ-R09
+  - ARQ-R10
+  - ARQ-R11
+  - ARQ-R12
+  - ARQ-R13
+  - ARQ-R14
+  - ARQ-R15
+  titulo: 'Arquivos: comentários de regra no código + testes'
+T05:
+  regras:
+  - MED-R01
+  - MED-R02
+  - MED-R03
+  - MED-R04
+  - MED-R05
+  - MED-R06
+  - MED-R07
+  - MED-R08
+  - MED-R09
+  - MED-R10
+  - MED-R11
+  - MED-R12
+  - MED-R13
+  - MED-R14
+  - MED-R15
+  titulo: 'Mídia/Cast: comentários de regra no código + testes'
+T06:
+  regras:
+  - COF-R01
+  - COF-R02
+  - COF-R03
+  - COF-R04
+  - COF-R05
+  - COF-R06
+  - COF-R07
+  - COF-R08
+  - COF-R09
+  - COF-R10
+  - COF-R11
+  - COF-R12
+  titulo: 'Cofre/TOTP: comentários de regra no código + testes'
+T07:
+  regras:
+  - DEV-R01
+  - DEV-R02
+  - DEV-R03
+  - DEV-R04
+  - DEV-R05
+  - DEV-R06
+  - DEV-R07
+  - DEV-R08
+  - DEV-R09
+  - DEV-R10
+  - DEV-R11
+  - DEV-R12
+  - DEV-R13
+  - DEV-R14
+  titulo: 'Dispositivo: comentários de regra no código + testes'
+T08:
+  regras:
+  - OBD-R01
+  - OBD-R02
+  - OBD-R03
+  - OBD-R04
+  - OBD-R05
+  - OBD-R06
+  - OBD-R07
+  - OBD-R08
+  - OBD-R09
+  - OBD-R10
+  - OBD-R11
+  - OBD-R12
+  - OBD-R13
+  - OBD-R14
+  - OBD-R15
+  titulo: 'OBD-II: comentários de regra no código + testes'
+T09:
+  regras:
+  - PROD-R01
+  - PROD-R02
+  - PROD-R03
+  - PROD-R04
+  - PROD-R05
+  - PROD-R06
+  - PROD-R07
+  - PROD-R08
+  - PROD-R09
+  - PROD-R10
+  - PROD-R11
+  - PROD-R12
+  titulo: 'Produtividade: comentários de regra no código + testes'
+T10:
+  regras:
+  - DOC-R01
+  - DOC-R02
+  - DOC-R03
+  - DOC-R04
+  - DOC-R05
+  - DOC-R06
+  - DOC-R07
+  titulo: 'Documentos: comentários de regra no código + testes'
+T11:
+  regras:
+  - COM-R01
+  - COM-R02
+  - COM-R03
+  - COM-R04
+  - COM-R05
+  - COM-R06
+  - COM-R07
+  - COM-R08
+  - COM-R09
+  titulo: 'Comunicação: comentários de regra no código + testes'
+T12:
+  regras:
+  - DLK-R01
+  - DLK-R02
+  - DLK-R03
+  - DLK-R04
+  - DLK-R05
+  - DLK-R06
+  - DLK-R07
+  - DLK-R08
+  - DLK-R09
+  - DLK-R10
+  - DLK-R11
+  - DLK-R12
+  - DLK-R13
+  - DLK-R14
+  - DLK-R15
+  titulo: 'DroidLink: comentários de regra no código + testes'
+
+T13: {titulo: "Ferramentas auxiliares (guia power-off, bubble, busca global, equalizador, screen record, wifi monitor, network info, sobre)", regras: [EXT-R01, EXT-R02, EXT-R03, EXT-R04, EXT-R05, EXT-R06, EXT-R07, EXT-R08, EXT-R09, EXT-R10, EXT-R11, EXT-R12, EXT-R13, EXT-R14, EXT-R15]}

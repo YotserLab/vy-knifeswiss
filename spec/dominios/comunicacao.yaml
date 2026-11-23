@@ -1,0 +1,28 @@
+dominio: comunicacao
+prefixo: COM
+resumo: "Comunicação com o mundo externo: geração/leitura de QR, gerenciador SMS (app padrão) e e-mail via Mailtrap."
+entidades:
+  QrPayload: [conteudo, formato]
+  SmsThread: [endereco, mensagens]
+  Email: [para, assunto, corpo]
+estados: "na: threads SMS refletem o banco do sistema"
+permissoes:
+  usuario: [gerar/ler QR, ler e enviar SMS quando app padrão, enviar e-mail de suporte]
+regras:
+  COM-R01: "geração de QR usa ZXing QRCodeWriter a partir de texto do usuário"
+  COM-R02: "leitura de QR/barras usa ML Kit BarcodeScanning com a câmera"
+  COM-R03: "SmsManager só oferece gestão completa quando o app detém ROLE_SMS"
+  COM-R04: "sem ROLE_SMS, a tela oferece solicitar o papel via RoleManager"
+  COM-R05: "SMS recebidos chegam por SmsReceiver quando o app é o padrão"
+  COM-R06: "envio de SMS passa por HeadlessSmsSendService"
+  COM-R07: "e-mail usa API Mailtrap em https://send.api.mailtrap.io/api/send"
+  COM-R08: "MMS recebidos chegam por MmsReceiver"
+  COM-R09: "o app implementa SmsComposeActivity para responder como app de SMS padrão"
+casos_de_uso:
+  CU01: "usuário gera QR de um texto -> COM-R01"
+  CU02: "usuário escaneia QR -> COM-R02"
+  CU03: "usuário envia SMS -> COM-R03, COM-R06, COM-R09"
+  CU04: "usuário envia feedback por e-mail -> COM-R07"
+bordas:
+  - "app não é padrão SMS -> COM-R04"
+  - "MMS -> COM-R08"

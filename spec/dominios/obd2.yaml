@@ -1,0 +1,37 @@
+dominio: obd2
+prefixo: OBD
+resumo: "Scanner OBD-II via adaptador ELM327 Bluetooth: PIDs ao vivo, DTCs, freeze frame, testes ECU, trip computer, dyno e exportação."
+entidades:
+  Pid: [mode, pid, nome, unidade, formula]
+  SessaoObd: [id, inicio, fim, logs]
+  Dtc: [codigo, descricao, status]
+  ConexaoObd: [adaptador, estado]
+estados:
+  ConexaoObd: "desconectado -> conectando -> conectado -> desconectado | erro"
+permissoes:
+  usuario: [conectar adaptador, ler PIDs/DTCs, limpar DTCs, exportar sessão]
+regras:
+  OBD-R01: "conexão usa adaptador ELM327 via Bluetooth pareado ou WiFi TCP (porta padrão 35000)"
+  OBD-R02: "polling de PIDs é adaptativo com ciclo rápido de 400ms e ciclos medium/slow"
+  OBD-R03: "suporta Mode 01, 02, 03, 04, 06, 07 e 09 do padrão OBD-II"
+  OBD-R04: "limpar DTCs (Mode 04) exige confirmação explícita em diálogo"
+  OBD-R05: "PIDs padrão seguem SAE J1979 e o registro aceita Custom PIDs OEM do usuário"
+  OBD-R06: "visão alterna entre Motorista (essencial) e Técnica (todos os sensores)"
+  OBD-R07: "logs de sessão persistem em Room (ObdSessionEntity e ObdLogEntryEntity)"
+  OBD-R08: "sessão pode ser exportada em CSV e PDF"
+  OBD-R09: "I/M Readiness é lida via Mode 01 PID 01"
+  OBD-R10: "alertas de sensores distinguem severidade normal e crítica (ObdAlert)"
+  OBD-R11: "trip computer estima consumo e distância; dyno virtual estima potência e torque"
+  OBD-R12: "sem conexão ativa, a tela mostra estado desconectado e não inventa leituras"
+  OBD-R13: "inicialização do ELM327 envia ATZ, ATE0, ATL0, ATH0, ATS0, ATM0, ATAT1 e ATSP0 em sequência"
+  OBD-R14: "socket TCP do adaptador usa soTimeout de 4 segundos"
+  OBD-R15: "teste de performance suporta 0-100, 0-60, 0-200 km/h e quarto de milha, acumulando resultados na sessão"
+casos_de_uso:
+  CU01: "usuário lê sensores ao vivo -> OBD-R01, OBD-R02, OBD-R03, OBD-R06"
+  CU02: "usuário limpa luz do motor -> OBD-R04"
+  CU03: "usuário exporta sessão -> OBD-R07, OBD-R08"
+  CU04: "usuário confere readiness -> OBD-R09"
+bordas:
+  - "adaptador desconecta -> OBD-R12"
+  - "clear DTC acidental -> OBD-R04"
+  - "PID desconhecido -> OBD-R05"

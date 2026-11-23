@@ -1,0 +1,24 @@
+dominio: documentos
+prefixo: DOC
+resumo: "Leitura e edição de documentos locais: PDF nativo, EPUB em WebView, editor de texto e quadro branco."
+entidades:
+  Documento: [caminho, formato, paginas]
+  Pagina: [indice, bitmap]
+estados: "na: documentos são abertos por caminho e não têm ciclo de vida no app"
+permissoes:
+  usuario: [abrir PDF/EPUB, editar texto, desenhar no quadro branco]
+regras:
+  DOC-R01: "PdfViewer renderiza páginas com PdfRenderer nativo em RENDER_MODE_FOR_DISPLAY"
+  DOC-R02: "acesso a páginas do PdfRenderer é sincronizado pois a API não é thread-safe"
+  DOC-R03: "EpubViewer renderiza em WebView e serve assets internos via esquema epub://"
+  DOC-R04: "requisições WebView fora do esquema epub:// não recebem conteúdo do epub"
+  DOC-R05: "TextEditor edita texto plano com abrir e salvar arquivo"
+  DOC-R06: "Whiteboard permite desenho livre sobre canvas"
+  DOC-R07: "documentos são abertos a partir de caminho codificado na rota (encodedPath)"
+casos_de_uso:
+  CU01: "usuário lê PDF -> DOC-R01, DOC-R02"
+  CU02: "usuário lê EPUB -> DOC-R03, DOC-R04"
+  CU03: "usuário edita texto -> DOC-R05"
+bordas:
+  - "URL externa no epub -> DOC-R04"
+  - "renderização paralela -> DOC-R02"

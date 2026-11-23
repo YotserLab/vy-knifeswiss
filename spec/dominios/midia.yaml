@@ -1,0 +1,39 @@
+dominio: midia
+prefixo: MED
+resumo: "Reprodução e captura de mídia (player, gravador de áudio/tela, transcrição) e cast para DLNA, Chromecast e Roku."
+entidades:
+  CastDevice: [nome, tipo, endereco, capacidades]
+  ServedMedia: [url, token, ttl]
+  Playlist: [id, nome, itens]
+  Gravacao: [arquivo, formato, criadaEm]
+  CastSession: [dispositivo, midia, estado]
+estados:
+  CastSession: "desconectado -> conectando -> conectado -> reproduzindo -> desconectado | erro"
+permissoes:
+  usuario: [tocar mídia, gravar áudio/tela, transcrever, transmitir para dispositivo cast]
+regras:
+  MED-R01: "MediaPlayer toca arquivo local com android.media.MediaPlayer"
+  MED-R02: "gravação de áudio gera REC_yyyyMMdd_HHmmss.m4a em AAC 44,1kHz"
+  MED-R03: "gravação de áudio roda em foreground service com tipo microphone"
+  MED-R04: "gravação de tela usa MediaProjection com consentimento e gera SCREEN_yyyyMMdd_HHmmss.mp4"
+  MED-R05: "biblioteca de áudio lista mp3, m4a, aac e wav do diretório de gravações"
+  MED-R06: "transcrição usa SpeechRecognizer do sistema com EXTRA_PREFER_OFFLINE e resultados parciais"
+  MED-R07: "cast descobre dispositivos via SSDP e mDNS (DLNA, Chromecast) e probe Roku ECP"
+  MED-R08: "URL servida tem TTL = duração da mídia + 30min, com piso de 4 horas"
+  MED-R09: "CastSessionManager renova o token servido a cada tick de poll de posição"
+  MED-R10: "sessão DLNA controla AVTransport e RenderingControl via SOAP (volume 0-100)"
+  MED-R11: "sessão Roku ECP oferece launch e keypress, sem seek nem volume"
+  MED-R12: "Chromecast usa Google Cast SDK 21.5.0 e RemoteMediaClient para load"
+  MED-R13: "conexão casa rota por friendly name normalizado; fallback para única rota candidata"
+  MED-R14: "ao conectar cast, o MediaPlayer local pausa e o arquivo é carregado no dispositivo"
+  MED-R15: "playlists são persistidas em Room (MediaPlaylist e PlaylistItem)"
+casos_de_uso:
+  CU01: "usuário toca vídeo local -> MED-R01"
+  CU02: "usuário grava áudio -> MED-R02, MED-R03, MED-R05"
+  CU03: "usuário grava tela -> MED-R04"
+  CU04: "usuário transmite para TV DLNA -> MED-R07, MED-R08, MED-R09, MED-R10"
+  CU05: "usuário transmite para Roku -> MED-R11"
+bordas:
+  - "mídia longa (>3,5h) -> MED-R08"
+  - "roku sem seek -> MED-R11"
+  - "sessão cast cai -> MED-R09"

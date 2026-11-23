@@ -1,0 +1,35 @@
+dominio: cofre
+prefixo: COF
+resumo: "Cofre de senhas e autenticador TOTP protegidos por biometria, com banco SQLCipher e backup cifrado exportável."
+entidades:
+  VaultEntry: [id, titulo, usuario, senhaCifrada, notas]
+  TotpAccount: [id, emissor, conta, segredoCifrado, digitos, periodo, algoritmo]
+  VaultBackup: [payloadCifrado, versao]
+  Cofre: [desbloqueado]
+estados:
+  Cofre: "bloqueado -> desbloqueado -> bloqueado"
+permissoes:
+  usuario: [desbloquear cofre, gerenciar senhas e TOTP, exportar/importar backup cifrado]
+regras:
+  COF-R01: "entradas do cofre e contas TOTP são persistidas no Room cifrado por SQLCipher"
+  COF-R02: "passphrase do banco é gerada e guardada em EncryptedSharedPreferences pelo DatabaseKeyManager"
+  COF-R03: "abrir o cofre exige autenticação via BiometricPrompt"
+  COF-R04: "revelar ou gerar código TOTP exige BiometricPrompt"
+  COF-R05: "cancelamento ou erro de biometria mantém o recurso bloqueado"
+  COF-R06: "TOTP segue RFC 6238: SHA1/SHA256/SHA512, 6 ou 8 dígitos, período padrão 30s"
+  COF-R07: "segredos TOTP são guardados cifrados em repouso (TotpSecretCrypto)"
+  COF-R08: "contas TOTP são adicionadas por URI otpauth:// manual ou via scanner QR"
+  COF-R09: "exportação gera VaultBackupPayload cifrado com AES-256 usando o PIN mestre como senha"
+  COF-R10: "importação do backup exige o PIN mestre usado na exportação"
+  COF-R11: "DeviceSecurity avalia bloqueio de tela, biometria, patch, root e a11y sem alterar o sistema"
+  COF-R12: "tempo restante do código TOTP é calculado como period - (epochSeconds mod period)"
+casos_de_uso:
+  CU01: "usuário abre cofre -> COF-R03, COF-R05"
+  CU02: "usuário vê código 2FA -> COF-R04, COF-R06, COF-R12"
+  CU03: "usuário exporta backup -> COF-R09"
+  CU04: "usuário importa backup em outro aparelho -> COF-R10"
+  CU05: "usuário adiciona conta por QR -> COF-R08"
+bordas:
+  - "biometria negada -> COF-R05"
+  - "PIN errado na importação -> COF-R10"
+  - "aparelho sem sensor biométrico -> COF-R11"
