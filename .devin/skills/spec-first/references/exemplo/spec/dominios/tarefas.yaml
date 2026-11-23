@@ -1,0 +1,26 @@
+dominio: tarefas
+prefixo: TAR
+resumo: Ciclo de vida das tarefas pessoais.
+entidades:
+  Tarefa: [id, titulo, descricao, prazo, status, criada_em]
+estados:
+  Tarefa: "pendente -> em_andamento -> concluida | arquivada"
+permissoes:
+  usuario: [criar, editar, concluir, arquivar, excluir]
+regras:
+  TAR-R01: Título é obrigatório, de 1 a 120 caracteres, e não pode ser só espaços.
+  TAR-R02: Prazo, se informado, não pode estar no passado na criação.
+  TAR-R03: Só tarefa pendente ou em_andamento pode ser concluída; concluída não volta a pendente.
+  TAR-R04: Arquivar é exclusão lógica; arquivadas não aparecem na listagem padrão.
+  TAR-R05: Excluir definitivamente exige confirmação e só vale para tarefas arquivadas.
+  TAR-R06: Listagem ordena por prazo crescente e depois por criada_em; sem prazo vem por último.
+  TAR-R07: Se salvar falhar, mostra erro e mantém o que o usuário digitou.
+  TAR-R08: Sem tarefas, a lista mostra estado vazio com a ação "criar primeira tarefa".
+casos_de_uso:
+  CU01: "Usuário cria tarefa -> TAR-R01, TAR-R02"
+  CU02: "Usuário conclui tarefa -> TAR-R03"
+  CU03: "Usuário arquiva e depois exclui -> TAR-R04, TAR-R05"
+  CU04: "Usuário vê a lista -> TAR-R06, TAR-R08"
+bordas:
+  - "Falha ao salvar por erro de disco ou rede -> TAR-R07"
+  - "Concluir tarefa que já está concluída -> TAR-R03"

@@ -1,0 +1,16 @@
+porte: P
+visao: App web local para uma pessoa organizar tarefas pessoais com prazo.
+usuarios:
+  usuario: Pessoa que organiza as próprias tarefas
+escopo: [criar e editar tarefas, concluir, arquivar, excluir, listar por prazo]
+fora_de_escopo: [login e contas, compartilhamento, notificações, sincronização, anexos]
+dominios: [tarefas]
+nao_funcionais:
+  NF01: Listagem de até 1000 tarefas responde em menos de 300 ms (p95).
+  NF02: Título e descrição são escapados na renderização (sem HTML cru).
+  NF03: Dependências fixadas em lockfile.
+premissas:
+  P01: App de usuário único, sem login (execução local).
+  P02: Idioma pt-BR e fuso America/Sao_Paulo.
+duvidas: []
+packs_descartados: {}
