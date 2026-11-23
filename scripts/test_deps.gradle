@@ -1,0 +1,4 @@
+apply plugin: 'com.android.application'
+dependencies {
+    implementation("com.github.termux.termux-app:terminal-view:v0.118.0")
+}

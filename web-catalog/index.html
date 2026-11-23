@@ -1,0 +1,1484 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VYKnifeSwiss — O Canivete Suíço Digital Definitivo para Android</title>
+  <meta name="description" content="Mais de 26 ferramentas offline de segurança, rede, produtividade e terminal em um único aplicativo Android modular. Baixe o APK e explore o catálogo de plugins.">
+  <meta name="keywords" content="VYKnifeSwiss, canivete suíço android, ferramentas rede, pentest offline, cofre senhas, terminal android, plugins android, offline first">
+  <meta property="og:title" content="VYKnifeSwiss — O Canivete Suíço Digital Definitivo">
+  <meta property="og:description" content="26+ ferramentas offline em um só app Android. 100% modular, sem anúncios, sem telemetria.">
+  <meta property="og:url" content="https://knifeswiss.yotserlab.com">
+  <meta property="og:type" content="website">
+
+  <!-- Fontes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg-main: #060911;
+      --bg-surface: #0B1120;
+      --bg-card: rgba(15, 23, 42, 0.7);
+      --bg-card-hover: rgba(30, 41, 59, 0.8);
+      --border-subtle: rgba(56, 189, 248, 0.12);
+      --border-focus: rgba(0, 212, 255, 0.45);
+      
+      --cyan: #00D4FF;
+      --cyan-glow: rgba(0, 212, 255, 0.25);
+      --sky: #38BDF8;
+      --violet: #8B5CF6;
+      --indigo: #6366F1;
+      --emerald: #10B981;
+      --amber: #F59E0B;
+      --rose: #F43F5E;
+
+      --text-white: #F8FAFC;
+      --text-muted: #94A3B8;
+      --text-dim: #64748B;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      color-scheme: dark;
+    }
+
+    body {
+      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+      background-color: var(--bg-main);
+      color: var(--text-white);
+      line-height: 1.6;
+      overflow-x: hidden;
+      min-height: 100vh;
+    }
+
+    /* Utilitários de Fundo e Luzes de Efeito */
+    .ambient-glow {
+      position: absolute;
+      pointer-events: none;
+      border-radius: 50%;
+      filter: blur(120px);
+      z-index: 0;
+    }
+
+    .glow-1 {
+      top: -100px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 700px;
+      height: 450px;
+      background: radial-gradient(circle, rgba(0, 212, 255, 0.12) 0%, rgba(99, 102, 241, 0.08) 50%, transparent 80%);
+    }
+
+    .glow-2 {
+      top: 1200px;
+      left: -150px;
+      width: 500px;
+      height: 500px;
+      background: radial-gradient(circle, rgba(139, 92, 246, 0.1) 0%, transparent 70%);
+    }
+
+    .glow-3 {
+      top: 2400px;
+      right: -100px;
+      width: 600px;
+      height: 600px;
+      background: radial-gradient(circle, rgba(0, 212, 255, 0.08) 0%, transparent 70%);
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 24px;
+      position: relative;
+      z-index: 2;
+    }
+
+    /* Navbar */
+    .navbar {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      background: rgba(6, 9, 17, 0.75);
+      border-bottom: 1px solid var(--border-subtle);
+    }
+
+    .nav-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 72px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+      color: #fff;
+    }
+
+    .brand-icon {
+      width: 38px;
+      height: 38px;
+      border-radius: 10px;
+      background: linear-gradient(135deg, #00D4FF, #6366F1);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 20px;
+      box-shadow: 0 0 16px var(--cyan-glow);
+    }
+
+    .brand-text {
+      font-size: 1.25rem;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      display: flex;
+      align-items: baseline;
+      gap: 4px;
+    }
+
+    .brand-text span {
+      color: var(--cyan);
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 32px;
+      list-style: none;
+    }
+
+    .nav-links a {
+      color: var(--text-muted);
+      text-decoration: none;
+      font-size: 0.925rem;
+      font-weight: 500;
+      transition: color 0.2s;
+    }
+
+    .nav-links a:hover {
+      color: var(--cyan);
+    }
+
+    .btn-nav-download {
+      background: linear-gradient(135deg, var(--cyan), var(--sky));
+      color: #040711 !important;
+      padding: 9px 20px;
+      border-radius: 9999px;
+      font-weight: 700 !important;
+      font-size: 0.875rem !important;
+      box-shadow: 0 4px 14px rgba(0, 212, 255, 0.25);
+      transition: transform 0.2s, box-shadow 0.2s !important;
+    }
+
+    .btn-nav-download:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(0, 212, 255, 0.4);
+    }
+
+    /* Hero Section */
+    .hero {
+      padding: 90px 0 60px;
+      text-align: center;
+    }
+
+    .badge-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 16px;
+      border-radius: 9999px;
+      background: rgba(0, 212, 255, 0.08);
+      border: 1px solid rgba(0, 212, 255, 0.25);
+      font-size: 0.8rem;
+      font-weight: 700;
+      color: var(--cyan);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 24px;
+      animation: pulseGlow 3s infinite;
+    }
+
+    @keyframes pulseGlow {
+      0%, 100% { border-color: rgba(0, 212, 255, 0.25); }
+      50% { border-color: rgba(0, 212, 255, 0.6); }
+    }
+
+    .hero h1 {
+      font-size: 3.5rem;
+      font-weight: 800;
+      line-height: 1.15;
+      letter-spacing: -0.03em;
+      max-width: 960px;
+      margin: 0 auto 24px;
+      background: linear-gradient(135deg, #FFFFFF 40%, #7DD3FC 80%, #00D4FF 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .hero p.lead {
+      font-size: 1.25rem;
+      color: var(--text-muted);
+      max-width: 720px;
+      margin: 0 auto 36px;
+      font-weight: 400;
+    }
+
+    .hero-actions {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 16px;
+      flex-wrap: wrap;
+      margin-bottom: 48px;
+    }
+
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: linear-gradient(135deg, var(--cyan), var(--sky));
+      color: #050814;
+      font-size: 1.05rem;
+      font-weight: 700;
+      padding: 14px 28px;
+      border-radius: 12px;
+      text-decoration: none;
+      box-shadow: 0 10px 25px rgba(0, 212, 255, 0.3);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 14px 32px rgba(0, 212, 255, 0.45);
+    }
+
+    .btn-secondary {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid var(--border-subtle);
+      color: var(--text-white);
+      font-size: 1.05rem;
+      font-weight: 600;
+      padding: 14px 28px;
+      border-radius: 12px;
+      text-decoration: none;
+      backdrop-filter: blur(8px);
+      transition: background 0.2s, border-color 0.2s, transform 0.2s;
+    }
+
+    .btn-secondary:hover {
+      background: rgba(255, 255, 255, 0.1);
+      border-color: var(--cyan);
+      transform: translateY(-2px);
+    }
+
+    .hero-features-chips {
+      display: flex;
+      justify-content: center;
+      gap: 24px;
+      flex-wrap: wrap;
+      color: var(--text-muted);
+      font-size: 0.9rem;
+    }
+
+    .hero-features-chips span {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    /* Pillars Grid */
+    .section-title-wrap {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+
+    .section-tag {
+      font-size: 0.8rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--cyan);
+      margin-bottom: 8px;
+    }
+
+    .section-title {
+      font-size: 2.25rem;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      color: #fff;
+    }
+
+    .section-subtitle {
+      font-size: 1.05rem;
+      color: var(--text-muted);
+      max-width: 600px;
+      margin: 10px auto 0;
+    }
+
+    .pillars-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 24px;
+      margin-bottom: 100px;
+    }
+
+    .pillar-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: 18px;
+      padding: 28px;
+      backdrop-filter: blur(12px);
+      transition: transform 0.2s, border-color 0.2s;
+    }
+
+    .pillar-card:hover {
+      transform: translateY(-4px);
+      border-color: var(--border-focus);
+    }
+
+    .pillar-icon {
+      width: 48px;
+      height: 48px;
+      border-radius: 12px;
+      background: rgba(0, 212, 255, 0.1);
+      color: var(--cyan);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      margin-bottom: 18px;
+    }
+
+    .pillar-title {
+      font-size: 1.25rem;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+
+    .pillar-desc {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+      line-height: 1.5;
+    }
+
+    /* Native Tools Showcase */
+    .tools-section {
+      padding: 40px 0 100px;
+    }
+
+    .tools-categories {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      margin-bottom: 36px;
+      flex-wrap: wrap;
+    }
+
+    .category-tab {
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid var(--border-subtle);
+      color: var(--text-muted);
+      padding: 10px 20px;
+      border-radius: 9999px;
+      cursor: pointer;
+      font-weight: 600;
+      font-size: 0.9rem;
+      transition: all 0.2s;
+    }
+
+    .category-tab.active, .category-tab:hover {
+      background: rgba(0, 212, 255, 0.12);
+      border-color: var(--cyan);
+      color: var(--cyan);
+    }
+
+    .tools-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+      gap: 18px;
+    }
+
+    .tool-item-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: 14px;
+      padding: 20px;
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+      transition: transform 0.2s, border-color 0.2s, background 0.2s;
+    }
+
+    .tool-item-card:hover {
+      transform: translateY(-2px);
+      border-color: var(--border-focus);
+      background: var(--bg-card-hover);
+    }
+
+    .tool-emoji {
+      font-size: 24px;
+      line-height: 1;
+      padding: 8px;
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 10px;
+    }
+
+    .tool-info h4 {
+      font-size: 1.05rem;
+      font-weight: 700;
+      margin-bottom: 4px;
+      color: #fff;
+    }
+
+    .tool-info p {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      line-height: 1.4;
+    }
+
+    /* Plugin Hub Section */
+    .plugin-hub {
+      padding: 40px 0 100px;
+    }
+
+    .hub-banner {
+      background: linear-gradient(135deg, rgba(11, 17, 32, 0.95), rgba(15, 23, 42, 0.8));
+      border: 1px solid rgba(0, 212, 255, 0.3);
+      border-radius: 20px;
+      padding: 32px;
+      margin-bottom: 40px;
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+    }
+
+    .hub-banner-content {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+
+    .hub-banner-text h3 {
+      font-size: 1.4rem;
+      font-weight: 800;
+      color: #fff;
+      margin-bottom: 6px;
+    }
+
+    .hub-banner-text p {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+    }
+
+    .endpoint-box {
+      background: rgba(0, 0, 0, 0.6);
+      border: 1px solid var(--border-subtle);
+      border-radius: 10px;
+      padding: 8px 16px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.85rem;
+      color: var(--cyan);
+    }
+
+    .btn-copy {
+      background: rgba(255, 255, 255, 0.1);
+      border: none;
+      color: #fff;
+      padding: 6px 12px;
+      border-radius: 6px;
+      font-size: 0.8rem;
+      cursor: pointer;
+      font-weight: 600;
+      transition: background 0.2s;
+    }
+
+    .btn-copy:hover {
+      background: var(--cyan);
+      color: #000;
+    }
+
+    .catalog-controls {
+      display: flex;
+      gap: 16px;
+      margin-bottom: 28px;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .search-input-wrap {
+      flex: 1;
+      min-width: 280px;
+    }
+
+    .search-input-wrap input {
+      width: 100%;
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: 12px;
+      padding: 12px 18px;
+      font-size: 0.95rem;
+      color: #fff;
+      outline: none;
+      transition: border-color 0.2s;
+    }
+
+    .search-input-wrap input:focus {
+      border-color: var(--cyan);
+    }
+
+    .catalog-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+      gap: 24px;
+    }
+
+    .plugin-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: 18px;
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      backdrop-filter: blur(12px);
+      transition: transform 0.2s, border-color 0.2s, box-shadow 0.2s;
+    }
+
+    .plugin-card:hover {
+      transform: translateY(-4px);
+      border-color: var(--border-focus);
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+    }
+
+    .plugin-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 14px;
+    }
+
+    .plugin-badge {
+      font-size: 0.725rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      padding: 4px 10px;
+      border-radius: 6px;
+      background: rgba(0, 212, 255, 0.1);
+      color: var(--cyan);
+    }
+
+    .plugin-version {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.8rem;
+      color: var(--text-dim);
+    }
+
+    .plugin-name {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 8px;
+    }
+
+    .plugin-desc {
+      font-size: 0.92rem;
+      color: var(--text-muted);
+      line-height: 1.5;
+      flex-grow: 1;
+      margin-bottom: 20px;
+    }
+
+    .plugin-meta {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.8rem;
+      color: var(--text-dim);
+      margin-bottom: 20px;
+      border-top: 1px solid rgba(255, 255, 255, 0.05);
+      padding-top: 14px;
+    }
+
+    .plugin-buttons {
+      display: flex;
+      gap: 10px;
+    }
+
+    .btn-download-zip {
+      flex: 1;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      background: linear-gradient(135deg, var(--cyan), var(--sky));
+      color: #050814;
+      font-weight: 700;
+      font-size: 0.875rem;
+      padding: 10px 16px;
+      border-radius: 10px;
+      text-decoration: none;
+      transition: opacity 0.2s;
+    }
+
+    .btn-download-zip:hover {
+      opacity: 0.9;
+    }
+
+    .btn-copy-link {
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid var(--border-subtle);
+      color: var(--text-white);
+      padding: 10px 14px;
+      border-radius: 10px;
+      font-weight: 600;
+      font-size: 0.875rem;
+      cursor: pointer;
+      transition: background 0.2s, border-color 0.2s;
+    }
+
+    .btn-copy-link:hover {
+      background: rgba(255, 255, 255, 0.12);
+      border-color: var(--cyan);
+    }
+
+    /* App Download Section */
+    .download-section {
+      padding: 60px 0 100px;
+    }
+
+    .download-box {
+      background: linear-gradient(135deg, rgba(15, 23, 42, 0.8), rgba(8, 12, 20, 0.95));
+      border: 1px solid rgba(0, 212, 255, 0.25);
+      border-radius: 24px;
+      padding: 48px;
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 40px;
+      align-items: center;
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+    }
+
+    .download-details h3 {
+      font-size: 2rem;
+      font-weight: 800;
+      color: #fff;
+      margin-bottom: 12px;
+    }
+
+    .download-details p {
+      color: var(--text-muted);
+      font-size: 1.05rem;
+      margin-bottom: 28px;
+    }
+
+    .apk-meta-list {
+      list-style: none;
+      margin-bottom: 32px;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 14px;
+    }
+
+    .apk-meta-item {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+    }
+
+    .apk-meta-item strong {
+      color: #fff;
+    }
+
+    .sha-box {
+      background: rgba(0, 0, 0, 0.5);
+      border: 1px solid var(--border-subtle);
+      border-radius: 10px;
+      padding: 12px 16px;
+      margin-bottom: 28px;
+    }
+
+    .sha-label {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      color: var(--text-dim);
+      font-weight: 700;
+      margin-bottom: 4px;
+    }
+
+    .sha-val {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.775rem;
+      color: var(--cyan);
+      word-break: break-all;
+    }
+
+    .qr-card {
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid var(--border-subtle);
+      border-radius: 18px;
+      padding: 28px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .qr-svg {
+      width: 180px;
+      height: 180px;
+      background: #fff;
+      padding: 12px;
+      border-radius: 12px;
+      margin-bottom: 16px;
+    }
+
+    .qr-card p {
+      font-size: 0.875rem;
+      color: var(--text-muted);
+    }
+
+    /* Dev Guide Section */
+    .dev-guide {
+      padding: 20px 0 100px;
+    }
+
+    .code-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+    }
+
+    .code-window {
+      background: #03060C;
+      border: 1px solid var(--border-subtle);
+      border-radius: 14px;
+      overflow: hidden;
+    }
+
+    .code-header {
+      background: rgba(255, 255, 255, 0.04);
+      padding: 10px 16px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+    }
+
+    .code-title {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.8rem;
+      color: var(--text-muted);
+    }
+
+    pre code {
+      display: block;
+      padding: 16px;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.825rem;
+      color: #E2E8F0;
+      line-height: 1.6;
+      overflow-x: auto;
+    }
+
+    /* Toast Notification */
+    .toast {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      background: #0F172A;
+      border: 1px solid var(--cyan);
+      color: #fff;
+      padding: 14px 20px;
+      border-radius: 12px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 0.9rem;
+      z-index: 1000;
+      transform: translateY(100px);
+      opacity: 0;
+      transition: transform 0.3s ease, opacity 0.3s ease;
+      pointer-events: none;
+    }
+
+    .toast.show {
+      transform: translateY(0);
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    /* Footer */
+    footer {
+      border-top: 1px solid var(--border-subtle);
+      padding: 40px 0;
+      background: rgba(6, 9, 17, 0.9);
+      font-size: 0.875rem;
+      color: var(--text-dim);
+    }
+
+    .footer-content {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 24px;
+      list-style: none;
+    }
+
+    .footer-links a {
+      color: var(--text-muted);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    .footer-links a:hover {
+      color: var(--cyan);
+    }
+
+    /* Responsividade */
+    @media (max-width: 900px) {
+      .hero h1 { font-size: 2.5rem; }
+      .download-box { grid-template-columns: 1fr; }
+      .code-grid { grid-template-columns: 1fr; }
+      .nav-links { display: none; }
+    }
+  </style>
+</head>
+<body>
+  <!-- Efeitos de iluminação de fundo -->
+  <div class="ambient-glow glow-1"></div>
+  <div class="ambient-glow glow-2"></div>
+  <div class="ambient-glow glow-3"></div>
+
+  <!-- Barra de Navegação -->
+  <nav class="navbar">
+    <div class="container nav-container">
+      <a href="#" class="brand">
+        <div class="brand-icon">⚡</div>
+        <div class="brand-text">VY<span>KnifeSwiss</span></div>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#features">Recursos</a></li>
+        <li><a href="#plugins">Plugins</a></li>
+        <li><a href="#download">Download APK</a></li>
+        <li><a href="#dev">Criar Plugins</a></li>
+        <li><a href="/downloads/vyknifeswiss-latest.apk" class="btn-nav-download">Baixar APK v1.0</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero">
+    <div class="container">
+      <div class="badge-pill">
+        🛡️ 100% Offline • Zero Telemetria • Código Aberto
+      </div>
+      <h1>O Canivete Suíço Digital Definitivo para Android</h1>
+      <p class="lead">
+        Mais de 26 ferramentas nativas de rede, segurança, terminal e produtividade em um único app. Agora com arquitetura modular de plugins instaláveis sob demanda via ZIP ou URL.
+      </p>
+
+      <div class="hero-actions">
+        <a href="#download" class="btn-primary">
+          <span>⬇️</span> Baixar APK para Android (64 MB)
+        </a>
+        <a href="#plugins" class="btn-secondary">
+          <span>🧩</span> Catálogo de Plugins
+        </a>
+      </div>
+
+      <div class="hero-features-chips">
+        <span>🔒 Criptografia SQLCipher & Keystore</span>
+        <span>🌐 Scanner mDNS, Ping & Portas</span>
+        <span>💬 Chat LAN Mesh Sem Internet</span>
+        <span>⚡ Extensível via Web Plugins</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Pilares Fundamentais -->
+  <section class="container" style="margin-top: 40px;">
+    <div class="pillars-grid">
+      <div class="pillar-card">
+        <div class="pillar-icon">🔒</div>
+        <h3 class="pillar-title">Segurança Máxima</h3>
+        <p class="pillar-desc">Cofre de senhas com SQLCipher, 2FA TOTP com leitor QR, auditoria de segurança de dispositivo e proteção contra desligamento indevido.</p>
+      </div>
+      <div class="pillar-card">
+        <div class="pillar-icon">📡</div>
+        <h3 class="pillar-title">Rede & Conectividade</h3>
+        <p class="pillar-desc">Varredura ARP, ping, detecção mDNS Bonjour, sondagem NetBIOS, diagnóstico de portas e chat P2P direto na rede local sem nuvem.</p>
+      </div>
+      <div class="pillar-card">
+        <div class="pillar-icon">🧩</div>
+        <h3 class="pillar-title">Modular & Extensível</h3>
+        <p class="pillar-desc">Instale novos utilitários via ZIP, links diretos ou catálogo online com 1 toque. Sandbox seguro e APIs nativas expostas aos plugins.</p>
+      </div>
+      <div class="pillar-card">
+        <div class="pillar-icon">⚡</div>
+        <h3 class="pillar-title">Produtividade Offline</h3>
+        <p class="pillar-desc">Terminal SSH, editor de texto com detecção de encodings, leitor de PDF/EPUB, transcrição de áudio offline e notas em quadro Kanban.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Showcase das 26+ Ferramentas Nativas -->
+  <section id="features" class="tools-section">
+    <div class="container">
+      <div class="section-title-wrap">
+        <div class="section-tag">Arsenal Completo</div>
+        <h2 class="section-title">26+ Ferramentas Integradas</h2>
+        <p class="section-subtitle">Tudo o que administradores de rede, desenvolvedores e entusiastas de privacidade precisam no bolso.</p>
+      </div>
+
+      <div class="tools-categories">
+        <button class="category-tab active" onclick="filterCategory('all', this)">Todas</button>
+        <button class="category-tab" onclick="filterCategory('net', this)">Rede & Wi-Fi</button>
+        <button class="category-tab" onclick="filterCategory('sec', this)">Segurança</button>
+        <button class="category-tab" onclick="filterCategory('prod', this)">Produtividade</button>
+        <button class="category-tab" onclick="filterCategory('media', this)">Mídia & Sistema</button>
+      </div>
+
+      <div class="tools-grid" id="toolsGrid">
+        <!-- Rede -->
+        <div class="tool-item-card" data-cat="net">
+          <div class="tool-emoji">🔍</div>
+          <div class="tool-info">
+            <h4>Scanner de Rede</h4>
+            <p>Varredura ARP, ping, mDNS (Bonjour), sondagem NetBIOS e detecção de portas abertas.</p>
+          </div>
+        </div>
+        <div class="tool-item-card" data-cat="net">
+          <div class="tool-emoji">💬</div>
+          <div class="tool-info">
+            <h4>Chat P2P Local</h4>
+            <p>Comunicação instantânea e troca de arquivos criptografada em LAN sem internet.</p>
+          </div>
+        </div>
+        <div class="tool-item-card" data-cat="net">
+          <div class="tool-emoji">📶</div>
+          <div class="tool-info">
+            <h4>Diagnóstico de Rede</h4>
+            <p>Inspeção de interfaces, gateway, DNS, Wi-Fi info, roteamento e velocidade.</p>
+          </div>
+        </div>
+        <div class="tool-item-card" data-cat="net">
+          <div class="tool-emoji">🚗</div>
+          <div class="tool-info">
+            <h4>Scanner OBD2</h4>
+            <p>Diagnóstico automotivo e telemetria de sensores via adaptador Bluetooth ELM327.</p>
+          </div>
+        </div>
+        <div class="tool-item-card" data-cat="net">
+          <div class="tool-emoji">🌐</div>
+          <div class="tool-info">
+            <h4>Rede Mesh P2P</h4>
+            <p>Topologia de nós locais para transmissão descentralizada de dados.</p>
+          </div>
+        </div>
+
+        <!-- Segurança -->
+        <div class="tool-item-card" data-cat="sec">
+          <div class="tool-emoji">🔐</div>
+          <div class="tool-info">
+            <h4>Cofre de Senhas</h4>
+            <p>Banco criptografado SQLCipher em repouso com desbloqueio biométrico seguro.</p>
+          </div>
+        </div>
+        <div class="tool-item-card" data-cat="sec">
+          <div class="tool-emoji">⏱️</div>
+          <div class="tool-info">
+            <h4>Autenticador 2FA TOTP</h4>
+            <p>Tokens de verificação em dois fatores 100% offline com scanner QR de alta resolução.</p>
+          </div>
+        </div>
+        <div class="tool-item-card" data-cat="sec">
+          <div class="tool-emoji">🛡️</div>
+          <div class="tool-info">
+            <h4>Auditoria do Dispositivo</h4>
+            <p>Detecção de Root, modo depuração USB ativado, SE-Linux e integridade do SO.</p>
+          </div>
+        </div>
+        <div class="tool-item-card" data-cat="sec">
+          <div class="tool-emoji">🛑</div>
+          <div class="tool-info">
+            <h4>Proteção ao Desligar</h4>
+            <p>Impede ou autentica tentativas de desligar a tela e o dispositivo.</p>
+          </div>
+        </div>
+
+        <!-- Produtividade -->
+        <div class="tool-item-card" data-cat="prod">
+          <div class="tool-emoji">💻</div>
+          <div class="tool-info">
+            <h4>Terminal Local & SSH</h4>
+            <p>Shell local interativo e cliente SSH completo para conexões remotas seguras.</p>
+          </div>
+        </div>
+        <div class="tool-item-card" data-cat="prod">
+          <div class="tool-emoji">📂</div>
+          <div class="tool-info">
+            <h4>Gerenciador de Arquivos</h4>
+            <p>Explorador com suporte a armazenamento compartilhado e operações em lote.</p>
+          </div>
+        </div>
+        <div class="tool-item-card" data-cat="prod">
+          <div class="tool-emoji">📝</div>
+          <div class="tool-info">
+            <h4>Editor de Texto</h4>
+            <p>Editor de código-fonte com detecção automática de encodings (UTF-8, ISO-8859-1).</p>
+          </div>
+        </div>
+        <div class="tool-item-card" data-cat="prod">
+          <div class="tool-emoji">📋</div>
+          <div class="tool-info">
+            <h4>Notas & Quadro Kanban</h4>
+            <p>Organizador de tarefas ágil e anotações rápidas com prioridades e cores.</p>
+          </div>
+        </div>
+        <div class="tool-item-card" data-cat="prod">
+          <div class="tool-emoji">🔄</div>
+          <div class="tool-info">
+            <h4>Sincronizador de Pastas</h4>
+            <p>Espelhamento e sincronização bidirecional entre diretórios locais do dispositivo.</p>
+          </div>
+        </div>
+        <div class="tool-item-card" data-cat="prod">
+          <div class="tool-emoji">🎨</div>
+          <div class="tool-info">
+            <h4>Quadro Branco</h4>
+            <p>Tela de desenho livre e anotações visuais para brainstorming rápido.</p>
+          </div>
+        </div>
+        <div class="tool-item-card" data-cat="prod">
+          <div class="tool-emoji">🧮</div>
+          <div class="tool-info">
+            <h4>Calculadora HP-48G</h4>
+            <p>Emulação de calculadora científica RPN para cálculos avançados de engenharia.</p>
+          </div>
+        </div>
+
+        <!-- Mídia & Sistema -->
+        <div class="tool-item-card" data-cat="media">
+          <div class="tool-emoji">🎙️</div>
+          <div class="tool-info">
+            <h4>Gravador & Transcrição</h4>
+            <p>Gravação de alta fidelidade e speech-to-text executado localmente sem internet.</p>
+          </div>
+        </div>
+        <div class="tool-item-card" data-cat="media">
+          <div class="tool-emoji">🎥</div>
+          <div class="tool-info">
+            <h4>Gravador de Tela</h4>
+            <p>Captura de vídeo da tela em alta resolução com áudio interno do sistema.</p>
+          </div>
+        </div>
+        <div class="tool-item-card" data-cat="media">
+          <div class="tool-emoji">📖</div>
+          <div class="tool-info">
+            <h4>Leitor PDF & EPUB</h4>
+            <p>Visualizador nativo leve para documentações técnicas e livros digitais.</p>
+          </div>
+        </div>
+        <div class="tool-item-card" data-cat="media">
+          <div class="tool-emoji">🧹</div>
+          <div class="tool-info">
+            <h4>Limpador de Cache</h4>
+            <p>Detecção e limpeza de resíduos temporários para liberação imediata de espaço.</p>
+          </div>
+        </div>
+        <div class="tool-item-card" data-cat="media">
+          <div class="tool-emoji">🖥️</div>
+          <div class="tool-info">
+            <h4>Windows Companion</h4>
+            <p>Integração com PC via companion app para compartilhamento de clipboard e terminal.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Central de Plugins & Catálogo Online -->
+  <section id="plugins" class="plugin-hub">
+    <div class="container">
+      <div class="section-title-wrap">
+        <div class="section-tag">Extensibilidade Ilimitada</div>
+        <h2 class="section-title">Catálogo Oficial de Plugins</h2>
+        <p class="section-subtitle">Instale utilitários adicionais no VYKnifeSwiss com apenas um clique ou faça download dos arquivos .zip.</p>
+      </div>
+
+      <!-- Banner com endpoint de integração -->
+      <div class="hub-banner">
+        <div class="hub-banner-content">
+          <div class="hub-banner-text">
+            <h3>Conectar Catálogo ao Aplicativo</h3>
+            <p>Este catálogo é o repositório oficial. No app, acesse <strong>Plugins > Catálogo Online</strong> para instalar diretamente.</p>
+          </div>
+          <div class="endpoint-box">
+            <span id="catUrl">https://knifeswiss.yotserlab.com/plugins.json</span>
+            <button class="btn-copy" onclick="copyCatalogUrl()">Copiar Endpoint</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Filtros e Busca -->
+      <div class="catalog-controls">
+        <div class="search-input-wrap">
+          <input type="text" id="pluginSearch" placeholder="Buscar por nome, tag ou recurso..." oninput="handlePluginSearch()">
+        </div>
+        <div class="tools-categories" style="margin-bottom: 0;">
+          <button class="category-tab active" onclick="filterPluginCategory('ALL', this)">Todos</button>
+          <button class="category-tab" onclick="filterPluginCategory('NETWORK', this)">Rede</button>
+          <button class="category-tab" onclick="filterPluginCategory('SECURITY', this)">Segurança</button>
+          <button class="category-tab" onclick="filterPluginCategory('PRODUCTIVITY', this)">Produtividade</button>
+        </div>
+      </div>
+
+      <!-- Grid de Plugins -->
+      <div class="catalog-grid" id="catalogGrid">
+        <!-- Renderizado dinamicamente via JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção de Download do Aplicativo -->
+  <section id="download" class="download-section">
+    <div class="container">
+      <div class="download-box">
+        <div class="download-details">
+          <div class="section-tag">Pronto para Instalação</div>
+          <h3>Baixe o VYKnifeSwiss para Android</h3>
+          <p>Instale o canivete suíço digital mais completo no seu smartphone ou tablet Android sem anúncios, cadastros ou dependências de nuvem.</p>
+
+          <ul class="apk-meta-list">
+            <li class="apk-meta-item">📦 Versão: <strong>1.0.0</strong></li>
+            <li class="apk-meta-item">⚖️ Tamanho: <strong>~64 MB</strong></li>
+            <li class="apk-meta-item">🤖 Requisito: <strong>Android 8.0+ (Oreo)</strong></li>
+            <li class="apk-meta-item">⚡ Arquitetura: <strong>Universal (ARM64 / v7a / x86)</strong></li>
+          </ul>
+
+          <div class="sha-box">
+            <div class="sha-label">Checksum SHA-256 (Integridade)</div>
+            <div class="sha-val" id="shaValue">b19c054681903a4a2dafe3188f12fb4fe222cfbb709dec466076d3d52635c446</div>
+          </div>
+
+          <div style="display: flex; gap: 14px; flex-wrap: wrap;">
+            <a href="/downloads/vyknifeswiss-latest.apk" download class="btn-primary">
+              <span>⬇️</span> Baixar APK Diretamente
+            </a>
+            <button class="btn-secondary" onclick="copySha()">
+              <span>📋</span> Copiar SHA-256
+            </button>
+          </div>
+        </div>
+
+        <div class="qr-card">
+          <!-- QR Code estilizado apontando para o link de download -->
+          <svg class="qr-svg" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="100" height="100" fill="#ffffff"/>
+            <!-- Marcador Superior Esquerdo -->
+            <rect x="10" y="10" width="24" height="24" fill="#060911"/>
+            <rect x="14" y="14" width="16" height="16" fill="#ffffff"/>
+            <rect x="18" y="18" width="8" height="8" fill="#00D4FF"/>
+            <!-- Marcador Superior Direito -->
+            <rect x="66" y="10" width="24" height="24" fill="#060911"/>
+            <rect x="70" y="14" width="16" height="16" fill="#ffffff"/>
+            <rect x="74" y="18" width="8" height="8" fill="#00D4FF"/>
+            <!-- Marcador Inferior Esquerdo -->
+            <rect x="10" y="66" width="24" height="24" fill="#060911"/>
+            <rect x="14" y="70" width="16" height="16" fill="#ffffff"/>
+            <rect x="18" y="74" width="8" height="8" fill="#00D4FF"/>
+            <!-- Padrões simulados de alta legibilidade -->
+            <rect x="38" y="12" width="6" height="6" fill="#060911"/>
+            <rect x="48" y="12" width="6" height="6" fill="#060911"/>
+            <rect x="40" y="24" width="6" height="6" fill="#060911"/>
+            <rect x="52" y="24" width="6" height="6" fill="#060911"/>
+            <rect x="12" y="42" width="6" height="6" fill="#060911"/>
+            <rect x="24" y="42" width="6" height="6" fill="#060911"/>
+            <rect x="36" y="38" width="28" height="28" rx="4" fill="#060911"/>
+            <path d="M42 52L50 60L58 44" stroke="#00D4FF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+            <rect x="72" y="42" width="6" height="6" fill="#060911"/>
+            <rect x="84" y="42" width="6" height="6" fill="#060911"/>
+            <rect x="38" y="72" width="6" height="6" fill="#060911"/>
+            <rect x="50" y="72" width="6" height="6" fill="#060911"/>
+            <rect x="72" y="72" width="6" height="6" fill="#060911"/>
+            <rect x="82" y="80" width="6" height="6" fill="#060911"/>
+            <rect x="68" y="84" width="6" height="6" fill="#060911"/>
+          </svg>
+          <p>Aponte a câmera do seu celular para baixar o APK direto para o aparelho</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Como Desenvolver Plugins -->
+  <section id="dev" class="dev-guide">
+    <div class="container">
+      <div class="section-title-wrap">
+        <div class="section-tag">Desenvolvedores</div>
+        <h2 class="section-title">Crie Seu Próprio Plugin</h2>
+        <p class="section-subtitle">Construa ferramentas modulares usando HTML5, CSS e JavaScript com acesso seguro aos recursos nativos do Android.</p>
+      </div>
+
+      <div class="code-grid">
+        <div class="code-window">
+          <div class="code-header">
+            <span class="code-title">📄 plugin.json</span>
+            <span style="font-size: 0.75rem; color: var(--cyan);">Manifesto</span>
+          </div>
+          <pre><code>{
+  "id": "meu_utilitario",
+  "name": "Meu Utilitário Custom",
+  "version": "1.0.0",
+  "versionCode": 1,
+  "description": "Ferramenta offline para inspeção",
+  "author": "YotserLab Community",
+  "category": "NETWORK",
+  "iconName": "dns",
+  "entryPoint": "index.html",
+  "type": "web",
+  "permissions": ["android.permission.INTERNET"]
+}</code></pre>
+        </div>
+
+        <div class="code-window">
+          <div class="code-header">
+            <span class="code-title">⚡ script.js (Bridge Android)</span>
+            <span style="font-size: 0.75rem; color: var(--emerald);">window.VyApp API</span>
+          </div>
+          <pre><code>// Notificação Toast nativa
+window.VyApp.showToast("Análise concluída com sucesso!");
+
+// Armazenamento chave-valor isolado e seguro
+window.VyApp.setStorage("ultimo_ip", "192.168.1.1");
+const ip = window.VyApp.getStorage("ultimo_ip");
+
+// Copiar para a área de transferência
+window.VyApp.copyToClipboard("Relatório gerado");
+
+// Vibração tátil
+window.VyApp.vibrate(50);</code></pre>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Toast Notification -->
+  <div id="toast" class="toast">
+    <span id="toastIcon">📋</span>
+    <span id="toastMsg">Copiado com sucesso!</span>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-content">
+      <div>
+        <p><strong>VYKnifeSwiss</strong> &copy; 2026 YotserLab. Projeto Open-Source focado em privacidade.</p>
+        <p style="margin-top: 4px;">Hospedado no Cloudflare Pages • Catálogo oficial em knifeswiss.yotserlab.com</p>
+      </div>
+      <ul class="footer-links">
+        <li><a href="#features">Recursos</a></li>
+        <li><a href="#plugins">Plugins</a></li>
+        <li><a href="#download">Download APK</a></li>
+        <li><a href="/plugins.json">plugins.json</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <!-- Scripts Interativos -->
+  <script>
+    // Fallback dos plugins caso o JSON seja aberto via file:// sem servidor web
+    const fallbackPlugins = [
+      {
+        id: "jwt_inspector",
+        name: "Inspetor de Tokens JWT",
+        version: "1.0.0",
+        description: "Decodificador offline de cabeçalhos e payloads de tokens JWT com verificação de assinatura e análise de tempo de expiração.",
+        category: "SECURITY",
+        fileSize: 2213,
+        author: "YotserLab",
+        downloadUrl: "https://knifeswiss.yotserlab.com/plugins/jwt_inspector.zip"
+      },
+      {
+        id: "subnet_calculator",
+        name: "Calculadora CIDR & Sub-rede",
+        version: "1.0.0",
+        description: "Cálculo detalhado de máscaras de rede, broadcast, faixa de IPs utilizáveis e representações binárias.",
+        category: "NETWORK",
+        fileSize: 2398,
+        author: "YotserLab",
+        downloadUrl: "https://knifeswiss.yotserlab.com/plugins/subnet_calculator.zip"
+      },
+      {
+        id: "whois_lookup",
+        name: "Consulta WHOIS & DNS",
+        version: "1.0.0",
+        description: "Verificação de proprietário de domínio, servidores autoritativos de DNS, MX e registros de infraestrutura.",
+        category: "NETWORK",
+        fileSize: 2915,
+        author: "YotserLab",
+        downloadUrl: "https://knifeswiss.yotserlab.com/plugins/whois_lookup.zip"
+      }
+    ];
+
+    let currentPlugins = [];
+    let selectedCategory = 'ALL';
+
+    async function initCatalog() {
+      try {
+        const res = await fetch('plugins.json');
+        if (!res.ok) throw new Error('HTTP ' + res.status);
+        currentPlugins = await res.json();
+      } catch (err) {
+        console.warn('Usando catálogo embutido de contingência:', err);
+        currentPlugins = fallbackPlugins;
+      }
+      renderCatalog();
+    }
+
+    function renderCatalog() {
+      const container = document.getElementById('catalogGrid');
+      const search = (document.getElementById('pluginSearch').value || '').toLowerCase();
+
+      const filtered = currentPlugins.filter(p => {
+        const matchesCat = selectedCategory === 'ALL' || (p.category && p.category.toUpperCase() === selectedCategory);
+        const matchesSearch = !search || 
+          p.name.toLowerCase().includes(search) || 
+          p.description.toLowerCase().includes(search) ||
+          (p.category && p.category.toLowerCase().includes(search));
+        return matchesCat && matchesSearch;
+      });
+
+      if (filtered.length === 0) {
+        container.innerHTML = `
+          <div style="grid-column: 1/-1; text-align: center; padding: 48px; color: var(--text-muted);">
+            Nenhum plugin encontrado correspondente aos critérios de busca.
+          </div>
+        `;
+        return;
+      }
+
+      container.innerHTML = filtered.map(p => {
+        const sizeKb = (p.fileSize / 1024).toFixed(1);
+        const zipFile = `plugins/${p.id}.zip`;
+        const downloadUrl = p.downloadUrl || `https://knifeswiss.yotserlab.com/${zipFile}`;
+
+        return `
+          <div class="plugin-card">
+            <div class="plugin-header">
+              <span class="plugin-badge">${p.category || 'UTIL'}</span>
+              <span class="plugin-version">v${p.version || '1.0.0'}</span>
+            </div>
+            <h4 class="plugin-name">${p.name}</h4>
+            <p class="plugin-desc">${p.description}</p>
+            <div class="plugin-meta">
+              <span>📦 ${sizeKb} KB</span>
+              <span>👤 ${p.author || 'YotserLab'}</span>
+            </div>
+            <div class="plugin-buttons">
+              <a href="${zipFile}" download class="btn-download-zip">
+                ⬇️ Baixar .zip
+              </a>
+              <button class="btn-copy-link" onclick="copyPluginUrl('${downloadUrl}')" title="Copiar URL para instalar no app">
+                🔗 Copiar URL
+              </button>
+            </div>
+          </div>
+        `;
+      }).join('');
+    }
+
+    function handlePluginSearch() {
+      renderCatalog();
+    }
+
+    function filterPluginCategory(cat, btn) {
+      selectedCategory = cat;
+      const buttons = btn.parentElement.querySelectorAll('.category-tab');
+      buttons.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      renderCatalog();
+    }
+
+    function filterCategory(cat, btn) {
+      const tabs = btn.parentElement.querySelectorAll('.category-tab');
+      tabs.forEach(t => t.classList.remove('active'));
+      btn.classList.add('active');
+
+      const items = document.querySelectorAll('#toolsGrid .tool-item-card');
+      items.forEach(item => {
+        if (cat === 'all' || item.getAttribute('data-cat') === cat) {
+          item.style.display = 'flex';
+        } else {
+          item.style.display = 'none';
+        }
+      });
+    }
+
+    function copyCatalogUrl() {
+      const url = document.getElementById('catUrl').innerText;
+      copyToClipboard(url, "Endpoint do catálogo copiado!");
+    }
+
+    function copyPluginUrl(url) {
+      copyToClipboard(url, "Link do plugin copiado! Cole em 'Instalar via URL' no app.");
+    }
+
+    function copySha() {
+      const sha = document.getElementById('shaValue').innerText;
+      copyToClipboard(sha, "Hash SHA-256 copiado para a área de transferência!");
+    }
+
+    function copyToClipboard(text, message) {
+      if (navigator.clipboard) {
+        navigator.clipboard.writeText(text).then(() => showToast(message));
+      } else {
+        const input = document.createElement('input');
+        input.value = text;
+        document.body.appendChild(input);
+        input.select();
+        document.execCommand('copy');
+        document.body.removeChild(input);
+        showToast(message);
+      }
+    }
+
+    function showToast(msg) {
+      const toast = document.getElementById('toast');
+      const toastMsg = document.getElementById('toastMsg');
+      toastMsg.innerText = msg;
+      toast.classList.add('show');
+      setTimeout(() => {
+        toast.classList.remove('show');
+      }, 3000);
+    }
+
+    initCatalog();
+  </script>
+</body>
+</html>

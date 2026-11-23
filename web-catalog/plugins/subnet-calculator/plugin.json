@@ -1,0 +1,15 @@
+{
+  "id": "subnet_calculator",
+  "name": "Calculadora CIDR & Sub-rede",
+  "version": "1.0.0",
+  "versionCode": 1,
+  "description": "Cálculo detalhado de máscaras de rede, broadcast, faixa de IPs e hosts utilizáveis",
+  "author": "YotserLab",
+  "category": "NETWORK",
+  "iconName": "calculate",
+  "entryPoint": "index.html",
+  "type": "web",
+  "permissions": [],
+  "minAppVersion": 1,
+  "downloadUrl": "https://knifeswiss.yotserlab.com/plugins/subnet_calculator.zip"
+}

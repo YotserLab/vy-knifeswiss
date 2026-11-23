@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inspetor JWT</title>
+  <style>
+    :root {
+      --bg: #0A0E1A;
+      --card: #111827;
+      --border: #1E2D4A;
+      --cyan: #00D4FF;
+      --violet: #7C3AED;
+      --text: #E8EAF6;
+      --muted: #8B97C8;
+      --red: #EF4444;
+      --green: #22C55E;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+    body { background-color: var(--bg); color: var(--text); padding: 16px; }
+    .header { margin-bottom: 20px; }
+    .title { font-size: 20px; font-weight: 700; color: var(--cyan); }
+    .subtitle { font-size: 13px; color: var(--muted); margin-top: 4px; }
+    .card { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 16px; margin-bottom: 16px; }
+    textarea {
+      width: 100%; height: 100px; background: #070A12; border: 1px solid var(--border);
+      border-radius: 8px; color: var(--text); padding: 10px; font-size: 13px; font-family: monospace; outline: none; resize: none;
+    }
+    button {
+      width: 100%; background: var(--cyan); color: var(--bg); border: none; border-radius: 8px;
+      padding: 12px; font-weight: 700; cursor: pointer; font-size: 14px; margin-top: 8px;
+    }
+    .badge { display: inline-block; padding: 4px 8px; border-radius: 6px; font-size: 12px; font-weight: 700; margin-bottom: 10px; }
+    .badge-valid { background: rgba(34, 197, 94, 0.2); color: var(--green); }
+    .badge-expired { background: rgba(239, 68, 68, 0.2); color: var(--red); }
+    pre { background: #070A12; padding: 12px; border-radius: 8px; font-family: monospace; font-size: 12px; overflow-x: auto; color: var(--cyan); }
+    .section-title { font-size: 13px; font-weight: 700; color: var(--muted); text-transform: uppercase; margin-bottom: 6px; }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <div class="title">🔐 Inspetor de Tokens JWT</div>
+    <div class="subtitle">Decodificação e inspeção de claims 100% offline</div>
+  </div>
+
+  <div class="card">
+    <textarea id="jwtInput" placeholder="Cole o token JWT aqui (header.payload.signature)..."></textarea>
+    <button onclick="inspect()">Decodificar Token</button>
+  </div>
+
+  <div id="resultCard" class="card" style="display: none;">
+    <div id="statusBadge"></div>
+
+    <div class="section-title">Cabeçalho (Header)</div>
+    <pre id="headerPre"></pre>
+
+    <div class="section-title" style="margin-top: 14px;">Carga Útil (Payload)</div>
+    <pre id="payloadPre"></pre>
+  </div>
+
+  <script>
+    function base64UrlDecode(str) {
+      str = str.replace(/-/g, '+').replace(/_/g, '/');
+      while (str.length % 4) str += '=';
+      return decodeURIComponent(escape(atob(str)));
+    }
+
+    function inspect() {
+      const token = document.getElementById('jwtInput').value.trim();
+      if (!token) return;
+
+      const parts = token.split('.');
+      if (parts.length < 2) {
+        if (window.VYKnife) window.VYKnife.toast("Formato JWT inválido (esperado 3 partes separadas por ponto)");
+        else alert("Formato JWT inválido!");
+        return;
+      }
+
+      try {
+        const header = JSON.parse(base64UrlDecode(parts[0]));
+        const payload = JSON.parse(base64UrlDecode(parts[1]));
+
+        document.getElementById('headerPre').textContent = JSON.stringify(header, null, 2);
+        document.getElementById('payloadPre').textContent = JSON.stringify(payload, null, 2);
+
+        const badge = document.getElementById('statusBadge');
+        if (payload.exp) {
+          const expDate = new Date(payload.exp * 1000);
+          const isExpired = Date.now() > expDate.getTime();
+          badge.className = 'badge ' + (isExpired ? 'badge-expired' : 'badge-valid');
+          badge.textContent = isExpired ? 'EXPIRADO em ' + expDate.toLocaleString() : 'VÁLIDO até ' + expDate.toLocaleString();
+        } else {
+          badge.className = 'badge badge-valid';
+          badge.textContent = 'Sem data de expiração (exp)';
+        }
+
+        document.getElementById('resultCard').style.display = 'block';
+      } catch (e) {
+        if (window.VYKnife) window.VYKnife.toast("Falha na decodificação: " + e.message);
+      }
+    }
+  </script>
+</body>
+</html>

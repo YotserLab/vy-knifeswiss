@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WHOIS & DNS Lookup</title>
+  <style>
+    :root {
+      --bg: #0A0E1A;
+      --card: #111827;
+      --border: #1E2D4A;
+      --cyan: #00D4FF;
+      --text: #E8EAF6;
+      --muted: #8B97C8;
+      --green: #22C55E;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+    body { background-color: var(--bg); color: var(--text); padding: 16px; min-height: 100vh; }
+    .header { margin-bottom: 20px; }
+    .title { font-size: 20px; font-weight: 700; color: var(--cyan); display: flex; align-items: center; gap: 8px; }
+    .subtitle { font-size: 13px; color: var(--muted); margin-top: 4px; }
+    .card { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 16px; margin-bottom: 16px; }
+    .input-group { display: flex; gap: 8px; margin-bottom: 12px; }
+    input[type="text"] {
+      flex: 1; background: #070A12; border: 1px solid var(--border); border-radius: 8px;
+      color: var(--text); padding: 12px; font-size: 14px; outline: none; transition: border-color 0.2s;
+    }
+    input[type="text"]:focus { border-color: var(--cyan); }
+    button {
+      background: var(--cyan); color: var(--bg); border: none; border-radius: 8px;
+      padding: 0 18px; font-weight: 700; cursor: pointer; display: flex; align-items: center; gap: 6px; font-size: 14px;
+    }
+    button:active { opacity: 0.8; }
+    .btn-secondary { background: #1B1F2C; color: var(--cyan); border: 1px solid var(--border); }
+    .record-list { display: flex; flex-direction: column; gap: 8px; }
+    .record-item { background: #070A12; padding: 10px 14px; border-radius: 8px; border-left: 3px solid var(--cyan); display: flex; justify-content: space-between; align-items: center; font-size: 13px; }
+    .record-type { font-weight: 700; color: var(--cyan); width: 60px; }
+    .record-val { font-family: monospace; color: var(--text); word-break: break-all; }
+    .loading { text-align: center; padding: 20px; color: var(--muted); font-size: 14px; display: none; }
+    .ping-box { margin-top: 14px; display: flex; justify-content: space-between; font-size: 13px; background: #070A12; padding: 10px; border-radius: 8px; }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <div class="title">🌐 Consulta DNS & Domínio</div>
+    <div class="subtitle">Plugin de análise de resolução DNS e latência de host</div>
+  </div>
+
+  <div class="card">
+    <div class="input-group">
+      <input type="text" id="domainInput" placeholder="exemplo: google.com" value="yotserlab.com" />
+      <button onclick="lookup()">Consultar</button>
+    </div>
+    <div id="loading" class="loading">Buscando registros DNS...</div>
+    <div id="pingBox" class="ping-box" style="display: none;">
+      <span>Ping ICMP/TCP:</span>
+      <span id="pingStatus" style="font-weight: 700; color: var(--green);">--</span>
+    </div>
+  </div>
+
+  <div id="resultsCard" class="card" style="display: none;">
+    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
+      <span style="font-weight: 700; font-size: 14px; color: var(--text);">Registros Encontrados</span>
+      <button class="btn-secondary" style="padding: 6px 12px; font-size: 12px;" onclick="copyResults()">Copiar</button>
+    </div>
+    <div id="records" class="record-list"></div>
+  </div>
+
+  <script>
+    let lastResults = "";
+
+    async function lookup() {
+      const raw = document.getElementById('domainInput').value.trim();
+      if (!raw) {
+        if (window.VYKnife) window.VYKnife.toast("Digite um domínio ou IP");
+        return;
+      }
+      const domain = raw.replace(/^https?:\/\//, '').replace(/\/.*$/, '');
+
+      document.getElementById('loading').style.display = 'block';
+      document.getElementById('resultsCard').style.display = 'none';
+      document.getElementById('pingBox').style.display = 'none';
+
+      // Test host ping via native bridge
+      if (window.VYKnife && window.VYKnife.ping) {
+        window.VYKnife.ping(domain, 3000).then(res => {
+          document.getElementById('pingBox').style.display = 'flex';
+          document.getElementById('pingStatus').textContent = res.reachable ? res.timeMs + ' ms (' + res.ip + ')' : 'Inalcançável';
+          document.getElementById('pingStatus').style.color = res.reachable ? 'var(--green)' : '#EF4444';
+        }).catch(() => {});
+      }
+
+      try {
+        // Query DNS over HTTPS (Cloudflare)
+        const types = ['A', 'AAAA', 'MX', 'TXT', 'NS'];
+        const records = [];
+
+        for (const t of types) {
+          const url = 'https://cloudflare-dns.com/dns-query?name=' + encodeURIComponent(domain) + '&type=' + t;
+          let resp;
+          if (window.VYKnife && window.VYKnife.fetch) {
+            resp = await window.VYKnife.fetch(url, { headers: { 'Accept': 'application/dns-json' } });
+            resp = resp.body ? JSON.parse(resp.body) : {};
+          } else {
+            const f = await fetch(url, { headers: { 'Accept': 'application/dns-json' } });
+            resp = await f.json();
+          }
+
+          if (resp.Answer) {
+            for (const ans of resp.Answer) {
+              records.push({ type: t, data: ans.data });
+            }
+          }
+        }
+
+        renderResults(domain, records);
+      } catch (err) {
+        document.getElementById('loading').style.display = 'none';
+        if (window.VYKnife) window.VYKnife.toast("Erro ao consultar DNS: " + err.message);
+      }
+    }
+
+    function renderResults(domain, records) {
+      document.getElementById('loading').style.display = 'none';
+      const container = document.getElementById('records');
+      container.innerHTML = '';
+      lastResults = '=== DNS Lookup: ' + domain + ' ===\n';
+
+      if (records.length === 0) {
+        container.innerHTML = '<div style="color: var(--muted); text-align: center; padding: 12px;">Nenhum registro público encontrado.</div>';
+      } else {
+        records.forEach(r => {
+          lastResults += '[' + r.type + '] ' + r.data + '\n';
+          const div = document.createElement('div');
+          div.className = 'record-item';
+          div.innerHTML = '<span class="record-type">' + r.type + '</span><span class="record-val">' + r.data + '</span>';
+          container.appendChild(div);
+        });
+      }
+
+      document.getElementById('resultsCard').style.display = 'block';
+    }
+
+    function copyResults() {
+      if (!lastResults) return;
+      if (window.VYKnife && window.VYKnife.copy) {
+        window.VYKnife.copy(lastResults);
+      } else {
+        navigator.clipboard.writeText(lastResults);
+        alert("Copiado!");
+      }
+    }
+  </script>
+</body>
+</html>

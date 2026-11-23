@@ -1,0 +1,1 @@
+rsync -avuz --no-g --no-o -O -e "ssh -o ClearAllForwardings=yes" ./ devbox:/projetos/apps-mobile/android/VYKnifeSwiss/ --exclude='build' --exclude='app/build' --exclude='app/build_old' --exclude='app/build_old_2' --exclude='.gradle' --exclude='.idea' --exclude='.kotlin' --exclude='.build-outputs' --exclude='.devin' --exclude='local.properties' --exclude='.git'

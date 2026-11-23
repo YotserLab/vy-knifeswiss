@@ -1,0 +1,1 @@
+rsync -avuz devbox:/projetos/apps-mobile/android/VYKnifeSwiss/app/build/outputs/apk/ ./app/build/outputs/apk/

@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Simultaneous Translator</title>
+    <style>
+        :root {
+            --bg-color: #121212;
+            --surface-color: #1e1e1e;
+            --primary-color: #03dac6;
+            --text-color: #ffffff;
+            --text-muted: #a0a0a0;
+            --border-color: #333333;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 16px;
+            background-color: var(--surface-color);
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 1.2rem;
+            color: var(--primary-color);
+        }
+
+        .history-toggle {
+            background: none;
+            border: none;
+            color: var(--primary-color);
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+
+        .main-container {
+            display: flex;
+            flex: 1;
+            overflow: hidden;
+        }
+
+        .translator-area {
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+            height: 100%;
+        }
+
+        /* Split panes for translation */
+        .pane {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            padding: 16px;
+            box-sizing: border-box;
+            border-bottom: 1px solid var(--border-color);
+        }
+        
+        .pane:last-child {
+            border-bottom: none;
+        }
+
+        .pane-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 8px;
+        }
+
+        select {
+            background-color: var(--surface-color);
+            color: var(--text-color);
+            border: 1px solid var(--border-color);
+            padding: 8px;
+            border-radius: 8px;
+            outline: none;
+            font-size: 1rem;
+        }
+
+        textarea {
+            flex: 1;
+            background-color: transparent;
+            color: var(--text-color);
+            border: none;
+            resize: none;
+            font-size: 1.2rem;
+            outline: none;
+            padding: 8px 0;
+        }
+
+        textarea::placeholder {
+            color: var(--text-muted);
+        }
+
+        .pane-actions {
+            display: flex;
+            justify-content: flex-end;
+            gap: 16px;
+            margin-top: 8px;
+        }
+
+        .action-btn {
+            background-color: var(--surface-color);
+            border: 1px solid var(--border-color);
+            color: var(--primary-color);
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .action-btn:active {
+            transform: scale(0.9);
+        }
+
+        .action-btn.listening {
+            background-color: var(--primary-color);
+            color: var(--bg-color);
+            animation: pulse 1.5s infinite;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+
+        /* History Sidebar */
+        .history-sidebar {
+            width: 250px;
+            background-color: var(--surface-color);
+            border-left: 1px solid var(--border-color);
+            display: flex;
+            flex-direction: column;
+            transform: translateX(100%);
+            transition: transform 0.3s ease;
+            position: absolute;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            z-index: 10;
+        }
+
+        .history-sidebar.open {
+            transform: translateX(0);
+        }
+
+        .history-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 16px;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .history-header h2 {
+            margin: 0;
+            font-size: 1.1rem;
+        }
+
+        .close-history {
+            background: none;
+            border: none;
+            color: var(--text-color);
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+
+        .history-list {
+            flex: 1;
+            overflow-y: auto;
+            padding: 16px;
+        }
+
+        .history-item {
+            background-color: var(--bg-color);
+            padding: 12px;
+            border-radius: 8px;
+            margin-bottom: 12px;
+            font-size: 0.9rem;
+        }
+        
+        .history-item .lang-pair {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            margin-bottom: 4px;
+        }
+
+        .history-item .src-text {
+            font-weight: bold;
+            margin-bottom: 4px;
+        }
+
+        .loading-indicator {
+            font-size: 0.8rem;
+            color: var(--primary-color);
+            display: none;
+        }
+        .loading-indicator.visible {
+            display: inline-block;
+        }
+
+        @media (orientation: landscape) {
+            .translator-area {
+                flex-direction: row;
+            }
+            .pane {
+                border-bottom: none;
+                border-right: 1px solid var(--border-color);
+            }
+            .pane:last-child {
+                border-right: none;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>Translator</h1>
+        <button class="history-toggle" onclick="toggleHistory()">🕒</button>
+    </div>
+
+    <div class="main-container">
+        <div class="translator-area">
+            <!-- PANE 1 -->
+            <div class="pane">
+                <div class="pane-header">
+                    <select id="lang1" onchange="updateTranslation(1)">
+                        <option value="pt-BR" selected>Portuguese (BR)</option>
+                        <option value="en-US">English (US)</option>
+                        <option value="es-ES">Spanish</option>
+                        <option value="fr-FR">French</option>
+                        <option value="de-DE">German</option>
+                    </select>
+                    <span id="loading1" class="loading-indicator">Translating...</span>
+                </div>
+                <textarea id="text1" placeholder="Type or speak here..." oninput="debounceTranslate(1)"></textarea>
+                <div class="pane-actions">
+                    <button class="action-btn" onclick="speakText(1)">🔊</button>
+                    <button class="action-btn" id="mic1" onclick="toggleMic(1)">🎤</button>
+                </div>
+            </div>
+
+            <!-- PANE 2 -->
+            <div class="pane">
+                <div class="pane-header">
+                    <select id="lang2" onchange="updateTranslation(2)">
+                        <option value="en-US" selected>English (US)</option>
+                        <option value="pt-BR">Portuguese (BR)</option>
+                        <option value="es-ES">Spanish</option>
+                        <option value="fr-FR">French</option>
+                        <option value="de-DE">German</option>
+                    </select>
+                    <span id="loading2" class="loading-indicator">Translating...</span>
+                </div>
+                <textarea id="text2" placeholder="Type or speak here..." oninput="debounceTranslate(2)"></textarea>
+                <div class="pane-actions">
+                    <button class="action-btn" onclick="speakText(2)">🔊</button>
+                    <button class="action-btn" id="mic2" onclick="toggleMic(2)">🎤</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="history-sidebar" id="historySidebar">
+            <div class="history-header">
+                <h2>History</h2>
+                <button class="close-history" onclick="toggleHistory()">×</button>
+            </div>
+            <div class="history-list" id="historyList">
+                <!-- History items will be populated here -->
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // State
+        let activeMic = 0; // 0=none, 1=pane1, 2=pane2
+        let recognition = null;
+        let typingTimer;
+        const typingDelay = 1000;
+        
+        // Initialize Speech Recognition if supported
+        const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+        if (SpeechRecognition) {
+            recognition = new SpeechRecognition();
+            recognition.continuous = true;
+            recognition.interimResults = true;
+            
+            recognition.onresult = (event) => {
+                if (activeMic === 0) return;
+                
+                let finalTranscript = '';
+                let interimTranscript = '';
+                
+                for (let i = event.resultIndex; i < event.results.length; ++i) {
+                    if (event.results[i].isFinal) {
+                        finalTranscript += event.results[i][0].transcript;
+                    } else {
+                        interimTranscript += event.results[i][0].transcript;
+                    }
+                }
+                
+                const textArea = document.getElementById(`text${activeMic}`);
+                
+                if (finalTranscript !== '') {
+                    // Append final result and translate immediately
+                    const currentVal = textArea.value;
+                    textArea.value = currentVal + (currentVal.endsWith(' ') || currentVal === '' ? '' : ' ') + finalTranscript;
+                    translate(activeMic);
+                }
+            };
+            
+            recognition.onerror = (event) => {
+                console.error("Speech recognition error", event.error);
+                stopMic();
+            };
+            
+            recognition.onend = () => {
+                // Auto-restart if we didn't explicitly stop it (for continuous dictation)
+                if (activeMic !== 0) {
+                    try {
+                        recognition.start();
+                    } catch(e) {}
+                }
+            };
+        } else {
+            console.warn("Speech Recognition not supported in this environment.");
+        }
+
+        function toggleMic(paneNum) {
+            if (activeMic === paneNum) {
+                // Stop listening
+                stopMic();
+            } else {
+                // Start listening on this pane
+                stopMic();
+                activeMic = paneNum;
+                document.getElementById(`mic${paneNum}`).classList.add('listening');
+                
+                if (recognition) {
+                    recognition.lang = document.getElementById(`lang${paneNum}`).value;
+                    try {
+                        recognition.start();
+                    } catch(e) {}
+                } else {
+                    alert("Speech recognition is not supported on this device/browser.");
+                    stopMic();
+                }
+            }
+        }
+
+        function stopMic() {
+            if (activeMic !== 0) {
+                document.getElementById(`mic${activeMic}`).classList.remove('listening');
+                activeMic = 0;
+                if (recognition) {
+                    recognition.stop();
+                }
+            }
+        }
+
+        // Text-to-Speech
+        function speakText(paneNum) {
+            const text = document.getElementById(`text${paneNum}`).value;
+            const lang = document.getElementById(`lang${paneNum}`).value;
+            
+            if (text.trim() === "") return;
+            
+            if ('speechSynthesis' in window) {
+                window.speechSynthesis.cancel(); // Cancel any ongoing speech
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = lang;
+                window.speechSynthesis.speak(utterance);
+            }
+        }
+
+        // Translation Logic
+        function debounceTranslate(sourcePane) {
+            clearTimeout(typingTimer);
+            typingTimer = setTimeout(() => {
+                translate(sourcePane);
+            }, typingDelay);
+        }
+        
+        function updateTranslation(sourcePane) {
+            // Translate current content again if language changed
+            translate(sourcePane);
+        }
+
+        async function translate(sourcePane) {
+            const targetPane = sourcePane === 1 ? 2 : 1;
+            
+            const sourceText = document.getElementById(`text${sourcePane}`).value.trim();
+            const sourceLangFull = document.getElementById(`lang${sourcePane}`).value;
+            const targetLangFull = document.getElementById(`lang${targetPane}`).value;
+            
+            // Extract just the primary language code for MyMemory (e.g., pt-BR -> pt)
+            // MyMemory works best with standard ISO codes
+            const sourceLang = sourceLangFull.split('-')[0];
+            const targetLang = targetLangFull.split('-')[0];
+            
+            if (sourceText === "") {
+                document.getElementById(`text${targetPane}`).value = "";
+                return;
+            }
+
+            const loadingInd = document.getElementById(`loading${sourcePane}`);
+            loadingInd.classList.add('visible');
+
+            try {
+                // Using MyMemory public API
+                // Note: Free usage is limited to 500 words/day. For production, consider providing an email parameter or a paid key.
+                const url = `https://api.mymemory.translated.net/get?q=${encodeURIComponent(sourceText)}&langpair=${sourceLang}|${targetLang}`;
+                
+                const response = await fetch(url);
+                const data = await response.json();
+                
+                if (data && data.responseData && data.responseData.translatedText) {
+                    const translatedText = data.responseData.translatedText;
+                    document.getElementById(`text${targetPane}`).value = translatedText;
+                    
+                    // Save to history only for significant translations
+                    if (sourceText.length > 2) {
+                        saveToHistory(sourceText, translatedText, sourceLangFull, targetLangFull);
+                    }
+                }
+            } catch (error) {
+                console.error("Translation Error: ", error);
+                document.getElementById(`text${targetPane}`).value = "[Translation Error]";
+            } finally {
+                loadingInd.classList.remove('visible');
+            }
+        }
+
+        // History Management
+        function toggleHistory() {
+            document.getElementById('historySidebar').classList.toggle('open');
+            if (document.getElementById('historySidebar').classList.contains('open')) {
+                loadHistory();
+            }
+        }
+
+        function saveToHistory(sourceText, translatedText, sourceLang, targetLang) {
+            try {
+                let history = JSON.parse(localStorage.getItem('translatorHistory') || '[]');
+                
+                // Avoid duplicating the exact last entry
+                if (history.length > 0 && history[0].sourceText === sourceText) {
+                    history[0].translatedText = translatedText; // update translation if it changed
+                } else {
+                    history.unshift({
+                        sourceText,
+                        translatedText,
+                        sourceLang,
+                        targetLang,
+                        timestamp: Date.now()
+                    });
+                }
+                
+                // Keep only last 50 entries
+                if (history.length > 50) history = history.slice(0, 50);
+                
+                localStorage.setItem('translatorHistory', JSON.stringify(history));
+                
+                // Update UI if open
+                if (document.getElementById('historySidebar').classList.contains('open')) {
+                    loadHistory();
+                }
+            } catch(e) {
+                console.error("LocalStorage error", e);
+            }
+        }
+
+        function loadHistory() {
+            const listElement = document.getElementById('historyList');
+            listElement.innerHTML = '';
+            
+            try {
+                const history = JSON.parse(localStorage.getItem('translatorHistory') || '[]');
+                
+                if (history.length === 0) {
+                    listElement.innerHTML = '<div style="color:var(--text-muted); text-align:center; margin-top:20px;">No history yet.</div>';
+                    return;
+                }
+                
+                history.forEach(item => {
+                    const div = document.createElement('div');
+                    div.className = 'history-item';
+                    
+                    const time = new Date(item.timestamp).toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'});
+                    
+                    div.innerHTML = `
+                        <div class="lang-pair">${item.sourceLang} → ${item.targetLang} • ${time}</div>
+                        <div class="src-text">${escapeHtml(item.sourceText)}</div>
+                        <div class="tgt-text">${escapeHtml(item.translatedText)}</div>
+                    `;
+                    listElement.appendChild(div);
+                });
+            } catch(e) {
+                console.error("Load history error", e);
+            }
+        }
+        
+        function escapeHtml(unsafe) {
+            return (unsafe || '').toString()
+                 .replace(/&/g, "&amp;")
+                 .replace(/</g, "&lt;")
+                 .replace(/>/g, "&gt;")
+                 .replace(/"/g, "&quot;")
+                 .replace(/'/g, "&#039;");
+        }
+    </script>
+</body>
+</html>

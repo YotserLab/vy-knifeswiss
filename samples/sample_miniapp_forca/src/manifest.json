@@ -1,0 +1,19 @@
+{
+  "accentColor": "#00D4FF",
+  "allowedDomains": [],
+  "author": "VY Labs",
+  "category": "Mini Apps",
+  "description": "Clássico Jogo da Forca com tema hacker/cybernetic, palavras de tecnologia e efeitos táteis.",
+  "entryPoint": "index.html",
+  "fileHashes": {
+    "index.html": "1ab370c3f5251ef4c50699836f24c7c28a54ce03dda23aa496208b934af430d4"
+  },
+  "id": "com.example.miniapp.forca",
+  "name": "Jogo da Forca",
+  "permissions": [
+    "vibrate",
+    "toast",
+    "log"
+  ],
+  "version": "1.0.0"
+}

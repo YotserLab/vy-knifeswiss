@@ -1,0 +1,17 @@
+{
+  "id": "whois_lookup",
+  "name": "Consulta WHOIS & DNS",
+  "version": "1.0.0",
+  "versionCode": 1,
+  "description": "Verificação de proprietário de domínio, servidores DNS e registros de rede",
+  "author": "YotserLab",
+  "category": "NETWORK",
+  "iconName": "dns",
+  "entryPoint": "index.html",
+  "type": "web",
+  "permissions": [
+    "android.permission.INTERNET"
+  ],
+  "minAppVersion": 1,
+  "downloadUrl": "https://knifeswiss.yotserlab.com/plugins/whois_lookup.zip"
+}

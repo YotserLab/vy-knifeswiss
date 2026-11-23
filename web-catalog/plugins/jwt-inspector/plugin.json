@@ -1,0 +1,15 @@
+{
+  "id": "jwt_inspector",
+  "name": "Inspetor de Tokens JWT",
+  "version": "1.0.0",
+  "versionCode": 1,
+  "description": "Decodificador offline de cabeçalhos e payloads de tokens JWT com análise de expiração",
+  "author": "YotserLab",
+  "category": "SECURITY",
+  "iconName": "lock",
+  "entryPoint": "index.html",
+  "type": "web",
+  "permissions": [],
+  "minAppVersion": 1,
+  "downloadUrl": "https://knifeswiss.yotserlab.com/plugins/jwt_inspector.zip"
+}

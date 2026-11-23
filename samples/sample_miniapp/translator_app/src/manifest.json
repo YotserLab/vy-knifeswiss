@@ -1,0 +1,20 @@
+{
+  "accentColor": "#03dac6",
+  "allowedDomains": [
+    "api.mymemory.translated.net"
+  ],
+  "author": "VY Labs",
+  "category": "Mini Apps",
+  "description": "Tradutor bidirecional simultâneo offline",
+  "entryPoint": "index.html",
+  "fileHashes": {
+    "index.html": "4f5bad2cf51eb085df2303ad9bf1e4dc6bd751d2acd3153232f877fb71e5dde9"
+  },
+  "icon": "icon.svg",
+  "id": "com.vylab.translator",
+  "name": "Tradutor",
+  "permissions": [
+    "audio"
+  ],
+  "version": "1.0.0"
+}

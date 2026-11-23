@@ -1,0 +1,20 @@
+{
+  "accentColor": "#00D4FF",
+  "allowedDomains": [],
+  "author": "VY Labs",
+  "category": "Mini Apps",
+  "description": "Mini-app de exemplo com segurança máxima, assinatura RSA e integridade SHA-256.",
+  "entryPoint": "index.html",
+  "fileHashes": {
+    "index.html": "8271fe0ee418880e33e0ed9925b383639335b6593bc97afea855f16f3510e926"
+  },
+  "id": "com.example.miniapp.hello",
+  "name": "Hello Mini",
+  "permissions": [
+    "deviceInfo",
+    "log",
+    "toast",
+    "vibrate"
+  ],
+  "version": "1.0.0"
+}
