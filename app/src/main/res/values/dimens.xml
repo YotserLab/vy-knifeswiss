@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Core Foundry Design System Spacing (8pt Grid System) -->
+    <dimen name="spacing_xs">4dp</dimen>
+    <dimen name="spacing_sm">8dp</dimen>
+    <dimen name="spacing_md">16dp</dimen>
+    <dimen name="spacing_lg">24dp</dimen>
+    <dimen name="spacing_xl">32dp</dimen>
+    
+    <!-- Mobile Layout -->
+    <dimen name="margin_mobile">16dp</dimen>
+    <dimen name="gutter">24dp</dimen>
+    
+    <!-- Corner Radius -->
+    <dimen name="radius_sm">4dp</dimen>
+    <dimen name="radius_default">8dp</dimen>
+    <dimen name="radius_md">12dp</dimen>
+    <dimen name="radius_lg">16dp</dimen>
+    <dimen name="radius_full">9999dp</dimen>
+    
+    <!-- Component Heights -->
+    <dimen name="button_height">48dp</dimen>
+    <dimen name="input_height_standard">40dp</dimen>
+    <dimen name="input_height_large">48dp</dimen>
+    
+    <!-- List Items -->
+    <dimen name="list_item_height">64dp</dimen>
+    <dimen name="list_item_padding_comfortable">12dp</dimen>
+    <dimen name="list_item_padding_compact">8dp</dimen>
+    
+    <!-- Grid Cards -->
+    <dimen name="grid_card_size">160dp</dimen>
+</resources>

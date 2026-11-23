@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Core Foundry Design System Component Styles -->
+    
+    <!-- Primary Button -->
+    <style name="Widget.Button.Primary" parent="android:Widget.Button">
+        <item name="android:background">@drawable/bg_button_primary</item>
+        <item name="android:textColor">@color/on_primary</item>
+        <item name="android:textAppearance">@style/TextAppearance.TitleMedium</item>
+        <item name="android:minHeight">@dimen/button_height</item>
+        <item name="android:paddingStart">@dimen/spacing_lg</item>
+        <item name="android:paddingEnd">@dimen/spacing_lg</item>
+    </style>
+    
+    <!-- Secondary Button -->
+    <style name="Widget.Button.Secondary" parent="android:Widget.Button">
+        <item name="android:background">@drawable/bg_button_secondary</item>
+        <item name="android:textColor">@color/on_surface</item>
+        <item name="android:textAppearance">@style/TextAppearance.TitleMedium</item>
+        <item name="android:minHeight">@dimen/button_height</item>
+        <item name="android:paddingStart">@dimen/spacing_lg</item>
+        <item name="android:paddingEnd">@dimen/spacing_lg</item>
+    </style>
+    
+    <!-- Ghost Button -->
+    <style name="Widget.Button.Ghost" parent="android:Widget.Button">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:textColor">@color/on_surface</item>
+        <item name="android:textAppearance">@style/TextAppearance.TitleMedium</item>
+        <item name="android:minHeight">@dimen/button_height</item>
+        <item name="android:paddingStart">@dimen/spacing_lg</item>
+        <item name="android:paddingEnd">@dimen/spacing_lg</item>
+    </style>
+    
+    <!-- Input Field Standard -->
+    <style name="Widget.InputField.Standard" parent="android:Widget.EditText">
+        <item name="android:background">@drawable/bg_input_field</item>
+        <item name="android:minHeight">@dimen/input_height_standard</item>
+        <item name="android:paddingStart">@dimen/spacing_md</item>
+        <item name="android:paddingEnd">@dimen/spacing_md</item>
+        <item name="android:textColor">@color/on_surface</item>
+        <item name="android:textColorHint">@color/outline</item>
+        <item name="android:textAppearance">@style/TextAppearance.BodyLarge</item>
+    </style>
+    
+    <!-- Input Field Large -->
+    <style name="Widget.InputField.Large" parent="Widget.InputField.Standard">
+        <item name="android:minHeight">@dimen/input_height_large</item>
+    </style>
+    
+    <!-- Card -->
+    <style name="Widget.Card" parent="android:Widget">
+        <item name="android:background">@drawable/bg_card</item>
+        <item name="android:padding">@dimen/spacing_md</item>
+    </style>
+    
+    <!-- Card Large -->
+    <style name="Widget.Card.Large" parent="Widget.Card">
+        <item name="android:background">@drawable/bg_card</item>
+    </style>
+    
+    <!-- List Item -->
+    <style name="Widget.ListItem" parent="android:Widget">
+        <item name="android:minHeight">@dimen/list_item_height</item>
+        <item name="android:paddingStart">@dimen/spacing_md</item>
+        <item name="android:paddingEnd">@dimen/spacing_md</item>
+        <item name="android:paddingTop">@dimen/list_item_padding_comfortable</item>
+        <item name="android:paddingBottom">@dimen/list_item_padding_comfortable</item>
+        <item name="android:background">@drawable/bg_list_item</item>
+    </style>
+    
+    <!-- List Item Compact -->
+    <style name="Widget.ListItem.Compact" parent="Widget.ListItem">
+        <item name="android:paddingTop">@dimen/list_item_padding_compact</item>
+        <item name="android:paddingBottom">@dimen/list_item_padding_compact</item>
+    </style>
+    
+    <!-- Status Chip -->
+    <style name="Widget.Chip" parent="android:Widget">
+        <item name="android:background">@drawable/bg_chip</item>
+        <item name="android:paddingStart">@dimen/spacing_md</item>
+        <item name="android:paddingEnd">@dimen/spacing_md</item>
+        <item name="android:paddingTop">@dimen/spacing_xs</item>
+        <item name="android:paddingBottom">@dimen/spacing_xs</item>
+        <item name="android:textAppearance">@style/TextAppearance.LabelMedium</item>
+        <item name="android:textColor">@color/on_surface</item>
+    </style>
+    
+    <!-- Search Bar -->
+    <style name="Widget.SearchBar" parent="android:Widget">
+        <item name="android:background">@drawable/bg_search_bar</item>
+        <item name="android:minHeight">@dimen/input_height_large</item>
+        <item name="android:paddingStart">@dimen/spacing_md</item>
+        <item name="android:paddingEnd">@dimen/spacing_md</item>
+        <item name="android:textColor">@color/on_surface</item>
+        <item name="android:textColorHint">@color/outline</item>
+        <item name="android:textAppearance">@style/TextAppearance.BodyLarge</item>
+    </style>
+</resources>
