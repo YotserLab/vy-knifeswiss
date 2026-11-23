@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingStart="@dimen/spacing_md"
+    android:paddingEnd="@dimen/spacing_md"
+    android:paddingTop="@dimen/list_item_padding_comfortable"
+    android:paddingBottom="@dimen/list_item_padding_comfortable"
+    android:background="@drawable/bg_list_item"
+    android:gravity="center_vertical">
+
+    <!-- File Icon -->
+    <ImageView
+        android:id="@+id/file_icon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@android:drawable/ic_menu_gallery"
+        android:contentDescription="@string/file_icon"
+        android:background="@drawable/bg_chip"
+        android:padding="@dimen/spacing_xs"
+        android:tint="@color/primary" />
+
+    <!-- File Info -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_marginStart="@dimen/spacing_md">
+
+        <!-- File Name -->
+        <TextView
+            android:id="@+id/file_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Document.pdf"
+            android:textAppearance="@style/TextAppearance.BodyLarge"
+            android:textColor="@color/on_surface"
+            android:maxLines="1"
+            android:ellipsize="end" />
+
+        <!-- File Metadata -->
+        <TextView
+            android:id="@+id/file_metadata"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2.4 MB • Modified 2 hours ago"
+            android:textAppearance="@style/TextAppearance.BodySmall"
+            android:textColor="@color/on_surface_variant"
+            android:layout_marginTop="@dimen/spacing_xs" />
+    </LinearLayout>
+
+    <!-- More Options -->
+    <ImageView
+        android:id="@+id/file_more"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@android:drawable/ic_menu_more"
+        android:contentDescription="@string/more_options"
+        android:layout_marginStart="@dimen/spacing_sm" />
+
+</LinearLayout>

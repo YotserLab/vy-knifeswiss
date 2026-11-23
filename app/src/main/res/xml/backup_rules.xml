@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<full-backup-content>
+    <exclude domain="sharedpref" path="vault_bio_prefs.xml"/>
+    <exclude domain="sharedpref" path="cloud_oauth_tokens.xml"/>
+    <exclude domain="sharedpref" path="vyknifeswiss_secure.xml"/>
+</full-backup-content>

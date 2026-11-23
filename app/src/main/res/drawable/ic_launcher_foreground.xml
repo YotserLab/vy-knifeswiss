@@ -1,0 +1,55 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- Outer rounded-square background (Stitch icon surface) -->
+    <path
+        android:fillColor="#111827"
+        android:strokeColor="#1E2D4A"
+        android:strokeWidth="3.375"
+        android:pathData="M27,0 H81 A27,27 0 0 1 108,27 V81 A27,27 0 0 1 81,108 H27 A27,27 0 0 1 0,81 V27 A27,27 0 0 1 27,0 z" />
+
+    <!-- Inner stadium container -->
+    <path
+        android:fillColor="#0A0E1A"
+        android:strokeColor="#00D4FF"
+        android:strokeWidth="4.22"
+        android:pathData="M54,20.25 A20.25,20.25 0 0 1 74.25,40.5 V67.5 A20.25,20.25 0 0 1 54,87.75 A20.25,20.25 0 0 1 33.75,67.5 V40.5 A20.25,20.25 0 0 1 54,20.25 z" />
+
+    <!-- Top dot -->
+    <path
+        android:fillColor="#00D4FF"
+        android:pathData="M54,37.125 m -5.0625,0 a 5.0625,5.0625 0 1,0 10.125,0 a 5.0625,5.0625 0 1,0 -10.125,0" />
+
+    <!-- Center plus -->
+    <path
+        android:strokeColor="#E8EAF6"
+        android:strokeWidth="3.375"
+        android:strokeLineCap="round"
+        android:pathData="M43.875,54 L64.125,54 M54,43.875 L54,64.125" />
+
+    <!-- Violet arc (top-right) -->
+    <path
+        android:strokeColor="#7C3AED"
+        android:strokeWidth="3.375"
+        android:strokeLineCap="round"
+        android:fillColor="#00000000"
+        android:pathData="M64.125,30.375 C74.25,33.75 81,43.875 81,54" />
+
+    <!-- Green arc (bottom-left) -->
+    <path
+        android:strokeColor="#22C55E"
+        android:strokeWidth="3.375"
+        android:strokeLineCap="round"
+        android:fillColor="#00000000"
+        android:pathData="M43.875,77.625 C33.75,74.25 27,64.125 27,54" />
+
+    <!-- Amber accent (bottom-right) -->
+    <path
+        android:strokeColor="#F59E0B"
+        android:strokeWidth="3.375"
+        android:strokeLineCap="round"
+        android:pathData="M70.875,70.875 L79.3125,79.3125" />
+</vector>

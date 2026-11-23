@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/spacing_md">
+
+        <!-- Header -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="@dimen/spacing_lg">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@android:drawable/ic_menu_revert"
+                android:contentDescription="@string/back" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/connections"
+                android:textAppearance="@style/TextAppearance.HeadlineLargeMobile"
+                android:textColor="@color/on_surface"
+                android:layout_marginStart="@dimen/spacing_md" />
+        </LinearLayout>
+
+        <!-- Add Connection Button -->
+        <Button
+            android:id="@+id/btn_add_connection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/add_connection"
+            style="@style/Widget.Button.Primary"
+            android:layout_marginBottom="@dimen/spacing_lg" />
+
+        <!-- Connection Cards -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/active_connections"
+            android:textAppearance="@style/TextAppearance.TitleMedium"
+            android:textColor="@color/on_surface_variant"
+            android:layout_marginBottom="@dimen/spacing_md" />
+
+        <!-- Connection Card 1 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/bg_card"
+            android:padding="@dimen/spacing_md"
+            android:layout_marginBottom="@dimen/spacing_sm">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@android:drawable/ic_menu_compass"
+                    android:background="@drawable/bg_chip"
+                    android:padding="@dimen/spacing_xs"
+                    android:tint="@color/primary" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_marginStart="@dimen/spacing_md">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="NAS Server"
+                        android:textAppearance="@style/TextAppearance.TitleMedium"
+                        android:textColor="@color/on_surface" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="192.168.1.100"
+                        android:textAppearance="@style/TextAppearance.BodySmall"
+                        android:textColor="@color/on_surface_variant" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/connected"
+                    android:textAppearance="@style/TextAppearance.LabelMedium"
+                    android:textColor="@color/primary"
+                    android:background="@drawable/bg_chip"
+                    android:paddingStart="@dimen/spacing_sm"
+                    android:paddingEnd="@dimen/spacing_sm"
+                    android:paddingTop="@dimen/spacing_xs"
+                    android:paddingBottom="@dimen/spacing_xs" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Connection Card 2 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/bg_card"
+            android:padding="@dimen/spacing_md"
+            android:layout_marginBottom="@dimen/spacing_sm">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@android:drawable/ic_menu_upload"
+                    android:background="@drawable/bg_chip"
+                    android:padding="@dimen/spacing_xs"
+                    android:tint="@color/secondary" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_marginStart="@dimen/spacing_md">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Google Drive"
+                        android:textAppearance="@style/TextAppearance.TitleMedium"
+                        android:textColor="@color/on_surface" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="user@gmail.com"
+                        android:textAppearance="@style/TextAppearance.BodySmall"
+                        android:textColor="@color/on_surface_variant" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/connected"
+                    android:textAppearance="@style/TextAppearance.LabelMedium"
+                    android:textColor="@color/primary"
+                    android:background="@drawable/bg_chip"
+                    android:paddingStart="@dimen/spacing_sm"
+                    android:paddingEnd="@dimen/spacing_sm"
+                    android:paddingTop="@dimen/spacing_xs"
+                    android:paddingBottom="@dimen/spacing_xs" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Connection Card 3 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/bg_card"
+            android:padding="@dimen/spacing_md"
+            android:layout_marginBottom="@dimen/spacing_lg">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@android:drawable/ic_menu_send"
+                    android:background="@drawable/bg_chip"
+                    android:padding="@dimen/spacing_xs"
+                    android:tint="@color/tertiary" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_marginStart="@dimen/spacing_md">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="FTP Server"
+                        android:textAppearance="@style/TextAppearance.TitleMedium"
+                        android:textColor="@color/on_surface" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ftp.example.com"
+                        android:textAppearance="@style/TextAppearance.BodySmall"
+                        android:textColor="@color/on_surface_variant" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/disconnected"
+                    android:textAppearance="@style/TextAppearance.LabelMedium"
+                    android:textColor="@color/on_surface_variant"
+                    android:background="@drawable/bg_chip"
+                    android:paddingStart="@dimen/spacing_sm"
+                    android:paddingEnd="@dimen/spacing_sm"
+                    android:paddingTop="@dimen/spacing_xs"
+                    android:paddingBottom="@dimen/spacing_xs" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Connection Types -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/available_connection_types"
+            android:textAppearance="@style/TextAppearance.TitleMedium"
+            android:textColor="@color/on_surface_variant"
+            android:layout_marginBottom="@dimen/spacing_md" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/connection_types_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</ScrollView>

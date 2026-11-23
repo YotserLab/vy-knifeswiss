@@ -1,0 +1,8002 @@
+[
+  {
+    "id": 1,
+    "name": "Maçã",
+    "calories_per_100g": 52.0,
+    "protein_g": 0.3,
+    "carbs_g": 14.0,
+    "fat_g": 0.2
+  },
+  {
+    "id": 2,
+    "name": "Maçã com Sal",
+    "calories_per_100g": 52.0,
+    "protein_g": 0.3,
+    "carbs_g": 14.0,
+    "fat_g": 0.2
+  },
+  {
+    "id": 3,
+    "name": "Maçã com Açúcar",
+    "calories_per_100g": 72.8,
+    "protein_g": 0.3,
+    "carbs_g": 28.0,
+    "fat_g": 0.2
+  },
+  {
+    "id": 4,
+    "name": "Maçã Temperado(a)",
+    "calories_per_100g": 57.2,
+    "protein_g": 0.3,
+    "carbs_g": 15.4,
+    "fat_g": 0.2
+  },
+  {
+    "id": 5,
+    "name": "Maçã com Azeite",
+    "calories_per_100g": 78.0,
+    "protein_g": 0.3,
+    "carbs_g": 14.0,
+    "fat_g": 0.6
+  },
+  {
+    "id": 6,
+    "name": "Maçã com Queijo",
+    "calories_per_100g": 93.6,
+    "protein_g": 0.4,
+    "carbs_g": 16.8,
+    "fat_g": 0.4
+  },
+  {
+    "id": 7,
+    "name": "Maçã com Molho de Tomate",
+    "calories_per_100g": 62.4,
+    "protein_g": 0.3,
+    "carbs_g": 21.0,
+    "fat_g": 0.2
+  },
+  {
+    "id": 8,
+    "name": "Maçã com Mel",
+    "calories_per_100g": 67.6,
+    "protein_g": 0.3,
+    "carbs_g": 28.0,
+    "fat_g": 0.2
+  },
+  {
+    "id": 9,
+    "name": "Maçã ao Alho",
+    "calories_per_100g": 57.2,
+    "protein_g": 0.3,
+    "carbs_g": 15.4,
+    "fat_g": 0.2
+  },
+  {
+    "id": 10,
+    "name": "Maçã com Ervas",
+    "calories_per_100g": 52.0,
+    "protein_g": 0.3,
+    "carbs_g": 14.0,
+    "fat_g": 0.2
+  },
+  {
+    "id": 11,
+    "name": "Maçã Cozido(a)",
+    "calories_per_100g": 41.6,
+    "protein_g": 0.3,
+    "carbs_g": 11.2,
+    "fat_g": 0.2
+  },
+  {
+    "id": 12,
+    "name": "Maçã Cozido(a) com Sal",
+    "calories_per_100g": 41.6,
+    "protein_g": 0.3,
+    "carbs_g": 11.2,
+    "fat_g": 0.2
+  },
+  {
+    "id": 13,
+    "name": "Maçã Cozido(a) com Açúcar",
+    "calories_per_100g": 58.2,
+    "protein_g": 0.3,
+    "carbs_g": 22.4,
+    "fat_g": 0.2
+  },
+  {
+    "id": 14,
+    "name": "Maçã Cozido(a) Temperado(a)",
+    "calories_per_100g": 45.8,
+    "protein_g": 0.3,
+    "carbs_g": 12.3,
+    "fat_g": 0.2
+  },
+  {
+    "id": 15,
+    "name": "Maçã Cozido(a) com Azeite",
+    "calories_per_100g": 62.4,
+    "protein_g": 0.3,
+    "carbs_g": 11.2,
+    "fat_g": 0.5
+  },
+  {
+    "id": 16,
+    "name": "Maçã Cozido(a) com Queijo",
+    "calories_per_100g": 74.9,
+    "protein_g": 0.4,
+    "carbs_g": 13.4,
+    "fat_g": 0.4
+  },
+  {
+    "id": 17,
+    "name": "Maçã Cozido(a) com Molho de Tomate",
+    "calories_per_100g": 49.9,
+    "protein_g": 0.3,
+    "carbs_g": 16.8,
+    "fat_g": 0.2
+  },
+  {
+    "id": 18,
+    "name": "Maçã Cozido(a) com Mel",
+    "calories_per_100g": 54.1,
+    "protein_g": 0.3,
+    "carbs_g": 22.4,
+    "fat_g": 0.2
+  },
+  {
+    "id": 19,
+    "name": "Maçã Cozido(a) ao Alho",
+    "calories_per_100g": 45.8,
+    "protein_g": 0.3,
+    "carbs_g": 12.3,
+    "fat_g": 0.2
+  },
+  {
+    "id": 20,
+    "name": "Maçã Cozido(a) com Ervas",
+    "calories_per_100g": 41.6,
+    "protein_g": 0.3,
+    "carbs_g": 11.2,
+    "fat_g": 0.2
+  },
+  {
+    "id": 21,
+    "name": "Maçã Assado(a)",
+    "calories_per_100g": 62.4,
+    "protein_g": 0.3,
+    "carbs_g": 15.4,
+    "fat_g": 0.2
+  },
+  {
+    "id": 22,
+    "name": "Maçã Assado(a) com Sal",
+    "calories_per_100g": 62.4,
+    "protein_g": 0.3,
+    "carbs_g": 15.4,
+    "fat_g": 0.2
+  },
+  {
+    "id": 23,
+    "name": "Maçã Assado(a) com Açúcar",
+    "calories_per_100g": 87.4,
+    "protein_g": 0.3,
+    "carbs_g": 30.8,
+    "fat_g": 0.2
+  },
+  {
+    "id": 24,
+    "name": "Maçã Assado(a) Temperado(a)",
+    "calories_per_100g": 68.6,
+    "protein_g": 0.3,
+    "carbs_g": 16.9,
+    "fat_g": 0.2
+  },
+  {
+    "id": 25,
+    "name": "Maçã Assado(a) com Azeite",
+    "calories_per_100g": 93.6,
+    "protein_g": 0.3,
+    "carbs_g": 15.4,
+    "fat_g": 0.6
+  },
+  {
+    "id": 26,
+    "name": "Maçã Assado(a) com Queijo",
+    "calories_per_100g": 112.3,
+    "protein_g": 0.4,
+    "carbs_g": 18.5,
+    "fat_g": 0.4
+  },
+  {
+    "id": 27,
+    "name": "Maçã Assado(a) com Molho de Tomate",
+    "calories_per_100g": 74.9,
+    "protein_g": 0.3,
+    "carbs_g": 23.1,
+    "fat_g": 0.2
+  },
+  {
+    "id": 28,
+    "name": "Maçã Assado(a) com Mel",
+    "calories_per_100g": 81.1,
+    "protein_g": 0.3,
+    "carbs_g": 30.8,
+    "fat_g": 0.2
+  },
+  {
+    "id": 29,
+    "name": "Maçã Assado(a) ao Alho",
+    "calories_per_100g": 68.6,
+    "protein_g": 0.3,
+    "carbs_g": 16.9,
+    "fat_g": 0.2
+  },
+  {
+    "id": 30,
+    "name": "Maçã Assado(a) com Ervas",
+    "calories_per_100g": 62.4,
+    "protein_g": 0.3,
+    "carbs_g": 15.4,
+    "fat_g": 0.2
+  },
+  {
+    "id": 31,
+    "name": "Maçã Frito(a)",
+    "calories_per_100g": 104.0,
+    "protein_g": 0.3,
+    "carbs_g": 21.0,
+    "fat_g": 1.0
+  },
+  {
+    "id": 32,
+    "name": "Maçã Frito(a) com Sal",
+    "calories_per_100g": 104.0,
+    "protein_g": 0.3,
+    "carbs_g": 21.0,
+    "fat_g": 1.0
+  },
+  {
+    "id": 33,
+    "name": "Maçã Frito(a) com Açúcar",
+    "calories_per_100g": 145.6,
+    "protein_g": 0.3,
+    "carbs_g": 42.0,
+    "fat_g": 1.0
+  },
+  {
+    "id": 34,
+    "name": "Maçã Frito(a) Temperado(a)",
+    "calories_per_100g": 114.4,
+    "protein_g": 0.3,
+    "carbs_g": 23.1,
+    "fat_g": 1.2
+  },
+  {
+    "id": 35,
+    "name": "Maçã Frito(a) com Azeite",
+    "calories_per_100g": 156.0,
+    "protein_g": 0.3,
+    "carbs_g": 21.0,
+    "fat_g": 3.0
+  },
+  {
+    "id": 36,
+    "name": "Maçã Frito(a) com Queijo",
+    "calories_per_100g": 187.2,
+    "protein_g": 0.4,
+    "carbs_g": 25.2,
+    "fat_g": 2.0
+  },
+  {
+    "id": 37,
+    "name": "Maçã Frito(a) com Molho de Tomate",
+    "calories_per_100g": 124.8,
+    "protein_g": 0.3,
+    "carbs_g": 31.5,
+    "fat_g": 1.1
+  },
+  {
+    "id": 38,
+    "name": "Maçã Frito(a) com Mel",
+    "calories_per_100g": 135.2,
+    "protein_g": 0.3,
+    "carbs_g": 42.0,
+    "fat_g": 1.0
+  },
+  {
+    "id": 39,
+    "name": "Maçã Frito(a) ao Alho",
+    "calories_per_100g": 114.4,
+    "protein_g": 0.3,
+    "carbs_g": 23.1,
+    "fat_g": 1.2
+  },
+  {
+    "id": 40,
+    "name": "Maçã Frito(a) com Ervas",
+    "calories_per_100g": 104.0,
+    "protein_g": 0.3,
+    "carbs_g": 21.0,
+    "fat_g": 1.0
+  },
+  {
+    "id": 41,
+    "name": "Maçã Grelhado(a)",
+    "calories_per_100g": 57.2,
+    "protein_g": 0.3,
+    "carbs_g": 14.0,
+    "fat_g": 0.2
+  },
+  {
+    "id": 42,
+    "name": "Maçã Grelhado(a) com Sal",
+    "calories_per_100g": 57.2,
+    "protein_g": 0.3,
+    "carbs_g": 14.0,
+    "fat_g": 0.2
+  },
+  {
+    "id": 43,
+    "name": "Maçã Grelhado(a) com Açúcar",
+    "calories_per_100g": 80.1,
+    "protein_g": 0.3,
+    "carbs_g": 28.0,
+    "fat_g": 0.2
+  },
+  {
+    "id": 44,
+    "name": "Maçã Grelhado(a) Temperado(a)",
+    "calories_per_100g": 62.9,
+    "protein_g": 0.3,
+    "carbs_g": 15.4,
+    "fat_g": 0.3
+  },
+  {
+    "id": 45,
+    "name": "Maçã Grelhado(a) com Azeite",
+    "calories_per_100g": 85.8,
+    "protein_g": 0.3,
+    "carbs_g": 14.0,
+    "fat_g": 0.7
+  },
+  {
+    "id": 46,
+    "name": "Maçã Grelhado(a) com Queijo",
+    "calories_per_100g": 103.0,
+    "protein_g": 0.4,
+    "carbs_g": 16.8,
+    "fat_g": 0.5
+  },
+  {
+    "id": 47,
+    "name": "Maçã Grelhado(a) com Molho de Tomate",
+    "calories_per_100g": 68.6,
+    "protein_g": 0.3,
+    "carbs_g": 21.0,
+    "fat_g": 0.3
+  },
+  {
+    "id": 48,
+    "name": "Maçã Grelhado(a) com Mel",
+    "calories_per_100g": 74.4,
+    "protein_g": 0.3,
+    "carbs_g": 28.0,
+    "fat_g": 0.2
+  },
+  {
+    "id": 49,
+    "name": "Maçã Grelhado(a) ao Alho",
+    "calories_per_100g": 62.9,
+    "protein_g": 0.3,
+    "carbs_g": 15.4,
+    "fat_g": 0.3
+  },
+  {
+    "id": 50,
+    "name": "Maçã Grelhado(a) com Ervas",
+    "calories_per_100g": 57.2,
+    "protein_g": 0.3,
+    "carbs_g": 14.0,
+    "fat_g": 0.2
+  },
+  {
+    "id": 51,
+    "name": "Maçã Refogado(a)",
+    "calories_per_100g": 67.6,
+    "protein_g": 0.3,
+    "carbs_g": 15.4,
+    "fat_g": 0.5
+  },
+  {
+    "id": 52,
+    "name": "Maçã Refogado(a) com Sal",
+    "calories_per_100g": 67.6,
+    "protein_g": 0.3,
+    "carbs_g": 15.4,
+    "fat_g": 0.5
+  },
+  {
+    "id": 53,
+    "name": "Maçã Refogado(a) com Açúcar",
+    "calories_per_100g": 94.6,
+    "protein_g": 0.3,
+    "carbs_g": 30.8,
+    "fat_g": 0.5
+  },
+  {
+    "id": 54,
+    "name": "Maçã Refogado(a) Temperado(a)",
+    "calories_per_100g": 74.4,
+    "protein_g": 0.3,
+    "carbs_g": 16.9,
+    "fat_g": 0.6
+  },
+  {
+    "id": 55,
+    "name": "Maçã Refogado(a) com Azeite",
+    "calories_per_100g": 101.4,
+    "protein_g": 0.3,
+    "carbs_g": 15.4,
+    "fat_g": 1.5
+  },
+  {
+    "id": 56,
+    "name": "Maçã Refogado(a) com Queijo",
+    "calories_per_100g": 121.7,
+    "protein_g": 0.4,
+    "carbs_g": 18.5,
+    "fat_g": 1.0
+  },
+  {
+    "id": 57,
+    "name": "Maçã Refogado(a) com Molho de Tomate",
+    "calories_per_100g": 81.1,
+    "protein_g": 0.3,
+    "carbs_g": 23.1,
+    "fat_g": 0.6
+  },
+  {
+    "id": 58,
+    "name": "Maçã Refogado(a) com Mel",
+    "calories_per_100g": 87.9,
+    "protein_g": 0.3,
+    "carbs_g": 30.8,
+    "fat_g": 0.5
+  },
+  {
+    "id": 59,
+    "name": "Maçã Refogado(a) ao Alho",
+    "calories_per_100g": 74.4,
+    "protein_g": 0.3,
+    "carbs_g": 16.9,
+    "fat_g": 0.6
+  },
+  {
+    "id": 60,
+    "name": "Maçã Refogado(a) com Ervas",
+    "calories_per_100g": 67.6,
+    "protein_g": 0.3,
+    "carbs_g": 15.4,
+    "fat_g": 0.5
+  },
+  {
+    "id": 61,
+    "name": "Maçã Em Conserva",
+    "calories_per_100g": 46.8,
+    "protein_g": 0.2,
+    "carbs_g": 12.6,
+    "fat_g": 0.2
+  },
+  {
+    "id": 62,
+    "name": "Maçã Em Conserva com Sal",
+    "calories_per_100g": 46.8,
+    "protein_g": 0.2,
+    "carbs_g": 12.6,
+    "fat_g": 0.2
+  },
+  {
+    "id": 63,
+    "name": "Maçã Em Conserva com Açúcar",
+    "calories_per_100g": 65.5,
+    "protein_g": 0.2,
+    "carbs_g": 25.2,
+    "fat_g": 0.2
+  },
+  {
+    "id": 64,
+    "name": "Maçã Em Conserva Temperado(a)",
+    "calories_per_100g": 51.5,
+    "protein_g": 0.2,
+    "carbs_g": 13.9,
+    "fat_g": 0.2
+  },
+  {
+    "id": 65,
+    "name": "Maçã Em Conserva com Azeite",
+    "calories_per_100g": 70.2,
+    "protein_g": 0.2,
+    "carbs_g": 12.6,
+    "fat_g": 0.5
+  },
+  {
+    "id": 66,
+    "name": "Maçã Em Conserva com Queijo",
+    "calories_per_100g": 84.2,
+    "protein_g": 0.4,
+    "carbs_g": 15.1,
+    "fat_g": 0.3
+  },
+  {
+    "id": 67,
+    "name": "Maçã Em Conserva com Molho de Tomate",
+    "calories_per_100g": 56.2,
+    "protein_g": 0.3,
+    "carbs_g": 18.9,
+    "fat_g": 0.2
+  },
+  {
+    "id": 68,
+    "name": "Maçã Em Conserva com Mel",
+    "calories_per_100g": 60.8,
+    "protein_g": 0.2,
+    "carbs_g": 25.2,
+    "fat_g": 0.2
+  },
+  {
+    "id": 69,
+    "name": "Maçã Em Conserva ao Alho",
+    "calories_per_100g": 51.5,
+    "protein_g": 0.2,
+    "carbs_g": 13.9,
+    "fat_g": 0.2
+  },
+  {
+    "id": 70,
+    "name": "Maçã Em Conserva com Ervas",
+    "calories_per_100g": 46.8,
+    "protein_g": 0.2,
+    "carbs_g": 12.6,
+    "fat_g": 0.2
+  },
+  {
+    "id": 71,
+    "name": "Maçã Desidratado(a)",
+    "calories_per_100g": 156.0,
+    "protein_g": 0.9,
+    "carbs_g": 42.0,
+    "fat_g": 0.6
+  },
+  {
+    "id": 72,
+    "name": "Maçã Desidratado(a) com Sal",
+    "calories_per_100g": 156.0,
+    "protein_g": 0.9,
+    "carbs_g": 42.0,
+    "fat_g": 0.6
+  },
+  {
+    "id": 73,
+    "name": "Maçã Desidratado(a) com Açúcar",
+    "calories_per_100g": 218.4,
+    "protein_g": 0.9,
+    "carbs_g": 84.0,
+    "fat_g": 0.6
+  },
+  {
+    "id": 74,
+    "name": "Maçã Desidratado(a) Temperado(a)",
+    "calories_per_100g": 171.6,
+    "protein_g": 0.9,
+    "carbs_g": 46.2,
+    "fat_g": 0.7
+  },
+  {
+    "id": 75,
+    "name": "Maçã Desidratado(a) com Azeite",
+    "calories_per_100g": 234.0,
+    "protein_g": 0.9,
+    "carbs_g": 42.0,
+    "fat_g": 1.8
+  },
+  {
+    "id": 76,
+    "name": "Maçã Desidratado(a) com Queijo",
+    "calories_per_100g": 280.8,
+    "protein_g": 1.3,
+    "carbs_g": 50.4,
+    "fat_g": 1.2
+  },
+  {
+    "id": 77,
+    "name": "Maçã Desidratado(a) com Molho de Tomate",
+    "calories_per_100g": 187.2,
+    "protein_g": 1.0,
+    "carbs_g": 63.0,
+    "fat_g": 0.7
+  },
+  {
+    "id": 78,
+    "name": "Maçã Desidratado(a) com Mel",
+    "calories_per_100g": 202.8,
+    "protein_g": 0.9,
+    "carbs_g": 84.0,
+    "fat_g": 0.6
+  },
+  {
+    "id": 79,
+    "name": "Maçã Desidratado(a) ao Alho",
+    "calories_per_100g": 171.6,
+    "protein_g": 0.9,
+    "carbs_g": 46.2,
+    "fat_g": 0.7
+  },
+  {
+    "id": 80,
+    "name": "Maçã Desidratado(a) com Ervas",
+    "calories_per_100g": 156.0,
+    "protein_g": 0.9,
+    "carbs_g": 42.0,
+    "fat_g": 0.6
+  },
+  {
+    "id": 81,
+    "name": "Maçã Em Pó",
+    "calories_per_100g": 208.0,
+    "protein_g": 1.2,
+    "carbs_g": 56.0,
+    "fat_g": 0.8
+  },
+  {
+    "id": 82,
+    "name": "Maçã Em Pó com Sal",
+    "calories_per_100g": 208.0,
+    "protein_g": 1.2,
+    "carbs_g": 56.0,
+    "fat_g": 0.8
+  },
+  {
+    "id": 83,
+    "name": "Maçã Em Pó com Açúcar",
+    "calories_per_100g": 291.2,
+    "protein_g": 1.2,
+    "carbs_g": 112.0,
+    "fat_g": 0.8
+  },
+  {
+    "id": 84,
+    "name": "Maçã Em Pó Temperado(a)",
+    "calories_per_100g": 228.8,
+    "protein_g": 1.2,
+    "carbs_g": 61.6,
+    "fat_g": 1.0
+  },
+  {
+    "id": 85,
+    "name": "Maçã Em Pó com Azeite",
+    "calories_per_100g": 312.0,
+    "protein_g": 1.2,
+    "carbs_g": 56.0,
+    "fat_g": 2.4
+  },
+  {
+    "id": 86,
+    "name": "Maçã Em Pó com Queijo",
+    "calories_per_100g": 374.4,
+    "protein_g": 1.8,
+    "carbs_g": 67.2,
+    "fat_g": 1.6
+  },
+  {
+    "id": 87,
+    "name": "Maçã Em Pó com Molho de Tomate",
+    "calories_per_100g": 249.6,
+    "protein_g": 1.3,
+    "carbs_g": 84.0,
+    "fat_g": 0.9
+  },
+  {
+    "id": 88,
+    "name": "Maçã Em Pó com Mel",
+    "calories_per_100g": 270.4,
+    "protein_g": 1.2,
+    "carbs_g": 112.0,
+    "fat_g": 0.8
+  },
+  {
+    "id": 89,
+    "name": "Maçã Em Pó ao Alho",
+    "calories_per_100g": 228.8,
+    "protein_g": 1.2,
+    "carbs_g": 61.6,
+    "fat_g": 1.0
+  },
+  {
+    "id": 90,
+    "name": "Maçã Em Pó com Ervas",
+    "calories_per_100g": 208.0,
+    "protein_g": 1.2,
+    "carbs_g": 56.0,
+    "fat_g": 0.8
+  },
+  {
+    "id": 91,
+    "name": "Pasta de Maçã",
+    "calories_per_100g": 182.0,
+    "protein_g": 0.4,
+    "carbs_g": 16.8,
+    "fat_g": 1.2
+  },
+  {
+    "id": 92,
+    "name": "Pasta de Maçã com Sal",
+    "calories_per_100g": 182.0,
+    "protein_g": 0.4,
+    "carbs_g": 16.8,
+    "fat_g": 1.2
+  },
+  {
+    "id": 93,
+    "name": "Pasta de Maçã com Açúcar",
+    "calories_per_100g": 254.8,
+    "protein_g": 0.4,
+    "carbs_g": 33.6,
+    "fat_g": 1.2
+  },
+  {
+    "id": 94,
+    "name": "Pasta de Maçã Temperado(a)",
+    "calories_per_100g": 200.2,
+    "protein_g": 0.4,
+    "carbs_g": 18.5,
+    "fat_g": 1.4
+  },
+  {
+    "id": 95,
+    "name": "Pasta de Maçã com Azeite",
+    "calories_per_100g": 273.0,
+    "protein_g": 0.4,
+    "carbs_g": 16.8,
+    "fat_g": 3.6
+  },
+  {
+    "id": 96,
+    "name": "Pasta de Maçã com Queijo",
+    "calories_per_100g": 327.6,
+    "protein_g": 0.7,
+    "carbs_g": 20.2,
+    "fat_g": 2.4
+  },
+  {
+    "id": 97,
+    "name": "Pasta de Maçã com Molho de Tomate",
+    "calories_per_100g": 218.4,
+    "protein_g": 0.5,
+    "carbs_g": 25.2,
+    "fat_g": 1.3
+  },
+  {
+    "id": 98,
+    "name": "Pasta de Maçã com Mel",
+    "calories_per_100g": 236.6,
+    "protein_g": 0.4,
+    "carbs_g": 33.6,
+    "fat_g": 1.2
+  },
+  {
+    "id": 99,
+    "name": "Pasta de Maçã ao Alho",
+    "calories_per_100g": 200.2,
+    "protein_g": 0.4,
+    "carbs_g": 18.5,
+    "fat_g": 1.4
+  },
+  {
+    "id": 100,
+    "name": "Pasta de Maçã com Ervas",
+    "calories_per_100g": 182.0,
+    "protein_g": 0.4,
+    "carbs_g": 16.8,
+    "fat_g": 1.2
+  },
+  {
+    "id": 101,
+    "name": "Banana",
+    "calories_per_100g": 89.0,
+    "protein_g": 1.1,
+    "carbs_g": 23.0,
+    "fat_g": 0.3
+  },
+  {
+    "id": 102,
+    "name": "Banana com Sal",
+    "calories_per_100g": 89.0,
+    "protein_g": 1.1,
+    "carbs_g": 23.0,
+    "fat_g": 0.3
+  },
+  {
+    "id": 103,
+    "name": "Banana com Açúcar",
+    "calories_per_100g": 124.6,
+    "protein_g": 1.1,
+    "carbs_g": 46.0,
+    "fat_g": 0.3
+  },
+  {
+    "id": 104,
+    "name": "Banana Temperado(a)",
+    "calories_per_100g": 97.9,
+    "protein_g": 1.1,
+    "carbs_g": 25.3,
+    "fat_g": 0.4
+  },
+  {
+    "id": 105,
+    "name": "Banana com Azeite",
+    "calories_per_100g": 133.5,
+    "protein_g": 1.1,
+    "carbs_g": 23.0,
+    "fat_g": 0.9
+  },
+  {
+    "id": 106,
+    "name": "Banana com Queijo",
+    "calories_per_100g": 160.2,
+    "protein_g": 1.7,
+    "carbs_g": 27.6,
+    "fat_g": 0.6
+  },
+  {
+    "id": 107,
+    "name": "Banana com Molho de Tomate",
+    "calories_per_100g": 106.8,
+    "protein_g": 1.2,
+    "carbs_g": 34.5,
+    "fat_g": 0.3
+  },
+  {
+    "id": 108,
+    "name": "Banana com Mel",
+    "calories_per_100g": 115.7,
+    "protein_g": 1.1,
+    "carbs_g": 46.0,
+    "fat_g": 0.3
+  },
+  {
+    "id": 109,
+    "name": "Banana ao Alho",
+    "calories_per_100g": 97.9,
+    "protein_g": 1.1,
+    "carbs_g": 25.3,
+    "fat_g": 0.4
+  },
+  {
+    "id": 110,
+    "name": "Banana com Ervas",
+    "calories_per_100g": 89.0,
+    "protein_g": 1.1,
+    "carbs_g": 23.0,
+    "fat_g": 0.3
+  },
+  {
+    "id": 111,
+    "name": "Banana Cozido(a)",
+    "calories_per_100g": 71.2,
+    "protein_g": 1.0,
+    "carbs_g": 18.4,
+    "fat_g": 0.3
+  },
+  {
+    "id": 112,
+    "name": "Banana Cozido(a) com Sal",
+    "calories_per_100g": 71.2,
+    "protein_g": 1.0,
+    "carbs_g": 18.4,
+    "fat_g": 0.3
+  },
+  {
+    "id": 113,
+    "name": "Banana Cozido(a) com Açúcar",
+    "calories_per_100g": 99.7,
+    "protein_g": 1.0,
+    "carbs_g": 36.8,
+    "fat_g": 0.3
+  },
+  {
+    "id": 114,
+    "name": "Banana Cozido(a) Temperado(a)",
+    "calories_per_100g": 78.3,
+    "protein_g": 1.0,
+    "carbs_g": 20.2,
+    "fat_g": 0.3
+  },
+  {
+    "id": 115,
+    "name": "Banana Cozido(a) com Azeite",
+    "calories_per_100g": 106.8,
+    "protein_g": 1.0,
+    "carbs_g": 18.4,
+    "fat_g": 0.8
+  },
+  {
+    "id": 116,
+    "name": "Banana Cozido(a) com Queijo",
+    "calories_per_100g": 128.2,
+    "protein_g": 1.5,
+    "carbs_g": 22.1,
+    "fat_g": 0.5
+  },
+  {
+    "id": 117,
+    "name": "Banana Cozido(a) com Molho de Tomate",
+    "calories_per_100g": 85.4,
+    "protein_g": 1.1,
+    "carbs_g": 27.6,
+    "fat_g": 0.3
+  },
+  {
+    "id": 118,
+    "name": "Banana Cozido(a) com Mel",
+    "calories_per_100g": 92.6,
+    "protein_g": 1.0,
+    "carbs_g": 36.8,
+    "fat_g": 0.3
+  },
+  {
+    "id": 119,
+    "name": "Banana Cozido(a) ao Alho",
+    "calories_per_100g": 78.3,
+    "protein_g": 1.0,
+    "carbs_g": 20.2,
+    "fat_g": 0.3
+  },
+  {
+    "id": 120,
+    "name": "Banana Cozido(a) com Ervas",
+    "calories_per_100g": 71.2,
+    "protein_g": 1.0,
+    "carbs_g": 18.4,
+    "fat_g": 0.3
+  },
+  {
+    "id": 121,
+    "name": "Banana Assado(a)",
+    "calories_per_100g": 106.8,
+    "protein_g": 1.1,
+    "carbs_g": 25.3,
+    "fat_g": 0.3
+  },
+  {
+    "id": 122,
+    "name": "Banana Assado(a) com Sal",
+    "calories_per_100g": 106.8,
+    "protein_g": 1.1,
+    "carbs_g": 25.3,
+    "fat_g": 0.3
+  },
+  {
+    "id": 123,
+    "name": "Banana Assado(a) com Açúcar",
+    "calories_per_100g": 149.5,
+    "protein_g": 1.1,
+    "carbs_g": 50.6,
+    "fat_g": 0.3
+  },
+  {
+    "id": 124,
+    "name": "Banana Assado(a) Temperado(a)",
+    "calories_per_100g": 117.5,
+    "protein_g": 1.1,
+    "carbs_g": 27.8,
+    "fat_g": 0.4
+  },
+  {
+    "id": 125,
+    "name": "Banana Assado(a) com Azeite",
+    "calories_per_100g": 160.2,
+    "protein_g": 1.1,
+    "carbs_g": 25.3,
+    "fat_g": 0.9
+  },
+  {
+    "id": 126,
+    "name": "Banana Assado(a) com Queijo",
+    "calories_per_100g": 192.2,
+    "protein_g": 1.7,
+    "carbs_g": 30.4,
+    "fat_g": 0.6
+  },
+  {
+    "id": 127,
+    "name": "Banana Assado(a) com Molho de Tomate",
+    "calories_per_100g": 128.2,
+    "protein_g": 1.2,
+    "carbs_g": 38.0,
+    "fat_g": 0.3
+  },
+  {
+    "id": 128,
+    "name": "Banana Assado(a) com Mel",
+    "calories_per_100g": 138.8,
+    "protein_g": 1.1,
+    "carbs_g": 50.6,
+    "fat_g": 0.3
+  },
+  {
+    "id": 129,
+    "name": "Banana Assado(a) ao Alho",
+    "calories_per_100g": 117.5,
+    "protein_g": 1.1,
+    "carbs_g": 27.8,
+    "fat_g": 0.4
+  },
+  {
+    "id": 130,
+    "name": "Banana Assado(a) com Ervas",
+    "calories_per_100g": 106.8,
+    "protein_g": 1.1,
+    "carbs_g": 25.3,
+    "fat_g": 0.3
+  },
+  {
+    "id": 131,
+    "name": "Banana Frito(a)",
+    "calories_per_100g": 178.0,
+    "protein_g": 1.0,
+    "carbs_g": 34.5,
+    "fat_g": 1.5
+  },
+  {
+    "id": 132,
+    "name": "Banana Frito(a) com Sal",
+    "calories_per_100g": 178.0,
+    "protein_g": 1.0,
+    "carbs_g": 34.5,
+    "fat_g": 1.5
+  },
+  {
+    "id": 133,
+    "name": "Banana Frito(a) com Açúcar",
+    "calories_per_100g": 249.2,
+    "protein_g": 1.0,
+    "carbs_g": 69.0,
+    "fat_g": 1.5
+  },
+  {
+    "id": 134,
+    "name": "Banana Frito(a) Temperado(a)",
+    "calories_per_100g": 195.8,
+    "protein_g": 1.0,
+    "carbs_g": 38.0,
+    "fat_g": 1.8
+  },
+  {
+    "id": 135,
+    "name": "Banana Frito(a) com Azeite",
+    "calories_per_100g": 267.0,
+    "protein_g": 1.0,
+    "carbs_g": 34.5,
+    "fat_g": 4.5
+  },
+  {
+    "id": 136,
+    "name": "Banana Frito(a) com Queijo",
+    "calories_per_100g": 320.4,
+    "protein_g": 1.5,
+    "carbs_g": 41.4,
+    "fat_g": 3.0
+  },
+  {
+    "id": 137,
+    "name": "Banana Frito(a) com Molho de Tomate",
+    "calories_per_100g": 213.6,
+    "protein_g": 1.1,
+    "carbs_g": 51.8,
+    "fat_g": 1.7
+  },
+  {
+    "id": 138,
+    "name": "Banana Frito(a) com Mel",
+    "calories_per_100g": 231.4,
+    "protein_g": 1.0,
+    "carbs_g": 69.0,
+    "fat_g": 1.5
+  },
+  {
+    "id": 139,
+    "name": "Banana Frito(a) ao Alho",
+    "calories_per_100g": 195.8,
+    "protein_g": 1.0,
+    "carbs_g": 38.0,
+    "fat_g": 1.8
+  },
+  {
+    "id": 140,
+    "name": "Banana Frito(a) com Ervas",
+    "calories_per_100g": 178.0,
+    "protein_g": 1.0,
+    "carbs_g": 34.5,
+    "fat_g": 1.5
+  },
+  {
+    "id": 141,
+    "name": "Banana Grelhado(a)",
+    "calories_per_100g": 97.9,
+    "protein_g": 1.1,
+    "carbs_g": 23.0,
+    "fat_g": 0.4
+  },
+  {
+    "id": 142,
+    "name": "Banana Grelhado(a) com Sal",
+    "calories_per_100g": 97.9,
+    "protein_g": 1.1,
+    "carbs_g": 23.0,
+    "fat_g": 0.4
+  },
+  {
+    "id": 143,
+    "name": "Banana Grelhado(a) com Açúcar",
+    "calories_per_100g": 137.1,
+    "protein_g": 1.1,
+    "carbs_g": 46.0,
+    "fat_g": 0.4
+  },
+  {
+    "id": 144,
+    "name": "Banana Grelhado(a) Temperado(a)",
+    "calories_per_100g": 107.7,
+    "protein_g": 1.1,
+    "carbs_g": 25.3,
+    "fat_g": 0.4
+  },
+  {
+    "id": 145,
+    "name": "Banana Grelhado(a) com Azeite",
+    "calories_per_100g": 146.9,
+    "protein_g": 1.1,
+    "carbs_g": 23.0,
+    "fat_g": 1.1
+  },
+  {
+    "id": 146,
+    "name": "Banana Grelhado(a) com Queijo",
+    "calories_per_100g": 176.2,
+    "protein_g": 1.7,
+    "carbs_g": 27.6,
+    "fat_g": 0.7
+  },
+  {
+    "id": 147,
+    "name": "Banana Grelhado(a) com Molho de Tomate",
+    "calories_per_100g": 117.5,
+    "protein_g": 1.2,
+    "carbs_g": 34.5,
+    "fat_g": 0.4
+  },
+  {
+    "id": 148,
+    "name": "Banana Grelhado(a) com Mel",
+    "calories_per_100g": 127.3,
+    "protein_g": 1.1,
+    "carbs_g": 46.0,
+    "fat_g": 0.4
+  },
+  {
+    "id": 149,
+    "name": "Banana Grelhado(a) ao Alho",
+    "calories_per_100g": 107.7,
+    "protein_g": 1.1,
+    "carbs_g": 25.3,
+    "fat_g": 0.4
+  },
+  {
+    "id": 150,
+    "name": "Banana Grelhado(a) com Ervas",
+    "calories_per_100g": 97.9,
+    "protein_g": 1.1,
+    "carbs_g": 23.0,
+    "fat_g": 0.4
+  },
+  {
+    "id": 151,
+    "name": "Banana Refogado(a)",
+    "calories_per_100g": 115.7,
+    "protein_g": 1.0,
+    "carbs_g": 25.3,
+    "fat_g": 0.8
+  },
+  {
+    "id": 152,
+    "name": "Banana Refogado(a) com Sal",
+    "calories_per_100g": 115.7,
+    "protein_g": 1.0,
+    "carbs_g": 25.3,
+    "fat_g": 0.8
+  },
+  {
+    "id": 153,
+    "name": "Banana Refogado(a) com Açúcar",
+    "calories_per_100g": 162.0,
+    "protein_g": 1.0,
+    "carbs_g": 50.6,
+    "fat_g": 0.8
+  },
+  {
+    "id": 154,
+    "name": "Banana Refogado(a) Temperado(a)",
+    "calories_per_100g": 127.3,
+    "protein_g": 1.0,
+    "carbs_g": 27.8,
+    "fat_g": 0.9
+  },
+  {
+    "id": 155,
+    "name": "Banana Refogado(a) com Azeite",
+    "calories_per_100g": 173.6,
+    "protein_g": 1.0,
+    "carbs_g": 25.3,
+    "fat_g": 2.2
+  },
+  {
+    "id": 156,
+    "name": "Banana Refogado(a) com Queijo",
+    "calories_per_100g": 208.3,
+    "protein_g": 1.5,
+    "carbs_g": 30.4,
+    "fat_g": 1.5
+  },
+  {
+    "id": 157,
+    "name": "Banana Refogado(a) com Molho de Tomate",
+    "calories_per_100g": 138.8,
+    "protein_g": 1.1,
+    "carbs_g": 38.0,
+    "fat_g": 0.8
+  },
+  {
+    "id": 158,
+    "name": "Banana Refogado(a) com Mel",
+    "calories_per_100g": 150.4,
+    "protein_g": 1.0,
+    "carbs_g": 50.6,
+    "fat_g": 0.8
+  },
+  {
+    "id": 159,
+    "name": "Banana Refogado(a) ao Alho",
+    "calories_per_100g": 127.3,
+    "protein_g": 1.0,
+    "carbs_g": 27.8,
+    "fat_g": 0.9
+  },
+  {
+    "id": 160,
+    "name": "Banana Refogado(a) com Ervas",
+    "calories_per_100g": 115.7,
+    "protein_g": 1.0,
+    "carbs_g": 25.3,
+    "fat_g": 0.8
+  },
+  {
+    "id": 161,
+    "name": "Banana Em Conserva",
+    "calories_per_100g": 80.1,
+    "protein_g": 0.9,
+    "carbs_g": 20.7,
+    "fat_g": 0.2
+  },
+  {
+    "id": 162,
+    "name": "Banana Em Conserva com Sal",
+    "calories_per_100g": 80.1,
+    "protein_g": 0.9,
+    "carbs_g": 20.7,
+    "fat_g": 0.2
+  },
+  {
+    "id": 163,
+    "name": "Banana Em Conserva com Açúcar",
+    "calories_per_100g": 112.1,
+    "protein_g": 0.9,
+    "carbs_g": 41.4,
+    "fat_g": 0.2
+  },
+  {
+    "id": 164,
+    "name": "Banana Em Conserva Temperado(a)",
+    "calories_per_100g": 88.1,
+    "protein_g": 0.9,
+    "carbs_g": 22.8,
+    "fat_g": 0.3
+  },
+  {
+    "id": 165,
+    "name": "Banana Em Conserva com Azeite",
+    "calories_per_100g": 120.2,
+    "protein_g": 0.9,
+    "carbs_g": 20.7,
+    "fat_g": 0.7
+  },
+  {
+    "id": 166,
+    "name": "Banana Em Conserva com Queijo",
+    "calories_per_100g": 144.2,
+    "protein_g": 1.3,
+    "carbs_g": 24.8,
+    "fat_g": 0.5
+  },
+  {
+    "id": 167,
+    "name": "Banana Em Conserva com Molho de Tomate",
+    "calories_per_100g": 96.1,
+    "protein_g": 1.0,
+    "carbs_g": 31.0,
+    "fat_g": 0.3
+  },
+  {
+    "id": 168,
+    "name": "Banana Em Conserva com Mel",
+    "calories_per_100g": 104.1,
+    "protein_g": 0.9,
+    "carbs_g": 41.4,
+    "fat_g": 0.2
+  },
+  {
+    "id": 169,
+    "name": "Banana Em Conserva ao Alho",
+    "calories_per_100g": 88.1,
+    "protein_g": 0.9,
+    "carbs_g": 22.8,
+    "fat_g": 0.3
+  },
+  {
+    "id": 170,
+    "name": "Banana Em Conserva com Ervas",
+    "calories_per_100g": 80.1,
+    "protein_g": 0.9,
+    "carbs_g": 20.7,
+    "fat_g": 0.2
+  },
+  {
+    "id": 171,
+    "name": "Banana Desidratado(a)",
+    "calories_per_100g": 267.0,
+    "protein_g": 3.3,
+    "carbs_g": 69.0,
+    "fat_g": 0.9
+  },
+  {
+    "id": 172,
+    "name": "Banana Desidratado(a) com Sal",
+    "calories_per_100g": 267.0,
+    "protein_g": 3.3,
+    "carbs_g": 69.0,
+    "fat_g": 0.9
+  },
+  {
+    "id": 173,
+    "name": "Banana Desidratado(a) com Açúcar",
+    "calories_per_100g": 373.8,
+    "protein_g": 3.3,
+    "carbs_g": 138.0,
+    "fat_g": 0.9
+  },
+  {
+    "id": 174,
+    "name": "Banana Desidratado(a) Temperado(a)",
+    "calories_per_100g": 293.7,
+    "protein_g": 3.3,
+    "carbs_g": 75.9,
+    "fat_g": 1.1
+  },
+  {
+    "id": 175,
+    "name": "Banana Desidratado(a) com Azeite",
+    "calories_per_100g": 400.5,
+    "protein_g": 3.3,
+    "carbs_g": 69.0,
+    "fat_g": 2.7
+  },
+  {
+    "id": 176,
+    "name": "Banana Desidratado(a) com Queijo",
+    "calories_per_100g": 480.6,
+    "protein_g": 5.0,
+    "carbs_g": 82.8,
+    "fat_g": 1.8
+  },
+  {
+    "id": 177,
+    "name": "Banana Desidratado(a) com Molho de Tomate",
+    "calories_per_100g": 320.4,
+    "protein_g": 3.6,
+    "carbs_g": 103.5,
+    "fat_g": 1.0
+  },
+  {
+    "id": 178,
+    "name": "Banana Desidratado(a) com Mel",
+    "calories_per_100g": 347.1,
+    "protein_g": 3.3,
+    "carbs_g": 138.0,
+    "fat_g": 0.9
+  },
+  {
+    "id": 179,
+    "name": "Banana Desidratado(a) ao Alho",
+    "calories_per_100g": 293.7,
+    "protein_g": 3.3,
+    "carbs_g": 75.9,
+    "fat_g": 1.1
+  },
+  {
+    "id": 180,
+    "name": "Banana Desidratado(a) com Ervas",
+    "calories_per_100g": 267.0,
+    "protein_g": 3.3,
+    "carbs_g": 69.0,
+    "fat_g": 0.9
+  },
+  {
+    "id": 181,
+    "name": "Banana Em Pó",
+    "calories_per_100g": 356.0,
+    "protein_g": 4.4,
+    "carbs_g": 92.0,
+    "fat_g": 1.2
+  },
+  {
+    "id": 182,
+    "name": "Banana Em Pó com Sal",
+    "calories_per_100g": 356.0,
+    "protein_g": 4.4,
+    "carbs_g": 92.0,
+    "fat_g": 1.2
+  },
+  {
+    "id": 183,
+    "name": "Banana Em Pó com Açúcar",
+    "calories_per_100g": 498.4,
+    "protein_g": 4.4,
+    "carbs_g": 184.0,
+    "fat_g": 1.2
+  },
+  {
+    "id": 184,
+    "name": "Banana Em Pó Temperado(a)",
+    "calories_per_100g": 391.6,
+    "protein_g": 4.4,
+    "carbs_g": 101.2,
+    "fat_g": 1.4
+  },
+  {
+    "id": 185,
+    "name": "Banana Em Pó com Azeite",
+    "calories_per_100g": 534.0,
+    "protein_g": 4.4,
+    "carbs_g": 92.0,
+    "fat_g": 3.6
+  },
+  {
+    "id": 186,
+    "name": "Banana Em Pó com Queijo",
+    "calories_per_100g": 640.8,
+    "protein_g": 6.6,
+    "carbs_g": 110.4,
+    "fat_g": 2.4
+  },
+  {
+    "id": 187,
+    "name": "Banana Em Pó com Molho de Tomate",
+    "calories_per_100g": 427.2,
+    "protein_g": 4.8,
+    "carbs_g": 138.0,
+    "fat_g": 1.3
+  },
+  {
+    "id": 188,
+    "name": "Banana Em Pó com Mel",
+    "calories_per_100g": 462.8,
+    "protein_g": 4.4,
+    "carbs_g": 184.0,
+    "fat_g": 1.2
+  },
+  {
+    "id": 189,
+    "name": "Banana Em Pó ao Alho",
+    "calories_per_100g": 391.6,
+    "protein_g": 4.4,
+    "carbs_g": 101.2,
+    "fat_g": 1.4
+  },
+  {
+    "id": 190,
+    "name": "Banana Em Pó com Ervas",
+    "calories_per_100g": 356.0,
+    "protein_g": 4.4,
+    "carbs_g": 92.0,
+    "fat_g": 1.2
+  },
+  {
+    "id": 191,
+    "name": "Pasta de Banana",
+    "calories_per_100g": 311.5,
+    "protein_g": 1.7,
+    "carbs_g": 27.6,
+    "fat_g": 1.8
+  },
+  {
+    "id": 192,
+    "name": "Pasta de Banana com Sal",
+    "calories_per_100g": 311.5,
+    "protein_g": 1.7,
+    "carbs_g": 27.6,
+    "fat_g": 1.8
+  },
+  {
+    "id": 193,
+    "name": "Pasta de Banana com Açúcar",
+    "calories_per_100g": 436.1,
+    "protein_g": 1.7,
+    "carbs_g": 55.2,
+    "fat_g": 1.8
+  },
+  {
+    "id": 194,
+    "name": "Pasta de Banana Temperado(a)",
+    "calories_per_100g": 342.7,
+    "protein_g": 1.7,
+    "carbs_g": 30.4,
+    "fat_g": 2.2
+  },
+  {
+    "id": 195,
+    "name": "Pasta de Banana com Azeite",
+    "calories_per_100g": 467.2,
+    "protein_g": 1.7,
+    "carbs_g": 27.6,
+    "fat_g": 5.4
+  },
+  {
+    "id": 196,
+    "name": "Pasta de Banana com Queijo",
+    "calories_per_100g": 560.7,
+    "protein_g": 2.5,
+    "carbs_g": 33.1,
+    "fat_g": 3.6
+  },
+  {
+    "id": 197,
+    "name": "Pasta de Banana com Molho de Tomate",
+    "calories_per_100g": 373.8,
+    "protein_g": 1.8,
+    "carbs_g": 41.4,
+    "fat_g": 2.0
+  },
+  {
+    "id": 198,
+    "name": "Pasta de Banana com Mel",
+    "calories_per_100g": 404.9,
+    "protein_g": 1.7,
+    "carbs_g": 55.2,
+    "fat_g": 1.8
+  },
+  {
+    "id": 199,
+    "name": "Pasta de Banana ao Alho",
+    "calories_per_100g": 342.7,
+    "protein_g": 1.7,
+    "carbs_g": 30.4,
+    "fat_g": 2.2
+  },
+  {
+    "id": 200,
+    "name": "Pasta de Banana com Ervas",
+    "calories_per_100g": 311.5,
+    "protein_g": 1.7,
+    "carbs_g": 27.6,
+    "fat_g": 1.8
+  },
+  {
+    "id": 201,
+    "name": "Laranja",
+    "calories_per_100g": 47.0,
+    "protein_g": 0.9,
+    "carbs_g": 12.0,
+    "fat_g": 0.1
+  },
+  {
+    "id": 202,
+    "name": "Laranja com Sal",
+    "calories_per_100g": 47.0,
+    "protein_g": 0.9,
+    "carbs_g": 12.0,
+    "fat_g": 0.1
+  },
+  {
+    "id": 203,
+    "name": "Laranja com Açúcar",
+    "calories_per_100g": 65.8,
+    "protein_g": 0.9,
+    "carbs_g": 24.0,
+    "fat_g": 0.1
+  },
+  {
+    "id": 204,
+    "name": "Laranja Temperado(a)",
+    "calories_per_100g": 51.7,
+    "protein_g": 0.9,
+    "carbs_g": 13.2,
+    "fat_g": 0.1
+  },
+  {
+    "id": 205,
+    "name": "Laranja com Azeite",
+    "calories_per_100g": 70.5,
+    "protein_g": 0.9,
+    "carbs_g": 12.0,
+    "fat_g": 0.3
+  },
+  {
+    "id": 206,
+    "name": "Laranja com Queijo",
+    "calories_per_100g": 84.6,
+    "protein_g": 1.4,
+    "carbs_g": 14.4,
+    "fat_g": 0.2
+  },
+  {
+    "id": 207,
+    "name": "Laranja com Molho de Tomate",
+    "calories_per_100g": 56.4,
+    "protein_g": 1.0,
+    "carbs_g": 18.0,
+    "fat_g": 0.1
+  },
+  {
+    "id": 208,
+    "name": "Laranja com Mel",
+    "calories_per_100g": 61.1,
+    "protein_g": 0.9,
+    "carbs_g": 24.0,
+    "fat_g": 0.1
+  },
+  {
+    "id": 209,
+    "name": "Laranja ao Alho",
+    "calories_per_100g": 51.7,
+    "protein_g": 0.9,
+    "carbs_g": 13.2,
+    "fat_g": 0.1
+  },
+  {
+    "id": 210,
+    "name": "Laranja com Ervas",
+    "calories_per_100g": 47.0,
+    "protein_g": 0.9,
+    "carbs_g": 12.0,
+    "fat_g": 0.1
+  },
+  {
+    "id": 211,
+    "name": "Laranja Cozido(a)",
+    "calories_per_100g": 37.6,
+    "protein_g": 0.8,
+    "carbs_g": 9.6,
+    "fat_g": 0.1
+  },
+  {
+    "id": 212,
+    "name": "Laranja Cozido(a) com Sal",
+    "calories_per_100g": 37.6,
+    "protein_g": 0.8,
+    "carbs_g": 9.6,
+    "fat_g": 0.1
+  },
+  {
+    "id": 213,
+    "name": "Laranja Cozido(a) com Açúcar",
+    "calories_per_100g": 52.6,
+    "protein_g": 0.8,
+    "carbs_g": 19.2,
+    "fat_g": 0.1
+  },
+  {
+    "id": 214,
+    "name": "Laranja Cozido(a) Temperado(a)",
+    "calories_per_100g": 41.4,
+    "protein_g": 0.8,
+    "carbs_g": 10.6,
+    "fat_g": 0.1
+  },
+  {
+    "id": 215,
+    "name": "Laranja Cozido(a) com Azeite",
+    "calories_per_100g": 56.4,
+    "protein_g": 0.8,
+    "carbs_g": 9.6,
+    "fat_g": 0.3
+  },
+  {
+    "id": 216,
+    "name": "Laranja Cozido(a) com Queijo",
+    "calories_per_100g": 67.7,
+    "protein_g": 1.2,
+    "carbs_g": 11.5,
+    "fat_g": 0.2
+  },
+  {
+    "id": 217,
+    "name": "Laranja Cozido(a) com Molho de Tomate",
+    "calories_per_100g": 45.1,
+    "protein_g": 0.9,
+    "carbs_g": 14.4,
+    "fat_g": 0.1
+  },
+  {
+    "id": 218,
+    "name": "Laranja Cozido(a) com Mel",
+    "calories_per_100g": 48.9,
+    "protein_g": 0.8,
+    "carbs_g": 19.2,
+    "fat_g": 0.1
+  },
+  {
+    "id": 219,
+    "name": "Laranja Cozido(a) ao Alho",
+    "calories_per_100g": 41.4,
+    "protein_g": 0.8,
+    "carbs_g": 10.6,
+    "fat_g": 0.1
+  },
+  {
+    "id": 220,
+    "name": "Laranja Cozido(a) com Ervas",
+    "calories_per_100g": 37.6,
+    "protein_g": 0.8,
+    "carbs_g": 9.6,
+    "fat_g": 0.1
+  },
+  {
+    "id": 221,
+    "name": "Laranja Assado(a)",
+    "calories_per_100g": 56.4,
+    "protein_g": 0.9,
+    "carbs_g": 13.2,
+    "fat_g": 0.1
+  },
+  {
+    "id": 222,
+    "name": "Laranja Assado(a) com Sal",
+    "calories_per_100g": 56.4,
+    "protein_g": 0.9,
+    "carbs_g": 13.2,
+    "fat_g": 0.1
+  },
+  {
+    "id": 223,
+    "name": "Laranja Assado(a) com Açúcar",
+    "calories_per_100g": 79.0,
+    "protein_g": 0.9,
+    "carbs_g": 26.4,
+    "fat_g": 0.1
+  },
+  {
+    "id": 224,
+    "name": "Laranja Assado(a) Temperado(a)",
+    "calories_per_100g": 62.0,
+    "protein_g": 0.9,
+    "carbs_g": 14.5,
+    "fat_g": 0.1
+  },
+  {
+    "id": 225,
+    "name": "Laranja Assado(a) com Azeite",
+    "calories_per_100g": 84.6,
+    "protein_g": 0.9,
+    "carbs_g": 13.2,
+    "fat_g": 0.3
+  },
+  {
+    "id": 226,
+    "name": "Laranja Assado(a) com Queijo",
+    "calories_per_100g": 101.5,
+    "protein_g": 1.4,
+    "carbs_g": 15.8,
+    "fat_g": 0.2
+  },
+  {
+    "id": 227,
+    "name": "Laranja Assado(a) com Molho de Tomate",
+    "calories_per_100g": 67.7,
+    "protein_g": 1.0,
+    "carbs_g": 19.8,
+    "fat_g": 0.1
+  },
+  {
+    "id": 228,
+    "name": "Laranja Assado(a) com Mel",
+    "calories_per_100g": 73.3,
+    "protein_g": 0.9,
+    "carbs_g": 26.4,
+    "fat_g": 0.1
+  },
+  {
+    "id": 229,
+    "name": "Laranja Assado(a) ao Alho",
+    "calories_per_100g": 62.0,
+    "protein_g": 0.9,
+    "carbs_g": 14.5,
+    "fat_g": 0.1
+  },
+  {
+    "id": 230,
+    "name": "Laranja Assado(a) com Ervas",
+    "calories_per_100g": 56.4,
+    "protein_g": 0.9,
+    "carbs_g": 13.2,
+    "fat_g": 0.1
+  },
+  {
+    "id": 231,
+    "name": "Laranja Frito(a)",
+    "calories_per_100g": 94.0,
+    "protein_g": 0.8,
+    "carbs_g": 18.0,
+    "fat_g": 0.5
+  },
+  {
+    "id": 232,
+    "name": "Laranja Frito(a) com Sal",
+    "calories_per_100g": 94.0,
+    "protein_g": 0.8,
+    "carbs_g": 18.0,
+    "fat_g": 0.5
+  },
+  {
+    "id": 233,
+    "name": "Laranja Frito(a) com Açúcar",
+    "calories_per_100g": 131.6,
+    "protein_g": 0.8,
+    "carbs_g": 36.0,
+    "fat_g": 0.5
+  },
+  {
+    "id": 234,
+    "name": "Laranja Frito(a) Temperado(a)",
+    "calories_per_100g": 103.4,
+    "protein_g": 0.8,
+    "carbs_g": 19.8,
+    "fat_g": 0.6
+  },
+  {
+    "id": 235,
+    "name": "Laranja Frito(a) com Azeite",
+    "calories_per_100g": 141.0,
+    "protein_g": 0.8,
+    "carbs_g": 18.0,
+    "fat_g": 1.5
+  },
+  {
+    "id": 236,
+    "name": "Laranja Frito(a) com Queijo",
+    "calories_per_100g": 169.2,
+    "protein_g": 1.2,
+    "carbs_g": 21.6,
+    "fat_g": 1.0
+  },
+  {
+    "id": 237,
+    "name": "Laranja Frito(a) com Molho de Tomate",
+    "calories_per_100g": 112.8,
+    "protein_g": 0.9,
+    "carbs_g": 27.0,
+    "fat_g": 0.6
+  },
+  {
+    "id": 238,
+    "name": "Laranja Frito(a) com Mel",
+    "calories_per_100g": 122.2,
+    "protein_g": 0.8,
+    "carbs_g": 36.0,
+    "fat_g": 0.5
+  },
+  {
+    "id": 239,
+    "name": "Laranja Frito(a) ao Alho",
+    "calories_per_100g": 103.4,
+    "protein_g": 0.8,
+    "carbs_g": 19.8,
+    "fat_g": 0.6
+  },
+  {
+    "id": 240,
+    "name": "Laranja Frito(a) com Ervas",
+    "calories_per_100g": 94.0,
+    "protein_g": 0.8,
+    "carbs_g": 18.0,
+    "fat_g": 0.5
+  },
+  {
+    "id": 241,
+    "name": "Laranja Grelhado(a)",
+    "calories_per_100g": 51.7,
+    "protein_g": 0.9,
+    "carbs_g": 12.0,
+    "fat_g": 0.1
+  },
+  {
+    "id": 242,
+    "name": "Laranja Grelhado(a) com Sal",
+    "calories_per_100g": 51.7,
+    "protein_g": 0.9,
+    "carbs_g": 12.0,
+    "fat_g": 0.1
+  },
+  {
+    "id": 243,
+    "name": "Laranja Grelhado(a) com Açúcar",
+    "calories_per_100g": 72.4,
+    "protein_g": 0.9,
+    "carbs_g": 24.0,
+    "fat_g": 0.1
+  },
+  {
+    "id": 244,
+    "name": "Laranja Grelhado(a) Temperado(a)",
+    "calories_per_100g": 56.9,
+    "protein_g": 0.9,
+    "carbs_g": 13.2,
+    "fat_g": 0.1
+  },
+  {
+    "id": 245,
+    "name": "Laranja Grelhado(a) com Azeite",
+    "calories_per_100g": 77.6,
+    "protein_g": 0.9,
+    "carbs_g": 12.0,
+    "fat_g": 0.4
+  },
+  {
+    "id": 246,
+    "name": "Laranja Grelhado(a) com Queijo",
+    "calories_per_100g": 93.1,
+    "protein_g": 1.4,
+    "carbs_g": 14.4,
+    "fat_g": 0.2
+  },
+  {
+    "id": 247,
+    "name": "Laranja Grelhado(a) com Molho de Tomate",
+    "calories_per_100g": 62.0,
+    "protein_g": 1.0,
+    "carbs_g": 18.0,
+    "fat_g": 0.1
+  },
+  {
+    "id": 248,
+    "name": "Laranja Grelhado(a) com Mel",
+    "calories_per_100g": 67.2,
+    "protein_g": 0.9,
+    "carbs_g": 24.0,
+    "fat_g": 0.1
+  },
+  {
+    "id": 249,
+    "name": "Laranja Grelhado(a) ao Alho",
+    "calories_per_100g": 56.9,
+    "protein_g": 0.9,
+    "carbs_g": 13.2,
+    "fat_g": 0.1
+  },
+  {
+    "id": 250,
+    "name": "Laranja Grelhado(a) com Ervas",
+    "calories_per_100g": 51.7,
+    "protein_g": 0.9,
+    "carbs_g": 12.0,
+    "fat_g": 0.1
+  },
+  {
+    "id": 251,
+    "name": "Laranja Refogado(a)",
+    "calories_per_100g": 61.1,
+    "protein_g": 0.8,
+    "carbs_g": 13.2,
+    "fat_g": 0.2
+  },
+  {
+    "id": 252,
+    "name": "Laranja Refogado(a) com Sal",
+    "calories_per_100g": 61.1,
+    "protein_g": 0.8,
+    "carbs_g": 13.2,
+    "fat_g": 0.2
+  },
+  {
+    "id": 253,
+    "name": "Laranja Refogado(a) com Açúcar",
+    "calories_per_100g": 85.5,
+    "protein_g": 0.8,
+    "carbs_g": 26.4,
+    "fat_g": 0.2
+  },
+  {
+    "id": 254,
+    "name": "Laranja Refogado(a) Temperado(a)",
+    "calories_per_100g": 67.2,
+    "protein_g": 0.8,
+    "carbs_g": 14.5,
+    "fat_g": 0.3
+  },
+  {
+    "id": 255,
+    "name": "Laranja Refogado(a) com Azeite",
+    "calories_per_100g": 91.7,
+    "protein_g": 0.8,
+    "carbs_g": 13.2,
+    "fat_g": 0.8
+  },
+  {
+    "id": 256,
+    "name": "Laranja Refogado(a) com Queijo",
+    "calories_per_100g": 110.0,
+    "protein_g": 1.2,
+    "carbs_g": 15.8,
+    "fat_g": 0.5
+  },
+  {
+    "id": 257,
+    "name": "Laranja Refogado(a) com Molho de Tomate",
+    "calories_per_100g": 73.3,
+    "protein_g": 0.9,
+    "carbs_g": 19.8,
+    "fat_g": 0.3
+  },
+  {
+    "id": 258,
+    "name": "Laranja Refogado(a) com Mel",
+    "calories_per_100g": 79.4,
+    "protein_g": 0.8,
+    "carbs_g": 26.4,
+    "fat_g": 0.2
+  },
+  {
+    "id": 259,
+    "name": "Laranja Refogado(a) ao Alho",
+    "calories_per_100g": 67.2,
+    "protein_g": 0.8,
+    "carbs_g": 14.5,
+    "fat_g": 0.3
+  },
+  {
+    "id": 260,
+    "name": "Laranja Refogado(a) com Ervas",
+    "calories_per_100g": 61.1,
+    "protein_g": 0.8,
+    "carbs_g": 13.2,
+    "fat_g": 0.2
+  },
+  {
+    "id": 261,
+    "name": "Laranja Em Conserva",
+    "calories_per_100g": 42.3,
+    "protein_g": 0.7,
+    "carbs_g": 10.8,
+    "fat_g": 0.1
+  },
+  {
+    "id": 262,
+    "name": "Laranja Em Conserva com Sal",
+    "calories_per_100g": 42.3,
+    "protein_g": 0.7,
+    "carbs_g": 10.8,
+    "fat_g": 0.1
+  },
+  {
+    "id": 263,
+    "name": "Laranja Em Conserva com Açúcar",
+    "calories_per_100g": 59.2,
+    "protein_g": 0.7,
+    "carbs_g": 21.6,
+    "fat_g": 0.1
+  },
+  {
+    "id": 264,
+    "name": "Laranja Em Conserva Temperado(a)",
+    "calories_per_100g": 46.5,
+    "protein_g": 0.7,
+    "carbs_g": 11.9,
+    "fat_g": 0.1
+  },
+  {
+    "id": 265,
+    "name": "Laranja Em Conserva com Azeite",
+    "calories_per_100g": 63.5,
+    "protein_g": 0.7,
+    "carbs_g": 10.8,
+    "fat_g": 0.2
+  },
+  {
+    "id": 266,
+    "name": "Laranja Em Conserva com Queijo",
+    "calories_per_100g": 76.1,
+    "protein_g": 1.1,
+    "carbs_g": 13.0,
+    "fat_g": 0.2
+  },
+  {
+    "id": 267,
+    "name": "Laranja Em Conserva com Molho de Tomate",
+    "calories_per_100g": 50.8,
+    "protein_g": 0.8,
+    "carbs_g": 16.2,
+    "fat_g": 0.1
+  },
+  {
+    "id": 268,
+    "name": "Laranja Em Conserva com Mel",
+    "calories_per_100g": 55.0,
+    "protein_g": 0.7,
+    "carbs_g": 21.6,
+    "fat_g": 0.1
+  },
+  {
+    "id": 269,
+    "name": "Laranja Em Conserva ao Alho",
+    "calories_per_100g": 46.5,
+    "protein_g": 0.7,
+    "carbs_g": 11.9,
+    "fat_g": 0.1
+  },
+  {
+    "id": 270,
+    "name": "Laranja Em Conserva com Ervas",
+    "calories_per_100g": 42.3,
+    "protein_g": 0.7,
+    "carbs_g": 10.8,
+    "fat_g": 0.1
+  },
+  {
+    "id": 271,
+    "name": "Laranja Desidratado(a)",
+    "calories_per_100g": 141.0,
+    "protein_g": 2.7,
+    "carbs_g": 36.0,
+    "fat_g": 0.3
+  },
+  {
+    "id": 272,
+    "name": "Laranja Desidratado(a) com Sal",
+    "calories_per_100g": 141.0,
+    "protein_g": 2.7,
+    "carbs_g": 36.0,
+    "fat_g": 0.3
+  },
+  {
+    "id": 273,
+    "name": "Laranja Desidratado(a) com Açúcar",
+    "calories_per_100g": 197.4,
+    "protein_g": 2.7,
+    "carbs_g": 72.0,
+    "fat_g": 0.3
+  },
+  {
+    "id": 274,
+    "name": "Laranja Desidratado(a) Temperado(a)",
+    "calories_per_100g": 155.1,
+    "protein_g": 2.7,
+    "carbs_g": 39.6,
+    "fat_g": 0.4
+  },
+  {
+    "id": 275,
+    "name": "Laranja Desidratado(a) com Azeite",
+    "calories_per_100g": 211.5,
+    "protein_g": 2.7,
+    "carbs_g": 36.0,
+    "fat_g": 0.9
+  },
+  {
+    "id": 276,
+    "name": "Laranja Desidratado(a) com Queijo",
+    "calories_per_100g": 253.8,
+    "protein_g": 4.1,
+    "carbs_g": 43.2,
+    "fat_g": 0.6
+  },
+  {
+    "id": 277,
+    "name": "Laranja Desidratado(a) com Molho de Tomate",
+    "calories_per_100g": 169.2,
+    "protein_g": 3.0,
+    "carbs_g": 54.0,
+    "fat_g": 0.3
+  },
+  {
+    "id": 278,
+    "name": "Laranja Desidratado(a) com Mel",
+    "calories_per_100g": 183.3,
+    "protein_g": 2.7,
+    "carbs_g": 72.0,
+    "fat_g": 0.3
+  },
+  {
+    "id": 279,
+    "name": "Laranja Desidratado(a) ao Alho",
+    "calories_per_100g": 155.1,
+    "protein_g": 2.7,
+    "carbs_g": 39.6,
+    "fat_g": 0.4
+  },
+  {
+    "id": 280,
+    "name": "Laranja Desidratado(a) com Ervas",
+    "calories_per_100g": 141.0,
+    "protein_g": 2.7,
+    "carbs_g": 36.0,
+    "fat_g": 0.3
+  },
+  {
+    "id": 281,
+    "name": "Laranja Em Pó",
+    "calories_per_100g": 188.0,
+    "protein_g": 3.6,
+    "carbs_g": 48.0,
+    "fat_g": 0.4
+  },
+  {
+    "id": 282,
+    "name": "Laranja Em Pó com Sal",
+    "calories_per_100g": 188.0,
+    "protein_g": 3.6,
+    "carbs_g": 48.0,
+    "fat_g": 0.4
+  },
+  {
+    "id": 283,
+    "name": "Laranja Em Pó com Açúcar",
+    "calories_per_100g": 263.2,
+    "protein_g": 3.6,
+    "carbs_g": 96.0,
+    "fat_g": 0.4
+  },
+  {
+    "id": 284,
+    "name": "Laranja Em Pó Temperado(a)",
+    "calories_per_100g": 206.8,
+    "protein_g": 3.6,
+    "carbs_g": 52.8,
+    "fat_g": 0.5
+  },
+  {
+    "id": 285,
+    "name": "Laranja Em Pó com Azeite",
+    "calories_per_100g": 282.0,
+    "protein_g": 3.6,
+    "carbs_g": 48.0,
+    "fat_g": 1.2
+  },
+  {
+    "id": 286,
+    "name": "Laranja Em Pó com Queijo",
+    "calories_per_100g": 338.4,
+    "protein_g": 5.4,
+    "carbs_g": 57.6,
+    "fat_g": 0.8
+  },
+  {
+    "id": 287,
+    "name": "Laranja Em Pó com Molho de Tomate",
+    "calories_per_100g": 225.6,
+    "protein_g": 4.0,
+    "carbs_g": 72.0,
+    "fat_g": 0.4
+  },
+  {
+    "id": 288,
+    "name": "Laranja Em Pó com Mel",
+    "calories_per_100g": 244.4,
+    "protein_g": 3.6,
+    "carbs_g": 96.0,
+    "fat_g": 0.4
+  },
+  {
+    "id": 289,
+    "name": "Laranja Em Pó ao Alho",
+    "calories_per_100g": 206.8,
+    "protein_g": 3.6,
+    "carbs_g": 52.8,
+    "fat_g": 0.5
+  },
+  {
+    "id": 290,
+    "name": "Laranja Em Pó com Ervas",
+    "calories_per_100g": 188.0,
+    "protein_g": 3.6,
+    "carbs_g": 48.0,
+    "fat_g": 0.4
+  },
+  {
+    "id": 291,
+    "name": "Pasta de Laranja",
+    "calories_per_100g": 164.5,
+    "protein_g": 1.4,
+    "carbs_g": 14.4,
+    "fat_g": 0.6
+  },
+  {
+    "id": 292,
+    "name": "Pasta de Laranja com Sal",
+    "calories_per_100g": 164.5,
+    "protein_g": 1.4,
+    "carbs_g": 14.4,
+    "fat_g": 0.6
+  },
+  {
+    "id": 293,
+    "name": "Pasta de Laranja com Açúcar",
+    "calories_per_100g": 230.3,
+    "protein_g": 1.4,
+    "carbs_g": 28.8,
+    "fat_g": 0.6
+  },
+  {
+    "id": 294,
+    "name": "Pasta de Laranja Temperado(a)",
+    "calories_per_100g": 181.0,
+    "protein_g": 1.4,
+    "carbs_g": 15.8,
+    "fat_g": 0.7
+  },
+  {
+    "id": 295,
+    "name": "Pasta de Laranja com Azeite",
+    "calories_per_100g": 246.8,
+    "protein_g": 1.4,
+    "carbs_g": 14.4,
+    "fat_g": 1.8
+  },
+  {
+    "id": 296,
+    "name": "Pasta de Laranja com Queijo",
+    "calories_per_100g": 296.1,
+    "protein_g": 2.0,
+    "carbs_g": 17.3,
+    "fat_g": 1.2
+  },
+  {
+    "id": 297,
+    "name": "Pasta de Laranja com Molho de Tomate",
+    "calories_per_100g": 197.4,
+    "protein_g": 1.5,
+    "carbs_g": 21.6,
+    "fat_g": 0.7
+  },
+  {
+    "id": 298,
+    "name": "Pasta de Laranja com Mel",
+    "calories_per_100g": 213.8,
+    "protein_g": 1.4,
+    "carbs_g": 28.8,
+    "fat_g": 0.6
+  },
+  {
+    "id": 299,
+    "name": "Pasta de Laranja ao Alho",
+    "calories_per_100g": 181.0,
+    "protein_g": 1.4,
+    "carbs_g": 15.8,
+    "fat_g": 0.7
+  },
+  {
+    "id": 300,
+    "name": "Pasta de Laranja com Ervas",
+    "calories_per_100g": 164.5,
+    "protein_g": 1.4,
+    "carbs_g": 14.4,
+    "fat_g": 0.6
+  },
+  {
+    "id": 301,
+    "name": "Morango",
+    "calories_per_100g": 32.0,
+    "protein_g": 0.7,
+    "carbs_g": 7.7,
+    "fat_g": 0.3
+  },
+  {
+    "id": 302,
+    "name": "Morango com Sal",
+    "calories_per_100g": 32.0,
+    "protein_g": 0.7,
+    "carbs_g": 7.7,
+    "fat_g": 0.3
+  },
+  {
+    "id": 303,
+    "name": "Morango com Açúcar",
+    "calories_per_100g": 44.8,
+    "protein_g": 0.7,
+    "carbs_g": 15.4,
+    "fat_g": 0.3
+  },
+  {
+    "id": 304,
+    "name": "Morango Temperado(a)",
+    "calories_per_100g": 35.2,
+    "protein_g": 0.7,
+    "carbs_g": 8.5,
+    "fat_g": 0.4
+  },
+  {
+    "id": 305,
+    "name": "Morango com Azeite",
+    "calories_per_100g": 48.0,
+    "protein_g": 0.7,
+    "carbs_g": 7.7,
+    "fat_g": 0.9
+  },
+  {
+    "id": 306,
+    "name": "Morango com Queijo",
+    "calories_per_100g": 57.6,
+    "protein_g": 1.0,
+    "carbs_g": 9.2,
+    "fat_g": 0.6
+  },
+  {
+    "id": 307,
+    "name": "Morango com Molho de Tomate",
+    "calories_per_100g": 38.4,
+    "protein_g": 0.8,
+    "carbs_g": 11.6,
+    "fat_g": 0.3
+  },
+  {
+    "id": 308,
+    "name": "Morango com Mel",
+    "calories_per_100g": 41.6,
+    "protein_g": 0.7,
+    "carbs_g": 15.4,
+    "fat_g": 0.3
+  },
+  {
+    "id": 309,
+    "name": "Morango ao Alho",
+    "calories_per_100g": 35.2,
+    "protein_g": 0.7,
+    "carbs_g": 8.5,
+    "fat_g": 0.4
+  },
+  {
+    "id": 310,
+    "name": "Morango com Ervas",
+    "calories_per_100g": 32.0,
+    "protein_g": 0.7,
+    "carbs_g": 7.7,
+    "fat_g": 0.3
+  },
+  {
+    "id": 311,
+    "name": "Morango Cozido(a)",
+    "calories_per_100g": 25.6,
+    "protein_g": 0.6,
+    "carbs_g": 6.2,
+    "fat_g": 0.3
+  },
+  {
+    "id": 312,
+    "name": "Morango Cozido(a) com Sal",
+    "calories_per_100g": 25.6,
+    "protein_g": 0.6,
+    "carbs_g": 6.2,
+    "fat_g": 0.3
+  },
+  {
+    "id": 313,
+    "name": "Morango Cozido(a) com Açúcar",
+    "calories_per_100g": 35.8,
+    "protein_g": 0.6,
+    "carbs_g": 12.3,
+    "fat_g": 0.3
+  },
+  {
+    "id": 314,
+    "name": "Morango Cozido(a) Temperado(a)",
+    "calories_per_100g": 28.2,
+    "protein_g": 0.6,
+    "carbs_g": 6.8,
+    "fat_g": 0.3
+  },
+  {
+    "id": 315,
+    "name": "Morango Cozido(a) com Azeite",
+    "calories_per_100g": 38.4,
+    "protein_g": 0.6,
+    "carbs_g": 6.2,
+    "fat_g": 0.8
+  },
+  {
+    "id": 316,
+    "name": "Morango Cozido(a) com Queijo",
+    "calories_per_100g": 46.1,
+    "protein_g": 0.9,
+    "carbs_g": 7.4,
+    "fat_g": 0.5
+  },
+  {
+    "id": 317,
+    "name": "Morango Cozido(a) com Molho de Tomate",
+    "calories_per_100g": 30.7,
+    "protein_g": 0.7,
+    "carbs_g": 9.2,
+    "fat_g": 0.3
+  },
+  {
+    "id": 318,
+    "name": "Morango Cozido(a) com Mel",
+    "calories_per_100g": 33.3,
+    "protein_g": 0.6,
+    "carbs_g": 12.3,
+    "fat_g": 0.3
+  },
+  {
+    "id": 319,
+    "name": "Morango Cozido(a) ao Alho",
+    "calories_per_100g": 28.2,
+    "protein_g": 0.6,
+    "carbs_g": 6.8,
+    "fat_g": 0.3
+  },
+  {
+    "id": 320,
+    "name": "Morango Cozido(a) com Ervas",
+    "calories_per_100g": 25.6,
+    "protein_g": 0.6,
+    "carbs_g": 6.2,
+    "fat_g": 0.3
+  },
+  {
+    "id": 321,
+    "name": "Morango Assado(a)",
+    "calories_per_100g": 38.4,
+    "protein_g": 0.7,
+    "carbs_g": 8.5,
+    "fat_g": 0.3
+  },
+  {
+    "id": 322,
+    "name": "Morango Assado(a) com Sal",
+    "calories_per_100g": 38.4,
+    "protein_g": 0.7,
+    "carbs_g": 8.5,
+    "fat_g": 0.3
+  },
+  {
+    "id": 323,
+    "name": "Morango Assado(a) com Açúcar",
+    "calories_per_100g": 53.8,
+    "protein_g": 0.7,
+    "carbs_g": 16.9,
+    "fat_g": 0.3
+  },
+  {
+    "id": 324,
+    "name": "Morango Assado(a) Temperado(a)",
+    "calories_per_100g": 42.2,
+    "protein_g": 0.7,
+    "carbs_g": 9.3,
+    "fat_g": 0.4
+  },
+  {
+    "id": 325,
+    "name": "Morango Assado(a) com Azeite",
+    "calories_per_100g": 57.6,
+    "protein_g": 0.7,
+    "carbs_g": 8.5,
+    "fat_g": 0.9
+  },
+  {
+    "id": 326,
+    "name": "Morango Assado(a) com Queijo",
+    "calories_per_100g": 69.1,
+    "protein_g": 1.0,
+    "carbs_g": 10.2,
+    "fat_g": 0.6
+  },
+  {
+    "id": 327,
+    "name": "Morango Assado(a) com Molho de Tomate",
+    "calories_per_100g": 46.1,
+    "protein_g": 0.8,
+    "carbs_g": 12.7,
+    "fat_g": 0.3
+  },
+  {
+    "id": 328,
+    "name": "Morango Assado(a) com Mel",
+    "calories_per_100g": 49.9,
+    "protein_g": 0.7,
+    "carbs_g": 16.9,
+    "fat_g": 0.3
+  },
+  {
+    "id": 329,
+    "name": "Morango Assado(a) ao Alho",
+    "calories_per_100g": 42.2,
+    "protein_g": 0.7,
+    "carbs_g": 9.3,
+    "fat_g": 0.4
+  },
+  {
+    "id": 330,
+    "name": "Morango Assado(a) com Ervas",
+    "calories_per_100g": 38.4,
+    "protein_g": 0.7,
+    "carbs_g": 8.5,
+    "fat_g": 0.3
+  },
+  {
+    "id": 331,
+    "name": "Morango Frito(a)",
+    "calories_per_100g": 64.0,
+    "protein_g": 0.6,
+    "carbs_g": 11.6,
+    "fat_g": 1.5
+  },
+  {
+    "id": 332,
+    "name": "Morango Frito(a) com Sal",
+    "calories_per_100g": 64.0,
+    "protein_g": 0.6,
+    "carbs_g": 11.6,
+    "fat_g": 1.5
+  },
+  {
+    "id": 333,
+    "name": "Morango Frito(a) com Açúcar",
+    "calories_per_100g": 89.6,
+    "protein_g": 0.6,
+    "carbs_g": 23.1,
+    "fat_g": 1.5
+  },
+  {
+    "id": 334,
+    "name": "Morango Frito(a) Temperado(a)",
+    "calories_per_100g": 70.4,
+    "protein_g": 0.6,
+    "carbs_g": 12.7,
+    "fat_g": 1.8
+  },
+  {
+    "id": 335,
+    "name": "Morango Frito(a) com Azeite",
+    "calories_per_100g": 96.0,
+    "protein_g": 0.6,
+    "carbs_g": 11.6,
+    "fat_g": 4.5
+  },
+  {
+    "id": 336,
+    "name": "Morango Frito(a) com Queijo",
+    "calories_per_100g": 115.2,
+    "protein_g": 0.9,
+    "carbs_g": 13.9,
+    "fat_g": 3.0
+  },
+  {
+    "id": 337,
+    "name": "Morango Frito(a) com Molho de Tomate",
+    "calories_per_100g": 76.8,
+    "protein_g": 0.7,
+    "carbs_g": 17.3,
+    "fat_g": 1.7
+  },
+  {
+    "id": 338,
+    "name": "Morango Frito(a) com Mel",
+    "calories_per_100g": 83.2,
+    "protein_g": 0.6,
+    "carbs_g": 23.1,
+    "fat_g": 1.5
+  },
+  {
+    "id": 339,
+    "name": "Morango Frito(a) ao Alho",
+    "calories_per_100g": 70.4,
+    "protein_g": 0.6,
+    "carbs_g": 12.7,
+    "fat_g": 1.8
+  },
+  {
+    "id": 340,
+    "name": "Morango Frito(a) com Ervas",
+    "calories_per_100g": 64.0,
+    "protein_g": 0.6,
+    "carbs_g": 11.6,
+    "fat_g": 1.5
+  },
+  {
+    "id": 341,
+    "name": "Morango Grelhado(a)",
+    "calories_per_100g": 35.2,
+    "protein_g": 0.7,
+    "carbs_g": 7.7,
+    "fat_g": 0.4
+  },
+  {
+    "id": 342,
+    "name": "Morango Grelhado(a) com Sal",
+    "calories_per_100g": 35.2,
+    "protein_g": 0.7,
+    "carbs_g": 7.7,
+    "fat_g": 0.4
+  },
+  {
+    "id": 343,
+    "name": "Morango Grelhado(a) com Açúcar",
+    "calories_per_100g": 49.3,
+    "protein_g": 0.7,
+    "carbs_g": 15.4,
+    "fat_g": 0.4
+  },
+  {
+    "id": 344,
+    "name": "Morango Grelhado(a) Temperado(a)",
+    "calories_per_100g": 38.7,
+    "protein_g": 0.7,
+    "carbs_g": 8.5,
+    "fat_g": 0.4
+  },
+  {
+    "id": 345,
+    "name": "Morango Grelhado(a) com Azeite",
+    "calories_per_100g": 52.8,
+    "protein_g": 0.7,
+    "carbs_g": 7.7,
+    "fat_g": 1.1
+  },
+  {
+    "id": 346,
+    "name": "Morango Grelhado(a) com Queijo",
+    "calories_per_100g": 63.4,
+    "protein_g": 1.0,
+    "carbs_g": 9.2,
+    "fat_g": 0.7
+  },
+  {
+    "id": 347,
+    "name": "Morango Grelhado(a) com Molho de Tomate",
+    "calories_per_100g": 42.2,
+    "protein_g": 0.8,
+    "carbs_g": 11.6,
+    "fat_g": 0.4
+  },
+  {
+    "id": 348,
+    "name": "Morango Grelhado(a) com Mel",
+    "calories_per_100g": 45.8,
+    "protein_g": 0.7,
+    "carbs_g": 15.4,
+    "fat_g": 0.4
+  },
+  {
+    "id": 349,
+    "name": "Morango Grelhado(a) ao Alho",
+    "calories_per_100g": 38.7,
+    "protein_g": 0.7,
+    "carbs_g": 8.5,
+    "fat_g": 0.4
+  },
+  {
+    "id": 350,
+    "name": "Morango Grelhado(a) com Ervas",
+    "calories_per_100g": 35.2,
+    "protein_g": 0.7,
+    "carbs_g": 7.7,
+    "fat_g": 0.4
+  },
+  {
+    "id": 351,
+    "name": "Morango Refogado(a)",
+    "calories_per_100g": 41.6,
+    "protein_g": 0.6,
+    "carbs_g": 8.5,
+    "fat_g": 0.8
+  },
+  {
+    "id": 352,
+    "name": "Morango Refogado(a) com Sal",
+    "calories_per_100g": 41.6,
+    "protein_g": 0.6,
+    "carbs_g": 8.5,
+    "fat_g": 0.8
+  },
+  {
+    "id": 353,
+    "name": "Morango Refogado(a) com Açúcar",
+    "calories_per_100g": 58.2,
+    "protein_g": 0.6,
+    "carbs_g": 16.9,
+    "fat_g": 0.8
+  },
+  {
+    "id": 354,
+    "name": "Morango Refogado(a) Temperado(a)",
+    "calories_per_100g": 45.8,
+    "protein_g": 0.6,
+    "carbs_g": 9.3,
+    "fat_g": 0.9
+  },
+  {
+    "id": 355,
+    "name": "Morango Refogado(a) com Azeite",
+    "calories_per_100g": 62.4,
+    "protein_g": 0.6,
+    "carbs_g": 8.5,
+    "fat_g": 2.2
+  },
+  {
+    "id": 356,
+    "name": "Morango Refogado(a) com Queijo",
+    "calories_per_100g": 74.9,
+    "protein_g": 0.9,
+    "carbs_g": 10.2,
+    "fat_g": 1.5
+  },
+  {
+    "id": 357,
+    "name": "Morango Refogado(a) com Molho de Tomate",
+    "calories_per_100g": 49.9,
+    "protein_g": 0.7,
+    "carbs_g": 12.7,
+    "fat_g": 0.8
+  },
+  {
+    "id": 358,
+    "name": "Morango Refogado(a) com Mel",
+    "calories_per_100g": 54.1,
+    "protein_g": 0.6,
+    "carbs_g": 16.9,
+    "fat_g": 0.8
+  },
+  {
+    "id": 359,
+    "name": "Morango Refogado(a) ao Alho",
+    "calories_per_100g": 45.8,
+    "protein_g": 0.6,
+    "carbs_g": 9.3,
+    "fat_g": 0.9
+  },
+  {
+    "id": 360,
+    "name": "Morango Refogado(a) com Ervas",
+    "calories_per_100g": 41.6,
+    "protein_g": 0.6,
+    "carbs_g": 8.5,
+    "fat_g": 0.8
+  },
+  {
+    "id": 361,
+    "name": "Morango Em Conserva",
+    "calories_per_100g": 28.8,
+    "protein_g": 0.6,
+    "carbs_g": 6.9,
+    "fat_g": 0.2
+  },
+  {
+    "id": 362,
+    "name": "Morango Em Conserva com Sal",
+    "calories_per_100g": 28.8,
+    "protein_g": 0.6,
+    "carbs_g": 6.9,
+    "fat_g": 0.2
+  },
+  {
+    "id": 363,
+    "name": "Morango Em Conserva com Açúcar",
+    "calories_per_100g": 40.3,
+    "protein_g": 0.6,
+    "carbs_g": 13.9,
+    "fat_g": 0.2
+  },
+  {
+    "id": 364,
+    "name": "Morango Em Conserva Temperado(a)",
+    "calories_per_100g": 31.7,
+    "protein_g": 0.6,
+    "carbs_g": 7.6,
+    "fat_g": 0.3
+  },
+  {
+    "id": 365,
+    "name": "Morango Em Conserva com Azeite",
+    "calories_per_100g": 43.2,
+    "protein_g": 0.6,
+    "carbs_g": 6.9,
+    "fat_g": 0.7
+  },
+  {
+    "id": 366,
+    "name": "Morango Em Conserva com Queijo",
+    "calories_per_100g": 51.8,
+    "protein_g": 0.8,
+    "carbs_g": 8.3,
+    "fat_g": 0.5
+  },
+  {
+    "id": 367,
+    "name": "Morango Em Conserva com Molho de Tomate",
+    "calories_per_100g": 34.6,
+    "protein_g": 0.6,
+    "carbs_g": 10.4,
+    "fat_g": 0.3
+  },
+  {
+    "id": 368,
+    "name": "Morango Em Conserva com Mel",
+    "calories_per_100g": 37.4,
+    "protein_g": 0.6,
+    "carbs_g": 13.9,
+    "fat_g": 0.2
+  },
+  {
+    "id": 369,
+    "name": "Morango Em Conserva ao Alho",
+    "calories_per_100g": 31.7,
+    "protein_g": 0.6,
+    "carbs_g": 7.6,
+    "fat_g": 0.3
+  },
+  {
+    "id": 370,
+    "name": "Morango Em Conserva com Ervas",
+    "calories_per_100g": 28.8,
+    "protein_g": 0.6,
+    "carbs_g": 6.9,
+    "fat_g": 0.2
+  },
+  {
+    "id": 371,
+    "name": "Morango Desidratado(a)",
+    "calories_per_100g": 96.0,
+    "protein_g": 2.1,
+    "carbs_g": 23.1,
+    "fat_g": 0.9
+  },
+  {
+    "id": 372,
+    "name": "Morango Desidratado(a) com Sal",
+    "calories_per_100g": 96.0,
+    "protein_g": 2.1,
+    "carbs_g": 23.1,
+    "fat_g": 0.9
+  },
+  {
+    "id": 373,
+    "name": "Morango Desidratado(a) com Açúcar",
+    "calories_per_100g": 134.4,
+    "protein_g": 2.1,
+    "carbs_g": 46.2,
+    "fat_g": 0.9
+  },
+  {
+    "id": 374,
+    "name": "Morango Desidratado(a) Temperado(a)",
+    "calories_per_100g": 105.6,
+    "protein_g": 2.1,
+    "carbs_g": 25.4,
+    "fat_g": 1.1
+  },
+  {
+    "id": 375,
+    "name": "Morango Desidratado(a) com Azeite",
+    "calories_per_100g": 144.0,
+    "protein_g": 2.1,
+    "carbs_g": 23.1,
+    "fat_g": 2.7
+  },
+  {
+    "id": 376,
+    "name": "Morango Desidratado(a) com Queijo",
+    "calories_per_100g": 172.8,
+    "protein_g": 3.1,
+    "carbs_g": 27.7,
+    "fat_g": 1.8
+  },
+  {
+    "id": 377,
+    "name": "Morango Desidratado(a) com Molho de Tomate",
+    "calories_per_100g": 115.2,
+    "protein_g": 2.3,
+    "carbs_g": 34.7,
+    "fat_g": 1.0
+  },
+  {
+    "id": 378,
+    "name": "Morango Desidratado(a) com Mel",
+    "calories_per_100g": 124.8,
+    "protein_g": 2.1,
+    "carbs_g": 46.2,
+    "fat_g": 0.9
+  },
+  {
+    "id": 379,
+    "name": "Morango Desidratado(a) ao Alho",
+    "calories_per_100g": 105.6,
+    "protein_g": 2.1,
+    "carbs_g": 25.4,
+    "fat_g": 1.1
+  },
+  {
+    "id": 380,
+    "name": "Morango Desidratado(a) com Ervas",
+    "calories_per_100g": 96.0,
+    "protein_g": 2.1,
+    "carbs_g": 23.1,
+    "fat_g": 0.9
+  },
+  {
+    "id": 381,
+    "name": "Morango Em Pó",
+    "calories_per_100g": 128.0,
+    "protein_g": 2.8,
+    "carbs_g": 30.8,
+    "fat_g": 1.2
+  },
+  {
+    "id": 382,
+    "name": "Morango Em Pó com Sal",
+    "calories_per_100g": 128.0,
+    "protein_g": 2.8,
+    "carbs_g": 30.8,
+    "fat_g": 1.2
+  },
+  {
+    "id": 383,
+    "name": "Morango Em Pó com Açúcar",
+    "calories_per_100g": 179.2,
+    "protein_g": 2.8,
+    "carbs_g": 61.6,
+    "fat_g": 1.2
+  },
+  {
+    "id": 384,
+    "name": "Morango Em Pó Temperado(a)",
+    "calories_per_100g": 140.8,
+    "protein_g": 2.8,
+    "carbs_g": 33.9,
+    "fat_g": 1.4
+  },
+  {
+    "id": 385,
+    "name": "Morango Em Pó com Azeite",
+    "calories_per_100g": 192.0,
+    "protein_g": 2.8,
+    "carbs_g": 30.8,
+    "fat_g": 3.6
+  },
+  {
+    "id": 386,
+    "name": "Morango Em Pó com Queijo",
+    "calories_per_100g": 230.4,
+    "protein_g": 4.2,
+    "carbs_g": 37.0,
+    "fat_g": 2.4
+  },
+  {
+    "id": 387,
+    "name": "Morango Em Pó com Molho de Tomate",
+    "calories_per_100g": 153.6,
+    "protein_g": 3.1,
+    "carbs_g": 46.2,
+    "fat_g": 1.3
+  },
+  {
+    "id": 388,
+    "name": "Morango Em Pó com Mel",
+    "calories_per_100g": 166.4,
+    "protein_g": 2.8,
+    "carbs_g": 61.6,
+    "fat_g": 1.2
+  },
+  {
+    "id": 389,
+    "name": "Morango Em Pó ao Alho",
+    "calories_per_100g": 140.8,
+    "protein_g": 2.8,
+    "carbs_g": 33.9,
+    "fat_g": 1.4
+  },
+  {
+    "id": 390,
+    "name": "Morango Em Pó com Ervas",
+    "calories_per_100g": 128.0,
+    "protein_g": 2.8,
+    "carbs_g": 30.8,
+    "fat_g": 1.2
+  },
+  {
+    "id": 391,
+    "name": "Pasta de Morango",
+    "calories_per_100g": 112.0,
+    "protein_g": 1.0,
+    "carbs_g": 9.2,
+    "fat_g": 1.8
+  },
+  {
+    "id": 392,
+    "name": "Pasta de Morango com Sal",
+    "calories_per_100g": 112.0,
+    "protein_g": 1.0,
+    "carbs_g": 9.2,
+    "fat_g": 1.8
+  },
+  {
+    "id": 393,
+    "name": "Pasta de Morango com Açúcar",
+    "calories_per_100g": 156.8,
+    "protein_g": 1.0,
+    "carbs_g": 18.5,
+    "fat_g": 1.8
+  },
+  {
+    "id": 394,
+    "name": "Pasta de Morango Temperado(a)",
+    "calories_per_100g": 123.2,
+    "protein_g": 1.0,
+    "carbs_g": 10.2,
+    "fat_g": 2.2
+  },
+  {
+    "id": 395,
+    "name": "Pasta de Morango com Azeite",
+    "calories_per_100g": 168.0,
+    "protein_g": 1.0,
+    "carbs_g": 9.2,
+    "fat_g": 5.4
+  },
+  {
+    "id": 396,
+    "name": "Pasta de Morango com Queijo",
+    "calories_per_100g": 201.6,
+    "protein_g": 1.6,
+    "carbs_g": 11.1,
+    "fat_g": 3.6
+  },
+  {
+    "id": 397,
+    "name": "Pasta de Morango com Molho de Tomate",
+    "calories_per_100g": 134.4,
+    "protein_g": 1.2,
+    "carbs_g": 13.9,
+    "fat_g": 2.0
+  },
+  {
+    "id": 398,
+    "name": "Pasta de Morango com Mel",
+    "calories_per_100g": 145.6,
+    "protein_g": 1.0,
+    "carbs_g": 18.5,
+    "fat_g": 1.8
+  },
+  {
+    "id": 399,
+    "name": "Pasta de Morango ao Alho",
+    "calories_per_100g": 123.2,
+    "protein_g": 1.0,
+    "carbs_g": 10.2,
+    "fat_g": 2.2
+  },
+  {
+    "id": 400,
+    "name": "Pasta de Morango com Ervas",
+    "calories_per_100g": 112.0,
+    "protein_g": 1.0,
+    "carbs_g": 9.2,
+    "fat_g": 1.8
+  },
+  {
+    "id": 401,
+    "name": "Pera",
+    "calories_per_100g": 57.0,
+    "protein_g": 0.4,
+    "carbs_g": 15.0,
+    "fat_g": 0.1
+  },
+  {
+    "id": 402,
+    "name": "Pera com Sal",
+    "calories_per_100g": 57.0,
+    "protein_g": 0.4,
+    "carbs_g": 15.0,
+    "fat_g": 0.1
+  },
+  {
+    "id": 403,
+    "name": "Pera com Açúcar",
+    "calories_per_100g": 79.8,
+    "protein_g": 0.4,
+    "carbs_g": 30.0,
+    "fat_g": 0.1
+  },
+  {
+    "id": 404,
+    "name": "Pera Temperado(a)",
+    "calories_per_100g": 62.7,
+    "protein_g": 0.4,
+    "carbs_g": 16.5,
+    "fat_g": 0.1
+  },
+  {
+    "id": 405,
+    "name": "Pera com Azeite",
+    "calories_per_100g": 85.5,
+    "protein_g": 0.4,
+    "carbs_g": 15.0,
+    "fat_g": 0.3
+  },
+  {
+    "id": 406,
+    "name": "Pera com Queijo",
+    "calories_per_100g": 102.6,
+    "protein_g": 0.6,
+    "carbs_g": 18.0,
+    "fat_g": 0.2
+  },
+  {
+    "id": 407,
+    "name": "Pera com Molho de Tomate",
+    "calories_per_100g": 68.4,
+    "protein_g": 0.4,
+    "carbs_g": 22.5,
+    "fat_g": 0.1
+  },
+  {
+    "id": 408,
+    "name": "Pera com Mel",
+    "calories_per_100g": 74.1,
+    "protein_g": 0.4,
+    "carbs_g": 30.0,
+    "fat_g": 0.1
+  },
+  {
+    "id": 409,
+    "name": "Pera ao Alho",
+    "calories_per_100g": 62.7,
+    "protein_g": 0.4,
+    "carbs_g": 16.5,
+    "fat_g": 0.1
+  },
+  {
+    "id": 410,
+    "name": "Pera com Ervas",
+    "calories_per_100g": 57.0,
+    "protein_g": 0.4,
+    "carbs_g": 15.0,
+    "fat_g": 0.1
+  },
+  {
+    "id": 411,
+    "name": "Pera Cozido(a)",
+    "calories_per_100g": 45.6,
+    "protein_g": 0.4,
+    "carbs_g": 12.0,
+    "fat_g": 0.1
+  },
+  {
+    "id": 412,
+    "name": "Pera Cozido(a) com Sal",
+    "calories_per_100g": 45.6,
+    "protein_g": 0.4,
+    "carbs_g": 12.0,
+    "fat_g": 0.1
+  },
+  {
+    "id": 413,
+    "name": "Pera Cozido(a) com Açúcar",
+    "calories_per_100g": 63.8,
+    "protein_g": 0.4,
+    "carbs_g": 24.0,
+    "fat_g": 0.1
+  },
+  {
+    "id": 414,
+    "name": "Pera Cozido(a) Temperado(a)",
+    "calories_per_100g": 50.2,
+    "protein_g": 0.4,
+    "carbs_g": 13.2,
+    "fat_g": 0.1
+  },
+  {
+    "id": 415,
+    "name": "Pera Cozido(a) com Azeite",
+    "calories_per_100g": 68.4,
+    "protein_g": 0.4,
+    "carbs_g": 12.0,
+    "fat_g": 0.3
+  },
+  {
+    "id": 416,
+    "name": "Pera Cozido(a) com Queijo",
+    "calories_per_100g": 82.1,
+    "protein_g": 0.5,
+    "carbs_g": 14.4,
+    "fat_g": 0.2
+  },
+  {
+    "id": 417,
+    "name": "Pera Cozido(a) com Molho de Tomate",
+    "calories_per_100g": 54.7,
+    "protein_g": 0.4,
+    "carbs_g": 18.0,
+    "fat_g": 0.1
+  },
+  {
+    "id": 418,
+    "name": "Pera Cozido(a) com Mel",
+    "calories_per_100g": 59.3,
+    "protein_g": 0.4,
+    "carbs_g": 24.0,
+    "fat_g": 0.1
+  },
+  {
+    "id": 419,
+    "name": "Pera Cozido(a) ao Alho",
+    "calories_per_100g": 50.2,
+    "protein_g": 0.4,
+    "carbs_g": 13.2,
+    "fat_g": 0.1
+  },
+  {
+    "id": 420,
+    "name": "Pera Cozido(a) com Ervas",
+    "calories_per_100g": 45.6,
+    "protein_g": 0.4,
+    "carbs_g": 12.0,
+    "fat_g": 0.1
+  },
+  {
+    "id": 421,
+    "name": "Pera Assado(a)",
+    "calories_per_100g": 68.4,
+    "protein_g": 0.4,
+    "carbs_g": 16.5,
+    "fat_g": 0.1
+  },
+  {
+    "id": 422,
+    "name": "Pera Assado(a) com Sal",
+    "calories_per_100g": 68.4,
+    "protein_g": 0.4,
+    "carbs_g": 16.5,
+    "fat_g": 0.1
+  },
+  {
+    "id": 423,
+    "name": "Pera Assado(a) com Açúcar",
+    "calories_per_100g": 95.8,
+    "protein_g": 0.4,
+    "carbs_g": 33.0,
+    "fat_g": 0.1
+  },
+  {
+    "id": 424,
+    "name": "Pera Assado(a) Temperado(a)",
+    "calories_per_100g": 75.2,
+    "protein_g": 0.4,
+    "carbs_g": 18.2,
+    "fat_g": 0.1
+  },
+  {
+    "id": 425,
+    "name": "Pera Assado(a) com Azeite",
+    "calories_per_100g": 102.6,
+    "protein_g": 0.4,
+    "carbs_g": 16.5,
+    "fat_g": 0.3
+  },
+  {
+    "id": 426,
+    "name": "Pera Assado(a) com Queijo",
+    "calories_per_100g": 123.1,
+    "protein_g": 0.6,
+    "carbs_g": 19.8,
+    "fat_g": 0.2
+  },
+  {
+    "id": 427,
+    "name": "Pera Assado(a) com Molho de Tomate",
+    "calories_per_100g": 82.1,
+    "protein_g": 0.4,
+    "carbs_g": 24.8,
+    "fat_g": 0.1
+  },
+  {
+    "id": 428,
+    "name": "Pera Assado(a) com Mel",
+    "calories_per_100g": 88.9,
+    "protein_g": 0.4,
+    "carbs_g": 33.0,
+    "fat_g": 0.1
+  },
+  {
+    "id": 429,
+    "name": "Pera Assado(a) ao Alho",
+    "calories_per_100g": 75.2,
+    "protein_g": 0.4,
+    "carbs_g": 18.2,
+    "fat_g": 0.1
+  },
+  {
+    "id": 430,
+    "name": "Pera Assado(a) com Ervas",
+    "calories_per_100g": 68.4,
+    "protein_g": 0.4,
+    "carbs_g": 16.5,
+    "fat_g": 0.1
+  },
+  {
+    "id": 431,
+    "name": "Pera Frito(a)",
+    "calories_per_100g": 114.0,
+    "protein_g": 0.4,
+    "carbs_g": 22.5,
+    "fat_g": 0.5
+  },
+  {
+    "id": 432,
+    "name": "Pera Frito(a) com Sal",
+    "calories_per_100g": 114.0,
+    "protein_g": 0.4,
+    "carbs_g": 22.5,
+    "fat_g": 0.5
+  },
+  {
+    "id": 433,
+    "name": "Pera Frito(a) com Açúcar",
+    "calories_per_100g": 159.6,
+    "protein_g": 0.4,
+    "carbs_g": 45.0,
+    "fat_g": 0.5
+  },
+  {
+    "id": 434,
+    "name": "Pera Frito(a) Temperado(a)",
+    "calories_per_100g": 125.4,
+    "protein_g": 0.4,
+    "carbs_g": 24.8,
+    "fat_g": 0.6
+  },
+  {
+    "id": 435,
+    "name": "Pera Frito(a) com Azeite",
+    "calories_per_100g": 171.0,
+    "protein_g": 0.4,
+    "carbs_g": 22.5,
+    "fat_g": 1.5
+  },
+  {
+    "id": 436,
+    "name": "Pera Frito(a) com Queijo",
+    "calories_per_100g": 205.2,
+    "protein_g": 0.5,
+    "carbs_g": 27.0,
+    "fat_g": 1.0
+  },
+  {
+    "id": 437,
+    "name": "Pera Frito(a) com Molho de Tomate",
+    "calories_per_100g": 136.8,
+    "protein_g": 0.4,
+    "carbs_g": 33.8,
+    "fat_g": 0.6
+  },
+  {
+    "id": 438,
+    "name": "Pera Frito(a) com Mel",
+    "calories_per_100g": 148.2,
+    "protein_g": 0.4,
+    "carbs_g": 45.0,
+    "fat_g": 0.5
+  },
+  {
+    "id": 439,
+    "name": "Pera Frito(a) ao Alho",
+    "calories_per_100g": 125.4,
+    "protein_g": 0.4,
+    "carbs_g": 24.8,
+    "fat_g": 0.6
+  },
+  {
+    "id": 440,
+    "name": "Pera Frito(a) com Ervas",
+    "calories_per_100g": 114.0,
+    "protein_g": 0.4,
+    "carbs_g": 22.5,
+    "fat_g": 0.5
+  },
+  {
+    "id": 441,
+    "name": "Pera Grelhado(a)",
+    "calories_per_100g": 62.7,
+    "protein_g": 0.4,
+    "carbs_g": 15.0,
+    "fat_g": 0.1
+  },
+  {
+    "id": 442,
+    "name": "Pera Grelhado(a) com Sal",
+    "calories_per_100g": 62.7,
+    "protein_g": 0.4,
+    "carbs_g": 15.0,
+    "fat_g": 0.1
+  },
+  {
+    "id": 443,
+    "name": "Pera Grelhado(a) com Açúcar",
+    "calories_per_100g": 87.8,
+    "protein_g": 0.4,
+    "carbs_g": 30.0,
+    "fat_g": 0.1
+  },
+  {
+    "id": 444,
+    "name": "Pera Grelhado(a) Temperado(a)",
+    "calories_per_100g": 69.0,
+    "protein_g": 0.4,
+    "carbs_g": 16.5,
+    "fat_g": 0.1
+  },
+  {
+    "id": 445,
+    "name": "Pera Grelhado(a) com Azeite",
+    "calories_per_100g": 94.1,
+    "protein_g": 0.4,
+    "carbs_g": 15.0,
+    "fat_g": 0.4
+  },
+  {
+    "id": 446,
+    "name": "Pera Grelhado(a) com Queijo",
+    "calories_per_100g": 112.9,
+    "protein_g": 0.6,
+    "carbs_g": 18.0,
+    "fat_g": 0.2
+  },
+  {
+    "id": 447,
+    "name": "Pera Grelhado(a) com Molho de Tomate",
+    "calories_per_100g": 75.2,
+    "protein_g": 0.4,
+    "carbs_g": 22.5,
+    "fat_g": 0.1
+  },
+  {
+    "id": 448,
+    "name": "Pera Grelhado(a) com Mel",
+    "calories_per_100g": 81.5,
+    "protein_g": 0.4,
+    "carbs_g": 30.0,
+    "fat_g": 0.1
+  },
+  {
+    "id": 449,
+    "name": "Pera Grelhado(a) ao Alho",
+    "calories_per_100g": 69.0,
+    "protein_g": 0.4,
+    "carbs_g": 16.5,
+    "fat_g": 0.1
+  },
+  {
+    "id": 450,
+    "name": "Pera Grelhado(a) com Ervas",
+    "calories_per_100g": 62.7,
+    "protein_g": 0.4,
+    "carbs_g": 15.0,
+    "fat_g": 0.1
+  },
+  {
+    "id": 451,
+    "name": "Pera Refogado(a)",
+    "calories_per_100g": 74.1,
+    "protein_g": 0.4,
+    "carbs_g": 16.5,
+    "fat_g": 0.2
+  },
+  {
+    "id": 452,
+    "name": "Pera Refogado(a) com Sal",
+    "calories_per_100g": 74.1,
+    "protein_g": 0.4,
+    "carbs_g": 16.5,
+    "fat_g": 0.2
+  },
+  {
+    "id": 453,
+    "name": "Pera Refogado(a) com Açúcar",
+    "calories_per_100g": 103.7,
+    "protein_g": 0.4,
+    "carbs_g": 33.0,
+    "fat_g": 0.2
+  },
+  {
+    "id": 454,
+    "name": "Pera Refogado(a) Temperado(a)",
+    "calories_per_100g": 81.5,
+    "protein_g": 0.4,
+    "carbs_g": 18.2,
+    "fat_g": 0.3
+  },
+  {
+    "id": 455,
+    "name": "Pera Refogado(a) com Azeite",
+    "calories_per_100g": 111.2,
+    "protein_g": 0.4,
+    "carbs_g": 16.5,
+    "fat_g": 0.8
+  },
+  {
+    "id": 456,
+    "name": "Pera Refogado(a) com Queijo",
+    "calories_per_100g": 133.4,
+    "protein_g": 0.5,
+    "carbs_g": 19.8,
+    "fat_g": 0.5
+  },
+  {
+    "id": 457,
+    "name": "Pera Refogado(a) com Molho de Tomate",
+    "calories_per_100g": 88.9,
+    "protein_g": 0.4,
+    "carbs_g": 24.8,
+    "fat_g": 0.3
+  },
+  {
+    "id": 458,
+    "name": "Pera Refogado(a) com Mel",
+    "calories_per_100g": 96.3,
+    "protein_g": 0.4,
+    "carbs_g": 33.0,
+    "fat_g": 0.2
+  },
+  {
+    "id": 459,
+    "name": "Pera Refogado(a) ao Alho",
+    "calories_per_100g": 81.5,
+    "protein_g": 0.4,
+    "carbs_g": 18.2,
+    "fat_g": 0.3
+  },
+  {
+    "id": 460,
+    "name": "Pera Refogado(a) com Ervas",
+    "calories_per_100g": 74.1,
+    "protein_g": 0.4,
+    "carbs_g": 16.5,
+    "fat_g": 0.2
+  },
+  {
+    "id": 461,
+    "name": "Pera Em Conserva",
+    "calories_per_100g": 51.3,
+    "protein_g": 0.3,
+    "carbs_g": 13.5,
+    "fat_g": 0.1
+  },
+  {
+    "id": 462,
+    "name": "Pera Em Conserva com Sal",
+    "calories_per_100g": 51.3,
+    "protein_g": 0.3,
+    "carbs_g": 13.5,
+    "fat_g": 0.1
+  },
+  {
+    "id": 463,
+    "name": "Pera Em Conserva com Açúcar",
+    "calories_per_100g": 71.8,
+    "protein_g": 0.3,
+    "carbs_g": 27.0,
+    "fat_g": 0.1
+  },
+  {
+    "id": 464,
+    "name": "Pera Em Conserva Temperado(a)",
+    "calories_per_100g": 56.4,
+    "protein_g": 0.3,
+    "carbs_g": 14.9,
+    "fat_g": 0.1
+  },
+  {
+    "id": 465,
+    "name": "Pera Em Conserva com Azeite",
+    "calories_per_100g": 77.0,
+    "protein_g": 0.3,
+    "carbs_g": 13.5,
+    "fat_g": 0.2
+  },
+  {
+    "id": 466,
+    "name": "Pera Em Conserva com Queijo",
+    "calories_per_100g": 92.3,
+    "protein_g": 0.5,
+    "carbs_g": 16.2,
+    "fat_g": 0.2
+  },
+  {
+    "id": 467,
+    "name": "Pera Em Conserva com Molho de Tomate",
+    "calories_per_100g": 61.6,
+    "protein_g": 0.4,
+    "carbs_g": 20.2,
+    "fat_g": 0.1
+  },
+  {
+    "id": 468,
+    "name": "Pera Em Conserva com Mel",
+    "calories_per_100g": 66.7,
+    "protein_g": 0.3,
+    "carbs_g": 27.0,
+    "fat_g": 0.1
+  },
+  {
+    "id": 469,
+    "name": "Pera Em Conserva ao Alho",
+    "calories_per_100g": 56.4,
+    "protein_g": 0.3,
+    "carbs_g": 14.9,
+    "fat_g": 0.1
+  },
+  {
+    "id": 470,
+    "name": "Pera Em Conserva com Ervas",
+    "calories_per_100g": 51.3,
+    "protein_g": 0.3,
+    "carbs_g": 13.5,
+    "fat_g": 0.1
+  },
+  {
+    "id": 471,
+    "name": "Pera Desidratado(a)",
+    "calories_per_100g": 171.0,
+    "protein_g": 1.2,
+    "carbs_g": 45.0,
+    "fat_g": 0.3
+  },
+  {
+    "id": 472,
+    "name": "Pera Desidratado(a) com Sal",
+    "calories_per_100g": 171.0,
+    "protein_g": 1.2,
+    "carbs_g": 45.0,
+    "fat_g": 0.3
+  },
+  {
+    "id": 473,
+    "name": "Pera Desidratado(a) com Açúcar",
+    "calories_per_100g": 239.4,
+    "protein_g": 1.2,
+    "carbs_g": 90.0,
+    "fat_g": 0.3
+  },
+  {
+    "id": 474,
+    "name": "Pera Desidratado(a) Temperado(a)",
+    "calories_per_100g": 188.1,
+    "protein_g": 1.2,
+    "carbs_g": 49.5,
+    "fat_g": 0.4
+  },
+  {
+    "id": 475,
+    "name": "Pera Desidratado(a) com Azeite",
+    "calories_per_100g": 256.5,
+    "protein_g": 1.2,
+    "carbs_g": 45.0,
+    "fat_g": 0.9
+  },
+  {
+    "id": 476,
+    "name": "Pera Desidratado(a) com Queijo",
+    "calories_per_100g": 307.8,
+    "protein_g": 1.8,
+    "carbs_g": 54.0,
+    "fat_g": 0.6
+  },
+  {
+    "id": 477,
+    "name": "Pera Desidratado(a) com Molho de Tomate",
+    "calories_per_100g": 205.2,
+    "protein_g": 1.3,
+    "carbs_g": 67.5,
+    "fat_g": 0.3
+  },
+  {
+    "id": 478,
+    "name": "Pera Desidratado(a) com Mel",
+    "calories_per_100g": 222.3,
+    "protein_g": 1.2,
+    "carbs_g": 90.0,
+    "fat_g": 0.3
+  },
+  {
+    "id": 479,
+    "name": "Pera Desidratado(a) ao Alho",
+    "calories_per_100g": 188.1,
+    "protein_g": 1.2,
+    "carbs_g": 49.5,
+    "fat_g": 0.4
+  },
+  {
+    "id": 480,
+    "name": "Pera Desidratado(a) com Ervas",
+    "calories_per_100g": 171.0,
+    "protein_g": 1.2,
+    "carbs_g": 45.0,
+    "fat_g": 0.3
+  },
+  {
+    "id": 481,
+    "name": "Pera Em Pó",
+    "calories_per_100g": 228.0,
+    "protein_g": 1.6,
+    "carbs_g": 60.0,
+    "fat_g": 0.4
+  },
+  {
+    "id": 482,
+    "name": "Pera Em Pó com Sal",
+    "calories_per_100g": 228.0,
+    "protein_g": 1.6,
+    "carbs_g": 60.0,
+    "fat_g": 0.4
+  },
+  {
+    "id": 483,
+    "name": "Pera Em Pó com Açúcar",
+    "calories_per_100g": 319.2,
+    "protein_g": 1.6,
+    "carbs_g": 120.0,
+    "fat_g": 0.4
+  },
+  {
+    "id": 484,
+    "name": "Pera Em Pó Temperado(a)",
+    "calories_per_100g": 250.8,
+    "protein_g": 1.6,
+    "carbs_g": 66.0,
+    "fat_g": 0.5
+  },
+  {
+    "id": 485,
+    "name": "Pera Em Pó com Azeite",
+    "calories_per_100g": 342.0,
+    "protein_g": 1.6,
+    "carbs_g": 60.0,
+    "fat_g": 1.2
+  },
+  {
+    "id": 486,
+    "name": "Pera Em Pó com Queijo",
+    "calories_per_100g": 410.4,
+    "protein_g": 2.4,
+    "carbs_g": 72.0,
+    "fat_g": 0.8
+  },
+  {
+    "id": 487,
+    "name": "Pera Em Pó com Molho de Tomate",
+    "calories_per_100g": 273.6,
+    "protein_g": 1.8,
+    "carbs_g": 90.0,
+    "fat_g": 0.4
+  },
+  {
+    "id": 488,
+    "name": "Pera Em Pó com Mel",
+    "calories_per_100g": 296.4,
+    "protein_g": 1.6,
+    "carbs_g": 120.0,
+    "fat_g": 0.4
+  },
+  {
+    "id": 489,
+    "name": "Pera Em Pó ao Alho",
+    "calories_per_100g": 250.8,
+    "protein_g": 1.6,
+    "carbs_g": 66.0,
+    "fat_g": 0.5
+  },
+  {
+    "id": 490,
+    "name": "Pera Em Pó com Ervas",
+    "calories_per_100g": 228.0,
+    "protein_g": 1.6,
+    "carbs_g": 60.0,
+    "fat_g": 0.4
+  },
+  {
+    "id": 491,
+    "name": "Pasta de Pera",
+    "calories_per_100g": 199.5,
+    "protein_g": 0.6,
+    "carbs_g": 18.0,
+    "fat_g": 0.6
+  },
+  {
+    "id": 492,
+    "name": "Pasta de Pera com Sal",
+    "calories_per_100g": 199.5,
+    "protein_g": 0.6,
+    "carbs_g": 18.0,
+    "fat_g": 0.6
+  },
+  {
+    "id": 493,
+    "name": "Pasta de Pera com Açúcar",
+    "calories_per_100g": 279.3,
+    "protein_g": 0.6,
+    "carbs_g": 36.0,
+    "fat_g": 0.6
+  },
+  {
+    "id": 494,
+    "name": "Pasta de Pera Temperado(a)",
+    "calories_per_100g": 219.5,
+    "protein_g": 0.6,
+    "carbs_g": 19.8,
+    "fat_g": 0.7
+  },
+  {
+    "id": 495,
+    "name": "Pasta de Pera com Azeite",
+    "calories_per_100g": 299.2,
+    "protein_g": 0.6,
+    "carbs_g": 18.0,
+    "fat_g": 1.8
+  },
+  {
+    "id": 496,
+    "name": "Pasta de Pera com Queijo",
+    "calories_per_100g": 359.1,
+    "protein_g": 0.9,
+    "carbs_g": 21.6,
+    "fat_g": 1.2
+  },
+  {
+    "id": 497,
+    "name": "Pasta de Pera com Molho de Tomate",
+    "calories_per_100g": 239.4,
+    "protein_g": 0.7,
+    "carbs_g": 27.0,
+    "fat_g": 0.7
+  },
+  {
+    "id": 498,
+    "name": "Pasta de Pera com Mel",
+    "calories_per_100g": 259.4,
+    "protein_g": 0.6,
+    "carbs_g": 36.0,
+    "fat_g": 0.6
+  },
+  {
+    "id": 499,
+    "name": "Pasta de Pera ao Alho",
+    "calories_per_100g": 219.5,
+    "protein_g": 0.6,
+    "carbs_g": 19.8,
+    "fat_g": 0.7
+  },
+  {
+    "id": 500,
+    "name": "Pasta de Pera com Ervas",
+    "calories_per_100g": 199.5,
+    "protein_g": 0.6,
+    "carbs_g": 18.0,
+    "fat_g": 0.6
+  },
+  {
+    "id": 501,
+    "name": "Uva",
+    "calories_per_100g": 69.0,
+    "protein_g": 0.7,
+    "carbs_g": 18.0,
+    "fat_g": 0.2
+  },
+  {
+    "id": 502,
+    "name": "Uva com Sal",
+    "calories_per_100g": 69.0,
+    "protein_g": 0.7,
+    "carbs_g": 18.0,
+    "fat_g": 0.2
+  },
+  {
+    "id": 503,
+    "name": "Uva com Açúcar",
+    "calories_per_100g": 96.6,
+    "protein_g": 0.7,
+    "carbs_g": 36.0,
+    "fat_g": 0.2
+  },
+  {
+    "id": 504,
+    "name": "Uva Temperado(a)",
+    "calories_per_100g": 75.9,
+    "protein_g": 0.7,
+    "carbs_g": 19.8,
+    "fat_g": 0.2
+  },
+  {
+    "id": 505,
+    "name": "Uva com Azeite",
+    "calories_per_100g": 103.5,
+    "protein_g": 0.7,
+    "carbs_g": 18.0,
+    "fat_g": 0.6
+  },
+  {
+    "id": 506,
+    "name": "Uva com Queijo",
+    "calories_per_100g": 124.2,
+    "protein_g": 1.0,
+    "carbs_g": 21.6,
+    "fat_g": 0.4
+  },
+  {
+    "id": 507,
+    "name": "Uva com Molho de Tomate",
+    "calories_per_100g": 82.8,
+    "protein_g": 0.8,
+    "carbs_g": 27.0,
+    "fat_g": 0.2
+  },
+  {
+    "id": 508,
+    "name": "Uva com Mel",
+    "calories_per_100g": 89.7,
+    "protein_g": 0.7,
+    "carbs_g": 36.0,
+    "fat_g": 0.2
+  },
+  {
+    "id": 509,
+    "name": "Uva ao Alho",
+    "calories_per_100g": 75.9,
+    "protein_g": 0.7,
+    "carbs_g": 19.8,
+    "fat_g": 0.2
+  },
+  {
+    "id": 510,
+    "name": "Uva com Ervas",
+    "calories_per_100g": 69.0,
+    "protein_g": 0.7,
+    "carbs_g": 18.0,
+    "fat_g": 0.2
+  },
+  {
+    "id": 511,
+    "name": "Uva Cozido(a)",
+    "calories_per_100g": 55.2,
+    "protein_g": 0.6,
+    "carbs_g": 14.4,
+    "fat_g": 0.2
+  },
+  {
+    "id": 512,
+    "name": "Uva Cozido(a) com Sal",
+    "calories_per_100g": 55.2,
+    "protein_g": 0.6,
+    "carbs_g": 14.4,
+    "fat_g": 0.2
+  },
+  {
+    "id": 513,
+    "name": "Uva Cozido(a) com Açúcar",
+    "calories_per_100g": 77.3,
+    "protein_g": 0.6,
+    "carbs_g": 28.8,
+    "fat_g": 0.2
+  },
+  {
+    "id": 514,
+    "name": "Uva Cozido(a) Temperado(a)",
+    "calories_per_100g": 60.7,
+    "protein_g": 0.6,
+    "carbs_g": 15.8,
+    "fat_g": 0.2
+  },
+  {
+    "id": 515,
+    "name": "Uva Cozido(a) com Azeite",
+    "calories_per_100g": 82.8,
+    "protein_g": 0.6,
+    "carbs_g": 14.4,
+    "fat_g": 0.5
+  },
+  {
+    "id": 516,
+    "name": "Uva Cozido(a) com Queijo",
+    "calories_per_100g": 99.4,
+    "protein_g": 0.9,
+    "carbs_g": 17.3,
+    "fat_g": 0.4
+  },
+  {
+    "id": 517,
+    "name": "Uva Cozido(a) com Molho de Tomate",
+    "calories_per_100g": 66.2,
+    "protein_g": 0.7,
+    "carbs_g": 21.6,
+    "fat_g": 0.2
+  },
+  {
+    "id": 518,
+    "name": "Uva Cozido(a) com Mel",
+    "calories_per_100g": 71.8,
+    "protein_g": 0.6,
+    "carbs_g": 28.8,
+    "fat_g": 0.2
+  },
+  {
+    "id": 519,
+    "name": "Uva Cozido(a) ao Alho",
+    "calories_per_100g": 60.7,
+    "protein_g": 0.6,
+    "carbs_g": 15.8,
+    "fat_g": 0.2
+  },
+  {
+    "id": 520,
+    "name": "Uva Cozido(a) com Ervas",
+    "calories_per_100g": 55.2,
+    "protein_g": 0.6,
+    "carbs_g": 14.4,
+    "fat_g": 0.2
+  },
+  {
+    "id": 521,
+    "name": "Uva Assado(a)",
+    "calories_per_100g": 82.8,
+    "protein_g": 0.7,
+    "carbs_g": 19.8,
+    "fat_g": 0.2
+  },
+  {
+    "id": 522,
+    "name": "Uva Assado(a) com Sal",
+    "calories_per_100g": 82.8,
+    "protein_g": 0.7,
+    "carbs_g": 19.8,
+    "fat_g": 0.2
+  },
+  {
+    "id": 523,
+    "name": "Uva Assado(a) com Açúcar",
+    "calories_per_100g": 115.9,
+    "protein_g": 0.7,
+    "carbs_g": 39.6,
+    "fat_g": 0.2
+  },
+  {
+    "id": 524,
+    "name": "Uva Assado(a) Temperado(a)",
+    "calories_per_100g": 91.1,
+    "protein_g": 0.7,
+    "carbs_g": 21.8,
+    "fat_g": 0.2
+  },
+  {
+    "id": 525,
+    "name": "Uva Assado(a) com Azeite",
+    "calories_per_100g": 124.2,
+    "protein_g": 0.7,
+    "carbs_g": 19.8,
+    "fat_g": 0.6
+  },
+  {
+    "id": 526,
+    "name": "Uva Assado(a) com Queijo",
+    "calories_per_100g": 149.0,
+    "protein_g": 1.0,
+    "carbs_g": 23.8,
+    "fat_g": 0.4
+  },
+  {
+    "id": 527,
+    "name": "Uva Assado(a) com Molho de Tomate",
+    "calories_per_100g": 99.4,
+    "protein_g": 0.8,
+    "carbs_g": 29.7,
+    "fat_g": 0.2
+  },
+  {
+    "id": 528,
+    "name": "Uva Assado(a) com Mel",
+    "calories_per_100g": 107.6,
+    "protein_g": 0.7,
+    "carbs_g": 39.6,
+    "fat_g": 0.2
+  },
+  {
+    "id": 529,
+    "name": "Uva Assado(a) ao Alho",
+    "calories_per_100g": 91.1,
+    "protein_g": 0.7,
+    "carbs_g": 21.8,
+    "fat_g": 0.2
+  },
+  {
+    "id": 530,
+    "name": "Uva Assado(a) com Ervas",
+    "calories_per_100g": 82.8,
+    "protein_g": 0.7,
+    "carbs_g": 19.8,
+    "fat_g": 0.2
+  },
+  {
+    "id": 531,
+    "name": "Uva Frito(a)",
+    "calories_per_100g": 138.0,
+    "protein_g": 0.6,
+    "carbs_g": 27.0,
+    "fat_g": 1.0
+  },
+  {
+    "id": 532,
+    "name": "Uva Frito(a) com Sal",
+    "calories_per_100g": 138.0,
+    "protein_g": 0.6,
+    "carbs_g": 27.0,
+    "fat_g": 1.0
+  },
+  {
+    "id": 533,
+    "name": "Uva Frito(a) com Açúcar",
+    "calories_per_100g": 193.2,
+    "protein_g": 0.6,
+    "carbs_g": 54.0,
+    "fat_g": 1.0
+  },
+  {
+    "id": 534,
+    "name": "Uva Frito(a) Temperado(a)",
+    "calories_per_100g": 151.8,
+    "protein_g": 0.6,
+    "carbs_g": 29.7,
+    "fat_g": 1.2
+  },
+  {
+    "id": 535,
+    "name": "Uva Frito(a) com Azeite",
+    "calories_per_100g": 207.0,
+    "protein_g": 0.6,
+    "carbs_g": 27.0,
+    "fat_g": 3.0
+  },
+  {
+    "id": 536,
+    "name": "Uva Frito(a) com Queijo",
+    "calories_per_100g": 248.4,
+    "protein_g": 0.9,
+    "carbs_g": 32.4,
+    "fat_g": 2.0
+  },
+  {
+    "id": 537,
+    "name": "Uva Frito(a) com Molho de Tomate",
+    "calories_per_100g": 165.6,
+    "protein_g": 0.7,
+    "carbs_g": 40.5,
+    "fat_g": 1.1
+  },
+  {
+    "id": 538,
+    "name": "Uva Frito(a) com Mel",
+    "calories_per_100g": 179.4,
+    "protein_g": 0.6,
+    "carbs_g": 54.0,
+    "fat_g": 1.0
+  },
+  {
+    "id": 539,
+    "name": "Uva Frito(a) ao Alho",
+    "calories_per_100g": 151.8,
+    "protein_g": 0.6,
+    "carbs_g": 29.7,
+    "fat_g": 1.2
+  },
+  {
+    "id": 540,
+    "name": "Uva Frito(a) com Ervas",
+    "calories_per_100g": 138.0,
+    "protein_g": 0.6,
+    "carbs_g": 27.0,
+    "fat_g": 1.0
+  },
+  {
+    "id": 541,
+    "name": "Uva Grelhado(a)",
+    "calories_per_100g": 75.9,
+    "protein_g": 0.7,
+    "carbs_g": 18.0,
+    "fat_g": 0.2
+  },
+  {
+    "id": 542,
+    "name": "Uva Grelhado(a) com Sal",
+    "calories_per_100g": 75.9,
+    "protein_g": 0.7,
+    "carbs_g": 18.0,
+    "fat_g": 0.2
+  },
+  {
+    "id": 543,
+    "name": "Uva Grelhado(a) com Açúcar",
+    "calories_per_100g": 106.3,
+    "protein_g": 0.7,
+    "carbs_g": 36.0,
+    "fat_g": 0.2
+  },
+  {
+    "id": 544,
+    "name": "Uva Grelhado(a) Temperado(a)",
+    "calories_per_100g": 83.5,
+    "protein_g": 0.7,
+    "carbs_g": 19.8,
+    "fat_g": 0.3
+  },
+  {
+    "id": 545,
+    "name": "Uva Grelhado(a) com Azeite",
+    "calories_per_100g": 113.9,
+    "protein_g": 0.7,
+    "carbs_g": 18.0,
+    "fat_g": 0.7
+  },
+  {
+    "id": 546,
+    "name": "Uva Grelhado(a) com Queijo",
+    "calories_per_100g": 136.6,
+    "protein_g": 1.0,
+    "carbs_g": 21.6,
+    "fat_g": 0.5
+  },
+  {
+    "id": 547,
+    "name": "Uva Grelhado(a) com Molho de Tomate",
+    "calories_per_100g": 91.1,
+    "protein_g": 0.8,
+    "carbs_g": 27.0,
+    "fat_g": 0.3
+  },
+  {
+    "id": 548,
+    "name": "Uva Grelhado(a) com Mel",
+    "calories_per_100g": 98.7,
+    "protein_g": 0.7,
+    "carbs_g": 36.0,
+    "fat_g": 0.2
+  },
+  {
+    "id": 549,
+    "name": "Uva Grelhado(a) ao Alho",
+    "calories_per_100g": 83.5,
+    "protein_g": 0.7,
+    "carbs_g": 19.8,
+    "fat_g": 0.3
+  },
+  {
+    "id": 550,
+    "name": "Uva Grelhado(a) com Ervas",
+    "calories_per_100g": 75.9,
+    "protein_g": 0.7,
+    "carbs_g": 18.0,
+    "fat_g": 0.2
+  },
+  {
+    "id": 551,
+    "name": "Uva Refogado(a)",
+    "calories_per_100g": 89.7,
+    "protein_g": 0.6,
+    "carbs_g": 19.8,
+    "fat_g": 0.5
+  },
+  {
+    "id": 552,
+    "name": "Uva Refogado(a) com Sal",
+    "calories_per_100g": 89.7,
+    "protein_g": 0.6,
+    "carbs_g": 19.8,
+    "fat_g": 0.5
+  },
+  {
+    "id": 553,
+    "name": "Uva Refogado(a) com Açúcar",
+    "calories_per_100g": 125.6,
+    "protein_g": 0.6,
+    "carbs_g": 39.6,
+    "fat_g": 0.5
+  },
+  {
+    "id": 554,
+    "name": "Uva Refogado(a) Temperado(a)",
+    "calories_per_100g": 98.7,
+    "protein_g": 0.6,
+    "carbs_g": 21.8,
+    "fat_g": 0.6
+  },
+  {
+    "id": 555,
+    "name": "Uva Refogado(a) com Azeite",
+    "calories_per_100g": 134.6,
+    "protein_g": 0.6,
+    "carbs_g": 19.8,
+    "fat_g": 1.5
+  },
+  {
+    "id": 556,
+    "name": "Uva Refogado(a) com Queijo",
+    "calories_per_100g": 161.5,
+    "protein_g": 0.9,
+    "carbs_g": 23.8,
+    "fat_g": 1.0
+  },
+  {
+    "id": 557,
+    "name": "Uva Refogado(a) com Molho de Tomate",
+    "calories_per_100g": 107.6,
+    "protein_g": 0.7,
+    "carbs_g": 29.7,
+    "fat_g": 0.6
+  },
+  {
+    "id": 558,
+    "name": "Uva Refogado(a) com Mel",
+    "calories_per_100g": 116.6,
+    "protein_g": 0.6,
+    "carbs_g": 39.6,
+    "fat_g": 0.5
+  },
+  {
+    "id": 559,
+    "name": "Uva Refogado(a) ao Alho",
+    "calories_per_100g": 98.7,
+    "protein_g": 0.6,
+    "carbs_g": 21.8,
+    "fat_g": 0.6
+  },
+  {
+    "id": 560,
+    "name": "Uva Refogado(a) com Ervas",
+    "calories_per_100g": 89.7,
+    "protein_g": 0.6,
+    "carbs_g": 19.8,
+    "fat_g": 0.5
+  },
+  {
+    "id": 561,
+    "name": "Uva Em Conserva",
+    "calories_per_100g": 62.1,
+    "protein_g": 0.6,
+    "carbs_g": 16.2,
+    "fat_g": 0.2
+  },
+  {
+    "id": 562,
+    "name": "Uva Em Conserva com Sal",
+    "calories_per_100g": 62.1,
+    "protein_g": 0.6,
+    "carbs_g": 16.2,
+    "fat_g": 0.2
+  },
+  {
+    "id": 563,
+    "name": "Uva Em Conserva com Açúcar",
+    "calories_per_100g": 86.9,
+    "protein_g": 0.6,
+    "carbs_g": 32.4,
+    "fat_g": 0.2
+  },
+  {
+    "id": 564,
+    "name": "Uva Em Conserva Temperado(a)",
+    "calories_per_100g": 68.3,
+    "protein_g": 0.6,
+    "carbs_g": 17.8,
+    "fat_g": 0.2
+  },
+  {
+    "id": 565,
+    "name": "Uva Em Conserva com Azeite",
+    "calories_per_100g": 93.2,
+    "protein_g": 0.6,
+    "carbs_g": 16.2,
+    "fat_g": 0.5
+  },
+  {
+    "id": 566,
+    "name": "Uva Em Conserva com Queijo",
+    "calories_per_100g": 111.8,
+    "protein_g": 0.8,
+    "carbs_g": 19.4,
+    "fat_g": 0.3
+  },
+  {
+    "id": 567,
+    "name": "Uva Em Conserva com Molho de Tomate",
+    "calories_per_100g": 74.5,
+    "protein_g": 0.6,
+    "carbs_g": 24.3,
+    "fat_g": 0.2
+  },
+  {
+    "id": 568,
+    "name": "Uva Em Conserva com Mel",
+    "calories_per_100g": 80.7,
+    "protein_g": 0.6,
+    "carbs_g": 32.4,
+    "fat_g": 0.2
+  },
+  {
+    "id": 569,
+    "name": "Uva Em Conserva ao Alho",
+    "calories_per_100g": 68.3,
+    "protein_g": 0.6,
+    "carbs_g": 17.8,
+    "fat_g": 0.2
+  },
+  {
+    "id": 570,
+    "name": "Uva Em Conserva com Ervas",
+    "calories_per_100g": 62.1,
+    "protein_g": 0.6,
+    "carbs_g": 16.2,
+    "fat_g": 0.2
+  },
+  {
+    "id": 571,
+    "name": "Uva Desidratado(a)",
+    "calories_per_100g": 207.0,
+    "protein_g": 2.1,
+    "carbs_g": 54.0,
+    "fat_g": 0.6
+  },
+  {
+    "id": 572,
+    "name": "Uva Desidratado(a) com Sal",
+    "calories_per_100g": 207.0,
+    "protein_g": 2.1,
+    "carbs_g": 54.0,
+    "fat_g": 0.6
+  },
+  {
+    "id": 573,
+    "name": "Uva Desidratado(a) com Açúcar",
+    "calories_per_100g": 289.8,
+    "protein_g": 2.1,
+    "carbs_g": 108.0,
+    "fat_g": 0.6
+  },
+  {
+    "id": 574,
+    "name": "Uva Desidratado(a) Temperado(a)",
+    "calories_per_100g": 227.7,
+    "protein_g": 2.1,
+    "carbs_g": 59.4,
+    "fat_g": 0.7
+  },
+  {
+    "id": 575,
+    "name": "Uva Desidratado(a) com Azeite",
+    "calories_per_100g": 310.5,
+    "protein_g": 2.1,
+    "carbs_g": 54.0,
+    "fat_g": 1.8
+  },
+  {
+    "id": 576,
+    "name": "Uva Desidratado(a) com Queijo",
+    "calories_per_100g": 372.6,
+    "protein_g": 3.1,
+    "carbs_g": 64.8,
+    "fat_g": 1.2
+  },
+  {
+    "id": 577,
+    "name": "Uva Desidratado(a) com Molho de Tomate",
+    "calories_per_100g": 248.4,
+    "protein_g": 2.3,
+    "carbs_g": 81.0,
+    "fat_g": 0.7
+  },
+  {
+    "id": 578,
+    "name": "Uva Desidratado(a) com Mel",
+    "calories_per_100g": 269.1,
+    "protein_g": 2.1,
+    "carbs_g": 108.0,
+    "fat_g": 0.6
+  },
+  {
+    "id": 579,
+    "name": "Uva Desidratado(a) ao Alho",
+    "calories_per_100g": 227.7,
+    "protein_g": 2.1,
+    "carbs_g": 59.4,
+    "fat_g": 0.7
+  },
+  {
+    "id": 580,
+    "name": "Uva Desidratado(a) com Ervas",
+    "calories_per_100g": 207.0,
+    "protein_g": 2.1,
+    "carbs_g": 54.0,
+    "fat_g": 0.6
+  },
+  {
+    "id": 581,
+    "name": "Uva Em Pó",
+    "calories_per_100g": 276.0,
+    "protein_g": 2.8,
+    "carbs_g": 72.0,
+    "fat_g": 0.8
+  },
+  {
+    "id": 582,
+    "name": "Uva Em Pó com Sal",
+    "calories_per_100g": 276.0,
+    "protein_g": 2.8,
+    "carbs_g": 72.0,
+    "fat_g": 0.8
+  },
+  {
+    "id": 583,
+    "name": "Uva Em Pó com Açúcar",
+    "calories_per_100g": 386.4,
+    "protein_g": 2.8,
+    "carbs_g": 144.0,
+    "fat_g": 0.8
+  },
+  {
+    "id": 584,
+    "name": "Uva Em Pó Temperado(a)",
+    "calories_per_100g": 303.6,
+    "protein_g": 2.8,
+    "carbs_g": 79.2,
+    "fat_g": 1.0
+  },
+  {
+    "id": 585,
+    "name": "Uva Em Pó com Azeite",
+    "calories_per_100g": 414.0,
+    "protein_g": 2.8,
+    "carbs_g": 72.0,
+    "fat_g": 2.4
+  },
+  {
+    "id": 586,
+    "name": "Uva Em Pó com Queijo",
+    "calories_per_100g": 496.8,
+    "protein_g": 4.2,
+    "carbs_g": 86.4,
+    "fat_g": 1.6
+  },
+  {
+    "id": 587,
+    "name": "Uva Em Pó com Molho de Tomate",
+    "calories_per_100g": 331.2,
+    "protein_g": 3.1,
+    "carbs_g": 108.0,
+    "fat_g": 0.9
+  },
+  {
+    "id": 588,
+    "name": "Uva Em Pó com Mel",
+    "calories_per_100g": 358.8,
+    "protein_g": 2.8,
+    "carbs_g": 144.0,
+    "fat_g": 0.8
+  },
+  {
+    "id": 589,
+    "name": "Uva Em Pó ao Alho",
+    "calories_per_100g": 303.6,
+    "protein_g": 2.8,
+    "carbs_g": 79.2,
+    "fat_g": 1.0
+  },
+  {
+    "id": 590,
+    "name": "Uva Em Pó com Ervas",
+    "calories_per_100g": 276.0,
+    "protein_g": 2.8,
+    "carbs_g": 72.0,
+    "fat_g": 0.8
+  },
+  {
+    "id": 591,
+    "name": "Pasta de Uva",
+    "calories_per_100g": 241.5,
+    "protein_g": 1.0,
+    "carbs_g": 21.6,
+    "fat_g": 1.2
+  },
+  {
+    "id": 592,
+    "name": "Pasta de Uva com Sal",
+    "calories_per_100g": 241.5,
+    "protein_g": 1.0,
+    "carbs_g": 21.6,
+    "fat_g": 1.2
+  },
+  {
+    "id": 593,
+    "name": "Pasta de Uva com Açúcar",
+    "calories_per_100g": 338.1,
+    "protein_g": 1.0,
+    "carbs_g": 43.2,
+    "fat_g": 1.2
+  },
+  {
+    "id": 594,
+    "name": "Pasta de Uva Temperado(a)",
+    "calories_per_100g": 265.7,
+    "protein_g": 1.0,
+    "carbs_g": 23.8,
+    "fat_g": 1.4
+  },
+  {
+    "id": 595,
+    "name": "Pasta de Uva com Azeite",
+    "calories_per_100g": 362.2,
+    "protein_g": 1.0,
+    "carbs_g": 21.6,
+    "fat_g": 3.6
+  },
+  {
+    "id": 596,
+    "name": "Pasta de Uva com Queijo",
+    "calories_per_100g": 434.7,
+    "protein_g": 1.6,
+    "carbs_g": 25.9,
+    "fat_g": 2.4
+  },
+  {
+    "id": 597,
+    "name": "Pasta de Uva com Molho de Tomate",
+    "calories_per_100g": 289.8,
+    "protein_g": 1.2,
+    "carbs_g": 32.4,
+    "fat_g": 1.3
+  },
+  {
+    "id": 598,
+    "name": "Pasta de Uva com Mel",
+    "calories_per_100g": 313.9,
+    "protein_g": 1.0,
+    "carbs_g": 43.2,
+    "fat_g": 1.2
+  },
+  {
+    "id": 599,
+    "name": "Pasta de Uva ao Alho",
+    "calories_per_100g": 265.7,
+    "protein_g": 1.0,
+    "carbs_g": 23.8,
+    "fat_g": 1.4
+  },
+  {
+    "id": 600,
+    "name": "Pasta de Uva com Ervas",
+    "calories_per_100g": 241.5,
+    "protein_g": 1.0,
+    "carbs_g": 21.6,
+    "fat_g": 1.2
+  },
+  {
+    "id": 601,
+    "name": "Manga",
+    "calories_per_100g": 60.0,
+    "protein_g": 0.8,
+    "carbs_g": 15.0,
+    "fat_g": 0.4
+  },
+  {
+    "id": 602,
+    "name": "Manga com Sal",
+    "calories_per_100g": 60.0,
+    "protein_g": 0.8,
+    "carbs_g": 15.0,
+    "fat_g": 0.4
+  },
+  {
+    "id": 603,
+    "name": "Manga com Açúcar",
+    "calories_per_100g": 84.0,
+    "protein_g": 0.8,
+    "carbs_g": 30.0,
+    "fat_g": 0.4
+  },
+  {
+    "id": 604,
+    "name": "Manga Temperado(a)",
+    "calories_per_100g": 66.0,
+    "protein_g": 0.8,
+    "carbs_g": 16.5,
+    "fat_g": 0.5
+  },
+  {
+    "id": 605,
+    "name": "Manga com Azeite",
+    "calories_per_100g": 90.0,
+    "protein_g": 0.8,
+    "carbs_g": 15.0,
+    "fat_g": 1.2
+  },
+  {
+    "id": 606,
+    "name": "Manga com Queijo",
+    "calories_per_100g": 108.0,
+    "protein_g": 1.2,
+    "carbs_g": 18.0,
+    "fat_g": 0.8
+  },
+  {
+    "id": 607,
+    "name": "Manga com Molho de Tomate",
+    "calories_per_100g": 72.0,
+    "protein_g": 0.9,
+    "carbs_g": 22.5,
+    "fat_g": 0.4
+  },
+  {
+    "id": 608,
+    "name": "Manga com Mel",
+    "calories_per_100g": 78.0,
+    "protein_g": 0.8,
+    "carbs_g": 30.0,
+    "fat_g": 0.4
+  },
+  {
+    "id": 609,
+    "name": "Manga ao Alho",
+    "calories_per_100g": 66.0,
+    "protein_g": 0.8,
+    "carbs_g": 16.5,
+    "fat_g": 0.5
+  },
+  {
+    "id": 610,
+    "name": "Manga com Ervas",
+    "calories_per_100g": 60.0,
+    "protein_g": 0.8,
+    "carbs_g": 15.0,
+    "fat_g": 0.4
+  },
+  {
+    "id": 611,
+    "name": "Manga Cozido(a)",
+    "calories_per_100g": 48.0,
+    "protein_g": 0.7,
+    "carbs_g": 12.0,
+    "fat_g": 0.4
+  },
+  {
+    "id": 612,
+    "name": "Manga Cozido(a) com Sal",
+    "calories_per_100g": 48.0,
+    "protein_g": 0.7,
+    "carbs_g": 12.0,
+    "fat_g": 0.4
+  },
+  {
+    "id": 613,
+    "name": "Manga Cozido(a) com Açúcar",
+    "calories_per_100g": 67.2,
+    "protein_g": 0.7,
+    "carbs_g": 24.0,
+    "fat_g": 0.4
+  },
+  {
+    "id": 614,
+    "name": "Manga Cozido(a) Temperado(a)",
+    "calories_per_100g": 52.8,
+    "protein_g": 0.7,
+    "carbs_g": 13.2,
+    "fat_g": 0.4
+  },
+  {
+    "id": 615,
+    "name": "Manga Cozido(a) com Azeite",
+    "calories_per_100g": 72.0,
+    "protein_g": 0.7,
+    "carbs_g": 12.0,
+    "fat_g": 1.1
+  },
+  {
+    "id": 616,
+    "name": "Manga Cozido(a) com Queijo",
+    "calories_per_100g": 86.4,
+    "protein_g": 1.1,
+    "carbs_g": 14.4,
+    "fat_g": 0.7
+  },
+  {
+    "id": 617,
+    "name": "Manga Cozido(a) com Molho de Tomate",
+    "calories_per_100g": 57.6,
+    "protein_g": 0.8,
+    "carbs_g": 18.0,
+    "fat_g": 0.4
+  },
+  {
+    "id": 618,
+    "name": "Manga Cozido(a) com Mel",
+    "calories_per_100g": 62.4,
+    "protein_g": 0.7,
+    "carbs_g": 24.0,
+    "fat_g": 0.4
+  },
+  {
+    "id": 619,
+    "name": "Manga Cozido(a) ao Alho",
+    "calories_per_100g": 52.8,
+    "protein_g": 0.7,
+    "carbs_g": 13.2,
+    "fat_g": 0.4
+  },
+  {
+    "id": 620,
+    "name": "Manga Cozido(a) com Ervas",
+    "calories_per_100g": 48.0,
+    "protein_g": 0.7,
+    "carbs_g": 12.0,
+    "fat_g": 0.4
+  },
+  {
+    "id": 621,
+    "name": "Manga Assado(a)",
+    "calories_per_100g": 72.0,
+    "protein_g": 0.8,
+    "carbs_g": 16.5,
+    "fat_g": 0.4
+  },
+  {
+    "id": 622,
+    "name": "Manga Assado(a) com Sal",
+    "calories_per_100g": 72.0,
+    "protein_g": 0.8,
+    "carbs_g": 16.5,
+    "fat_g": 0.4
+  },
+  {
+    "id": 623,
+    "name": "Manga Assado(a) com Açúcar",
+    "calories_per_100g": 100.8,
+    "protein_g": 0.8,
+    "carbs_g": 33.0,
+    "fat_g": 0.4
+  },
+  {
+    "id": 624,
+    "name": "Manga Assado(a) Temperado(a)",
+    "calories_per_100g": 79.2,
+    "protein_g": 0.8,
+    "carbs_g": 18.2,
+    "fat_g": 0.5
+  },
+  {
+    "id": 625,
+    "name": "Manga Assado(a) com Azeite",
+    "calories_per_100g": 108.0,
+    "protein_g": 0.8,
+    "carbs_g": 16.5,
+    "fat_g": 1.2
+  },
+  {
+    "id": 626,
+    "name": "Manga Assado(a) com Queijo",
+    "calories_per_100g": 129.6,
+    "protein_g": 1.2,
+    "carbs_g": 19.8,
+    "fat_g": 0.8
+  },
+  {
+    "id": 627,
+    "name": "Manga Assado(a) com Molho de Tomate",
+    "calories_per_100g": 86.4,
+    "protein_g": 0.9,
+    "carbs_g": 24.8,
+    "fat_g": 0.4
+  },
+  {
+    "id": 628,
+    "name": "Manga Assado(a) com Mel",
+    "calories_per_100g": 93.6,
+    "protein_g": 0.8,
+    "carbs_g": 33.0,
+    "fat_g": 0.4
+  },
+  {
+    "id": 629,
+    "name": "Manga Assado(a) ao Alho",
+    "calories_per_100g": 79.2,
+    "protein_g": 0.8,
+    "carbs_g": 18.2,
+    "fat_g": 0.5
+  },
+  {
+    "id": 630,
+    "name": "Manga Assado(a) com Ervas",
+    "calories_per_100g": 72.0,
+    "protein_g": 0.8,
+    "carbs_g": 16.5,
+    "fat_g": 0.4
+  },
+  {
+    "id": 631,
+    "name": "Manga Frito(a)",
+    "calories_per_100g": 120.0,
+    "protein_g": 0.7,
+    "carbs_g": 22.5,
+    "fat_g": 2.0
+  },
+  {
+    "id": 632,
+    "name": "Manga Frito(a) com Sal",
+    "calories_per_100g": 120.0,
+    "protein_g": 0.7,
+    "carbs_g": 22.5,
+    "fat_g": 2.0
+  },
+  {
+    "id": 633,
+    "name": "Manga Frito(a) com Açúcar",
+    "calories_per_100g": 168.0,
+    "protein_g": 0.7,
+    "carbs_g": 45.0,
+    "fat_g": 2.0
+  },
+  {
+    "id": 634,
+    "name": "Manga Frito(a) Temperado(a)",
+    "calories_per_100g": 132.0,
+    "protein_g": 0.7,
+    "carbs_g": 24.8,
+    "fat_g": 2.4
+  },
+  {
+    "id": 635,
+    "name": "Manga Frito(a) com Azeite",
+    "calories_per_100g": 180.0,
+    "protein_g": 0.7,
+    "carbs_g": 22.5,
+    "fat_g": 6.0
+  },
+  {
+    "id": 636,
+    "name": "Manga Frito(a) com Queijo",
+    "calories_per_100g": 216.0,
+    "protein_g": 1.1,
+    "carbs_g": 27.0,
+    "fat_g": 4.0
+  },
+  {
+    "id": 637,
+    "name": "Manga Frito(a) com Molho de Tomate",
+    "calories_per_100g": 144.0,
+    "protein_g": 0.8,
+    "carbs_g": 33.8,
+    "fat_g": 2.2
+  },
+  {
+    "id": 638,
+    "name": "Manga Frito(a) com Mel",
+    "calories_per_100g": 156.0,
+    "protein_g": 0.7,
+    "carbs_g": 45.0,
+    "fat_g": 2.0
+  },
+  {
+    "id": 639,
+    "name": "Manga Frito(a) ao Alho",
+    "calories_per_100g": 132.0,
+    "protein_g": 0.7,
+    "carbs_g": 24.8,
+    "fat_g": 2.4
+  },
+  {
+    "id": 640,
+    "name": "Manga Frito(a) com Ervas",
+    "calories_per_100g": 120.0,
+    "protein_g": 0.7,
+    "carbs_g": 22.5,
+    "fat_g": 2.0
+  },
+  {
+    "id": 641,
+    "name": "Manga Grelhado(a)",
+    "calories_per_100g": 66.0,
+    "protein_g": 0.8,
+    "carbs_g": 15.0,
+    "fat_g": 0.5
+  },
+  {
+    "id": 642,
+    "name": "Manga Grelhado(a) com Sal",
+    "calories_per_100g": 66.0,
+    "protein_g": 0.8,
+    "carbs_g": 15.0,
+    "fat_g": 0.5
+  },
+  {
+    "id": 643,
+    "name": "Manga Grelhado(a) com Açúcar",
+    "calories_per_100g": 92.4,
+    "protein_g": 0.8,
+    "carbs_g": 30.0,
+    "fat_g": 0.5
+  },
+  {
+    "id": 644,
+    "name": "Manga Grelhado(a) Temperado(a)",
+    "calories_per_100g": 72.6,
+    "protein_g": 0.8,
+    "carbs_g": 16.5,
+    "fat_g": 0.6
+  },
+  {
+    "id": 645,
+    "name": "Manga Grelhado(a) com Azeite",
+    "calories_per_100g": 99.0,
+    "protein_g": 0.8,
+    "carbs_g": 15.0,
+    "fat_g": 1.4
+  },
+  {
+    "id": 646,
+    "name": "Manga Grelhado(a) com Queijo",
+    "calories_per_100g": 118.8,
+    "protein_g": 1.2,
+    "carbs_g": 18.0,
+    "fat_g": 1.0
+  },
+  {
+    "id": 647,
+    "name": "Manga Grelhado(a) com Molho de Tomate",
+    "calories_per_100g": 79.2,
+    "protein_g": 0.9,
+    "carbs_g": 22.5,
+    "fat_g": 0.5
+  },
+  {
+    "id": 648,
+    "name": "Manga Grelhado(a) com Mel",
+    "calories_per_100g": 85.8,
+    "protein_g": 0.8,
+    "carbs_g": 30.0,
+    "fat_g": 0.5
+  },
+  {
+    "id": 649,
+    "name": "Manga Grelhado(a) ao Alho",
+    "calories_per_100g": 72.6,
+    "protein_g": 0.8,
+    "carbs_g": 16.5,
+    "fat_g": 0.6
+  },
+  {
+    "id": 650,
+    "name": "Manga Grelhado(a) com Ervas",
+    "calories_per_100g": 66.0,
+    "protein_g": 0.8,
+    "carbs_g": 15.0,
+    "fat_g": 0.5
+  },
+  {
+    "id": 651,
+    "name": "Manga Refogado(a)",
+    "calories_per_100g": 78.0,
+    "protein_g": 0.7,
+    "carbs_g": 16.5,
+    "fat_g": 1.0
+  },
+  {
+    "id": 652,
+    "name": "Manga Refogado(a) com Sal",
+    "calories_per_100g": 78.0,
+    "protein_g": 0.7,
+    "carbs_g": 16.5,
+    "fat_g": 1.0
+  },
+  {
+    "id": 653,
+    "name": "Manga Refogado(a) com Açúcar",
+    "calories_per_100g": 109.2,
+    "protein_g": 0.7,
+    "carbs_g": 33.0,
+    "fat_g": 1.0
+  },
+  {
+    "id": 654,
+    "name": "Manga Refogado(a) Temperado(a)",
+    "calories_per_100g": 85.8,
+    "protein_g": 0.7,
+    "carbs_g": 18.2,
+    "fat_g": 1.2
+  },
+  {
+    "id": 655,
+    "name": "Manga Refogado(a) com Azeite",
+    "calories_per_100g": 117.0,
+    "protein_g": 0.7,
+    "carbs_g": 16.5,
+    "fat_g": 3.0
+  },
+  {
+    "id": 656,
+    "name": "Manga Refogado(a) com Queijo",
+    "calories_per_100g": 140.4,
+    "protein_g": 1.1,
+    "carbs_g": 19.8,
+    "fat_g": 2.0
+  },
+  {
+    "id": 657,
+    "name": "Manga Refogado(a) com Molho de Tomate",
+    "calories_per_100g": 93.6,
+    "protein_g": 0.8,
+    "carbs_g": 24.8,
+    "fat_g": 1.1
+  },
+  {
+    "id": 658,
+    "name": "Manga Refogado(a) com Mel",
+    "calories_per_100g": 101.4,
+    "protein_g": 0.7,
+    "carbs_g": 33.0,
+    "fat_g": 1.0
+  },
+  {
+    "id": 659,
+    "name": "Manga Refogado(a) ao Alho",
+    "calories_per_100g": 85.8,
+    "protein_g": 0.7,
+    "carbs_g": 18.2,
+    "fat_g": 1.2
+  },
+  {
+    "id": 660,
+    "name": "Manga Refogado(a) com Ervas",
+    "calories_per_100g": 78.0,
+    "protein_g": 0.7,
+    "carbs_g": 16.5,
+    "fat_g": 1.0
+  },
+  {
+    "id": 661,
+    "name": "Manga Em Conserva",
+    "calories_per_100g": 54.0,
+    "protein_g": 0.6,
+    "carbs_g": 13.5,
+    "fat_g": 0.3
+  },
+  {
+    "id": 662,
+    "name": "Manga Em Conserva com Sal",
+    "calories_per_100g": 54.0,
+    "protein_g": 0.6,
+    "carbs_g": 13.5,
+    "fat_g": 0.3
+  },
+  {
+    "id": 663,
+    "name": "Manga Em Conserva com Açúcar",
+    "calories_per_100g": 75.6,
+    "protein_g": 0.6,
+    "carbs_g": 27.0,
+    "fat_g": 0.3
+  },
+  {
+    "id": 664,
+    "name": "Manga Em Conserva Temperado(a)",
+    "calories_per_100g": 59.4,
+    "protein_g": 0.6,
+    "carbs_g": 14.9,
+    "fat_g": 0.4
+  },
+  {
+    "id": 665,
+    "name": "Manga Em Conserva com Azeite",
+    "calories_per_100g": 81.0,
+    "protein_g": 0.6,
+    "carbs_g": 13.5,
+    "fat_g": 1.0
+  },
+  {
+    "id": 666,
+    "name": "Manga Em Conserva com Queijo",
+    "calories_per_100g": 97.2,
+    "protein_g": 1.0,
+    "carbs_g": 16.2,
+    "fat_g": 0.6
+  },
+  {
+    "id": 667,
+    "name": "Manga Em Conserva com Molho de Tomate",
+    "calories_per_100g": 64.8,
+    "protein_g": 0.7,
+    "carbs_g": 20.2,
+    "fat_g": 0.4
+  },
+  {
+    "id": 668,
+    "name": "Manga Em Conserva com Mel",
+    "calories_per_100g": 70.2,
+    "protein_g": 0.6,
+    "carbs_g": 27.0,
+    "fat_g": 0.3
+  },
+  {
+    "id": 669,
+    "name": "Manga Em Conserva ao Alho",
+    "calories_per_100g": 59.4,
+    "protein_g": 0.6,
+    "carbs_g": 14.9,
+    "fat_g": 0.4
+  },
+  {
+    "id": 670,
+    "name": "Manga Em Conserva com Ervas",
+    "calories_per_100g": 54.0,
+    "protein_g": 0.6,
+    "carbs_g": 13.5,
+    "fat_g": 0.3
+  },
+  {
+    "id": 671,
+    "name": "Manga Desidratado(a)",
+    "calories_per_100g": 180.0,
+    "protein_g": 2.4,
+    "carbs_g": 45.0,
+    "fat_g": 1.2
+  },
+  {
+    "id": 672,
+    "name": "Manga Desidratado(a) com Sal",
+    "calories_per_100g": 180.0,
+    "protein_g": 2.4,
+    "carbs_g": 45.0,
+    "fat_g": 1.2
+  },
+  {
+    "id": 673,
+    "name": "Manga Desidratado(a) com Açúcar",
+    "calories_per_100g": 252.0,
+    "protein_g": 2.4,
+    "carbs_g": 90.0,
+    "fat_g": 1.2
+  },
+  {
+    "id": 674,
+    "name": "Manga Desidratado(a) Temperado(a)",
+    "calories_per_100g": 198.0,
+    "protein_g": 2.4,
+    "carbs_g": 49.5,
+    "fat_g": 1.4
+  },
+  {
+    "id": 675,
+    "name": "Manga Desidratado(a) com Azeite",
+    "calories_per_100g": 270.0,
+    "protein_g": 2.4,
+    "carbs_g": 45.0,
+    "fat_g": 3.6
+  },
+  {
+    "id": 676,
+    "name": "Manga Desidratado(a) com Queijo",
+    "calories_per_100g": 324.0,
+    "protein_g": 3.6,
+    "carbs_g": 54.0,
+    "fat_g": 2.4
+  },
+  {
+    "id": 677,
+    "name": "Manga Desidratado(a) com Molho de Tomate",
+    "calories_per_100g": 216.0,
+    "protein_g": 2.6,
+    "carbs_g": 67.5,
+    "fat_g": 1.3
+  },
+  {
+    "id": 678,
+    "name": "Manga Desidratado(a) com Mel",
+    "calories_per_100g": 234.0,
+    "protein_g": 2.4,
+    "carbs_g": 90.0,
+    "fat_g": 1.2
+  },
+  {
+    "id": 679,
+    "name": "Manga Desidratado(a) ao Alho",
+    "calories_per_100g": 198.0,
+    "protein_g": 2.4,
+    "carbs_g": 49.5,
+    "fat_g": 1.4
+  },
+  {
+    "id": 680,
+    "name": "Manga Desidratado(a) com Ervas",
+    "calories_per_100g": 180.0,
+    "protein_g": 2.4,
+    "carbs_g": 45.0,
+    "fat_g": 1.2
+  },
+  {
+    "id": 681,
+    "name": "Manga Em Pó",
+    "calories_per_100g": 240.0,
+    "protein_g": 3.2,
+    "carbs_g": 60.0,
+    "fat_g": 1.6
+  },
+  {
+    "id": 682,
+    "name": "Manga Em Pó com Sal",
+    "calories_per_100g": 240.0,
+    "protein_g": 3.2,
+    "carbs_g": 60.0,
+    "fat_g": 1.6
+  },
+  {
+    "id": 683,
+    "name": "Manga Em Pó com Açúcar",
+    "calories_per_100g": 336.0,
+    "protein_g": 3.2,
+    "carbs_g": 120.0,
+    "fat_g": 1.6
+  },
+  {
+    "id": 684,
+    "name": "Manga Em Pó Temperado(a)",
+    "calories_per_100g": 264.0,
+    "protein_g": 3.2,
+    "carbs_g": 66.0,
+    "fat_g": 1.9
+  },
+  {
+    "id": 685,
+    "name": "Manga Em Pó com Azeite",
+    "calories_per_100g": 360.0,
+    "protein_g": 3.2,
+    "carbs_g": 60.0,
+    "fat_g": 4.8
+  },
+  {
+    "id": 686,
+    "name": "Manga Em Pó com Queijo",
+    "calories_per_100g": 432.0,
+    "protein_g": 4.8,
+    "carbs_g": 72.0,
+    "fat_g": 3.2
+  },
+  {
+    "id": 687,
+    "name": "Manga Em Pó com Molho de Tomate",
+    "calories_per_100g": 288.0,
+    "protein_g": 3.5,
+    "carbs_g": 90.0,
+    "fat_g": 1.8
+  },
+  {
+    "id": 688,
+    "name": "Manga Em Pó com Mel",
+    "calories_per_100g": 312.0,
+    "protein_g": 3.2,
+    "carbs_g": 120.0,
+    "fat_g": 1.6
+  },
+  {
+    "id": 689,
+    "name": "Manga Em Pó ao Alho",
+    "calories_per_100g": 264.0,
+    "protein_g": 3.2,
+    "carbs_g": 66.0,
+    "fat_g": 1.9
+  },
+  {
+    "id": 690,
+    "name": "Manga Em Pó com Ervas",
+    "calories_per_100g": 240.0,
+    "protein_g": 3.2,
+    "carbs_g": 60.0,
+    "fat_g": 1.6
+  },
+  {
+    "id": 691,
+    "name": "Pasta de Manga",
+    "calories_per_100g": 210.0,
+    "protein_g": 1.2,
+    "carbs_g": 18.0,
+    "fat_g": 2.4
+  },
+  {
+    "id": 692,
+    "name": "Pasta de Manga com Sal",
+    "calories_per_100g": 210.0,
+    "protein_g": 1.2,
+    "carbs_g": 18.0,
+    "fat_g": 2.4
+  },
+  {
+    "id": 693,
+    "name": "Pasta de Manga com Açúcar",
+    "calories_per_100g": 294.0,
+    "protein_g": 1.2,
+    "carbs_g": 36.0,
+    "fat_g": 2.4
+  },
+  {
+    "id": 694,
+    "name": "Pasta de Manga Temperado(a)",
+    "calories_per_100g": 231.0,
+    "protein_g": 1.2,
+    "carbs_g": 19.8,
+    "fat_g": 2.9
+  },
+  {
+    "id": 695,
+    "name": "Pasta de Manga com Azeite",
+    "calories_per_100g": 315.0,
+    "protein_g": 1.2,
+    "carbs_g": 18.0,
+    "fat_g": 7.2
+  },
+  {
+    "id": 696,
+    "name": "Pasta de Manga com Queijo",
+    "calories_per_100g": 378.0,
+    "protein_g": 1.8,
+    "carbs_g": 21.6,
+    "fat_g": 4.8
+  },
+  {
+    "id": 697,
+    "name": "Pasta de Manga com Molho de Tomate",
+    "calories_per_100g": 252.0,
+    "protein_g": 1.3,
+    "carbs_g": 27.0,
+    "fat_g": 2.6
+  },
+  {
+    "id": 698,
+    "name": "Pasta de Manga com Mel",
+    "calories_per_100g": 273.0,
+    "protein_g": 1.2,
+    "carbs_g": 36.0,
+    "fat_g": 2.4
+  },
+  {
+    "id": 699,
+    "name": "Pasta de Manga ao Alho",
+    "calories_per_100g": 231.0,
+    "protein_g": 1.2,
+    "carbs_g": 19.8,
+    "fat_g": 2.9
+  },
+  {
+    "id": 700,
+    "name": "Pasta de Manga com Ervas",
+    "calories_per_100g": 210.0,
+    "protein_g": 1.2,
+    "carbs_g": 18.0,
+    "fat_g": 2.4
+  },
+  {
+    "id": 701,
+    "name": "Abacate",
+    "calories_per_100g": 160.0,
+    "protein_g": 2.0,
+    "carbs_g": 8.5,
+    "fat_g": 15.0
+  },
+  {
+    "id": 702,
+    "name": "Abacate com Sal",
+    "calories_per_100g": 160.0,
+    "protein_g": 2.0,
+    "carbs_g": 8.5,
+    "fat_g": 15.0
+  },
+  {
+    "id": 703,
+    "name": "Abacate com Açúcar",
+    "calories_per_100g": 224.0,
+    "protein_g": 2.0,
+    "carbs_g": 17.0,
+    "fat_g": 15.0
+  },
+  {
+    "id": 704,
+    "name": "Abacate Temperado(a)",
+    "calories_per_100g": 176.0,
+    "protein_g": 2.0,
+    "carbs_g": 9.4,
+    "fat_g": 18.0
+  },
+  {
+    "id": 705,
+    "name": "Abacate com Azeite",
+    "calories_per_100g": 240.0,
+    "protein_g": 2.0,
+    "carbs_g": 8.5,
+    "fat_g": 45.0
+  },
+  {
+    "id": 706,
+    "name": "Abacate com Queijo",
+    "calories_per_100g": 288.0,
+    "protein_g": 3.0,
+    "carbs_g": 10.2,
+    "fat_g": 30.0
+  },
+  {
+    "id": 707,
+    "name": "Abacate com Molho de Tomate",
+    "calories_per_100g": 192.0,
+    "protein_g": 2.2,
+    "carbs_g": 12.8,
+    "fat_g": 16.5
+  },
+  {
+    "id": 708,
+    "name": "Abacate com Mel",
+    "calories_per_100g": 208.0,
+    "protein_g": 2.0,
+    "carbs_g": 17.0,
+    "fat_g": 15.0
+  },
+  {
+    "id": 709,
+    "name": "Abacate ao Alho",
+    "calories_per_100g": 176.0,
+    "protein_g": 2.0,
+    "carbs_g": 9.4,
+    "fat_g": 18.0
+  },
+  {
+    "id": 710,
+    "name": "Abacate com Ervas",
+    "calories_per_100g": 160.0,
+    "protein_g": 2.0,
+    "carbs_g": 8.5,
+    "fat_g": 15.0
+  },
+  {
+    "id": 711,
+    "name": "Abacate Cozido(a)",
+    "calories_per_100g": 128.0,
+    "protein_g": 1.8,
+    "carbs_g": 6.8,
+    "fat_g": 13.5
+  },
+  {
+    "id": 712,
+    "name": "Abacate Cozido(a) com Sal",
+    "calories_per_100g": 128.0,
+    "protein_g": 1.8,
+    "carbs_g": 6.8,
+    "fat_g": 13.5
+  },
+  {
+    "id": 713,
+    "name": "Abacate Cozido(a) com Açúcar",
+    "calories_per_100g": 179.2,
+    "protein_g": 1.8,
+    "carbs_g": 13.6,
+    "fat_g": 13.5
+  },
+  {
+    "id": 714,
+    "name": "Abacate Cozido(a) Temperado(a)",
+    "calories_per_100g": 140.8,
+    "protein_g": 1.8,
+    "carbs_g": 7.5,
+    "fat_g": 16.2
+  },
+  {
+    "id": 715,
+    "name": "Abacate Cozido(a) com Azeite",
+    "calories_per_100g": 192.0,
+    "protein_g": 1.8,
+    "carbs_g": 6.8,
+    "fat_g": 40.5
+  },
+  {
+    "id": 716,
+    "name": "Abacate Cozido(a) com Queijo",
+    "calories_per_100g": 230.4,
+    "protein_g": 2.7,
+    "carbs_g": 8.2,
+    "fat_g": 27.0
+  },
+  {
+    "id": 717,
+    "name": "Abacate Cozido(a) com Molho de Tomate",
+    "calories_per_100g": 153.6,
+    "protein_g": 2.0,
+    "carbs_g": 10.2,
+    "fat_g": 14.9
+  },
+  {
+    "id": 718,
+    "name": "Abacate Cozido(a) com Mel",
+    "calories_per_100g": 166.4,
+    "protein_g": 1.8,
+    "carbs_g": 13.6,
+    "fat_g": 13.5
+  },
+  {
+    "id": 719,
+    "name": "Abacate Cozido(a) ao Alho",
+    "calories_per_100g": 140.8,
+    "protein_g": 1.8,
+    "carbs_g": 7.5,
+    "fat_g": 16.2
+  },
+  {
+    "id": 720,
+    "name": "Abacate Cozido(a) com Ervas",
+    "calories_per_100g": 128.0,
+    "protein_g": 1.8,
+    "carbs_g": 6.8,
+    "fat_g": 13.5
+  },
+  {
+    "id": 721,
+    "name": "Abacate Assado(a)",
+    "calories_per_100g": 192.0,
+    "protein_g": 2.0,
+    "carbs_g": 9.4,
+    "fat_g": 15.0
+  },
+  {
+    "id": 722,
+    "name": "Abacate Assado(a) com Sal",
+    "calories_per_100g": 192.0,
+    "protein_g": 2.0,
+    "carbs_g": 9.4,
+    "fat_g": 15.0
+  },
+  {
+    "id": 723,
+    "name": "Abacate Assado(a) com Açúcar",
+    "calories_per_100g": 268.8,
+    "protein_g": 2.0,
+    "carbs_g": 18.7,
+    "fat_g": 15.0
+  },
+  {
+    "id": 724,
+    "name": "Abacate Assado(a) Temperado(a)",
+    "calories_per_100g": 211.2,
+    "protein_g": 2.0,
+    "carbs_g": 10.3,
+    "fat_g": 18.0
+  },
+  {
+    "id": 725,
+    "name": "Abacate Assado(a) com Azeite",
+    "calories_per_100g": 288.0,
+    "protein_g": 2.0,
+    "carbs_g": 9.4,
+    "fat_g": 45.0
+  },
+  {
+    "id": 726,
+    "name": "Abacate Assado(a) com Queijo",
+    "calories_per_100g": 345.6,
+    "protein_g": 3.0,
+    "carbs_g": 11.2,
+    "fat_g": 30.0
+  },
+  {
+    "id": 727,
+    "name": "Abacate Assado(a) com Molho de Tomate",
+    "calories_per_100g": 230.4,
+    "protein_g": 2.2,
+    "carbs_g": 14.0,
+    "fat_g": 16.5
+  },
+  {
+    "id": 728,
+    "name": "Abacate Assado(a) com Mel",
+    "calories_per_100g": 249.6,
+    "protein_g": 2.0,
+    "carbs_g": 18.7,
+    "fat_g": 15.0
+  },
+  {
+    "id": 729,
+    "name": "Abacate Assado(a) ao Alho",
+    "calories_per_100g": 211.2,
+    "protein_g": 2.0,
+    "carbs_g": 10.3,
+    "fat_g": 18.0
+  },
+  {
+    "id": 730,
+    "name": "Abacate Assado(a) com Ervas",
+    "calories_per_100g": 192.0,
+    "protein_g": 2.0,
+    "carbs_g": 9.4,
+    "fat_g": 15.0
+  },
+  {
+    "id": 731,
+    "name": "Abacate Frito(a)",
+    "calories_per_100g": 320.0,
+    "protein_g": 1.8,
+    "carbs_g": 12.8,
+    "fat_g": 75.0
+  },
+  {
+    "id": 732,
+    "name": "Abacate Frito(a) com Sal",
+    "calories_per_100g": 320.0,
+    "protein_g": 1.8,
+    "carbs_g": 12.8,
+    "fat_g": 75.0
+  },
+  {
+    "id": 733,
+    "name": "Abacate Frito(a) com Açúcar",
+    "calories_per_100g": 448.0,
+    "protein_g": 1.8,
+    "carbs_g": 25.5,
+    "fat_g": 75.0
+  },
+  {
+    "id": 734,
+    "name": "Abacate Frito(a) Temperado(a)",
+    "calories_per_100g": 352.0,
+    "protein_g": 1.8,
+    "carbs_g": 14.0,
+    "fat_g": 90.0
+  },
+  {
+    "id": 735,
+    "name": "Abacate Frito(a) com Azeite",
+    "calories_per_100g": 480.0,
+    "protein_g": 1.8,
+    "carbs_g": 12.8,
+    "fat_g": 225.0
+  },
+  {
+    "id": 736,
+    "name": "Abacate Frito(a) com Queijo",
+    "calories_per_100g": 576.0,
+    "protein_g": 2.7,
+    "carbs_g": 15.3,
+    "fat_g": 150.0
+  },
+  {
+    "id": 737,
+    "name": "Abacate Frito(a) com Molho de Tomate",
+    "calories_per_100g": 384.0,
+    "protein_g": 2.0,
+    "carbs_g": 19.1,
+    "fat_g": 82.5
+  },
+  {
+    "id": 738,
+    "name": "Abacate Frito(a) com Mel",
+    "calories_per_100g": 416.0,
+    "protein_g": 1.8,
+    "carbs_g": 25.5,
+    "fat_g": 75.0
+  },
+  {
+    "id": 739,
+    "name": "Abacate Frito(a) ao Alho",
+    "calories_per_100g": 352.0,
+    "protein_g": 1.8,
+    "carbs_g": 14.0,
+    "fat_g": 90.0
+  },
+  {
+    "id": 740,
+    "name": "Abacate Frito(a) com Ervas",
+    "calories_per_100g": 320.0,
+    "protein_g": 1.8,
+    "carbs_g": 12.8,
+    "fat_g": 75.0
+  },
+  {
+    "id": 741,
+    "name": "Abacate Grelhado(a)",
+    "calories_per_100g": 176.0,
+    "protein_g": 2.0,
+    "carbs_g": 8.5,
+    "fat_g": 18.0
+  },
+  {
+    "id": 742,
+    "name": "Abacate Grelhado(a) com Sal",
+    "calories_per_100g": 176.0,
+    "protein_g": 2.0,
+    "carbs_g": 8.5,
+    "fat_g": 18.0
+  },
+  {
+    "id": 743,
+    "name": "Abacate Grelhado(a) com Açúcar",
+    "calories_per_100g": 246.4,
+    "protein_g": 2.0,
+    "carbs_g": 17.0,
+    "fat_g": 18.0
+  },
+  {
+    "id": 744,
+    "name": "Abacate Grelhado(a) Temperado(a)",
+    "calories_per_100g": 193.6,
+    "protein_g": 2.0,
+    "carbs_g": 9.4,
+    "fat_g": 21.6
+  },
+  {
+    "id": 745,
+    "name": "Abacate Grelhado(a) com Azeite",
+    "calories_per_100g": 264.0,
+    "protein_g": 2.0,
+    "carbs_g": 8.5,
+    "fat_g": 54.0
+  },
+  {
+    "id": 746,
+    "name": "Abacate Grelhado(a) com Queijo",
+    "calories_per_100g": 316.8,
+    "protein_g": 3.0,
+    "carbs_g": 10.2,
+    "fat_g": 36.0
+  },
+  {
+    "id": 747,
+    "name": "Abacate Grelhado(a) com Molho de Tomate",
+    "calories_per_100g": 211.2,
+    "protein_g": 2.2,
+    "carbs_g": 12.8,
+    "fat_g": 19.8
+  },
+  {
+    "id": 748,
+    "name": "Abacate Grelhado(a) com Mel",
+    "calories_per_100g": 228.8,
+    "protein_g": 2.0,
+    "carbs_g": 17.0,
+    "fat_g": 18.0
+  },
+  {
+    "id": 749,
+    "name": "Abacate Grelhado(a) ao Alho",
+    "calories_per_100g": 193.6,
+    "protein_g": 2.0,
+    "carbs_g": 9.4,
+    "fat_g": 21.6
+  },
+  {
+    "id": 750,
+    "name": "Abacate Grelhado(a) com Ervas",
+    "calories_per_100g": 176.0,
+    "protein_g": 2.0,
+    "carbs_g": 8.5,
+    "fat_g": 18.0
+  },
+  {
+    "id": 751,
+    "name": "Abacate Refogado(a)",
+    "calories_per_100g": 208.0,
+    "protein_g": 1.8,
+    "carbs_g": 9.4,
+    "fat_g": 37.5
+  },
+  {
+    "id": 752,
+    "name": "Abacate Refogado(a) com Sal",
+    "calories_per_100g": 208.0,
+    "protein_g": 1.8,
+    "carbs_g": 9.4,
+    "fat_g": 37.5
+  },
+  {
+    "id": 753,
+    "name": "Abacate Refogado(a) com Açúcar",
+    "calories_per_100g": 291.2,
+    "protein_g": 1.8,
+    "carbs_g": 18.7,
+    "fat_g": 37.5
+  },
+  {
+    "id": 754,
+    "name": "Abacate Refogado(a) Temperado(a)",
+    "calories_per_100g": 228.8,
+    "protein_g": 1.8,
+    "carbs_g": 10.3,
+    "fat_g": 45.0
+  },
+  {
+    "id": 755,
+    "name": "Abacate Refogado(a) com Azeite",
+    "calories_per_100g": 312.0,
+    "protein_g": 1.8,
+    "carbs_g": 9.4,
+    "fat_g": 112.5
+  },
+  {
+    "id": 756,
+    "name": "Abacate Refogado(a) com Queijo",
+    "calories_per_100g": 374.4,
+    "protein_g": 2.7,
+    "carbs_g": 11.2,
+    "fat_g": 75.0
+  },
+  {
+    "id": 757,
+    "name": "Abacate Refogado(a) com Molho de Tomate",
+    "calories_per_100g": 249.6,
+    "protein_g": 2.0,
+    "carbs_g": 14.0,
+    "fat_g": 41.2
+  },
+  {
+    "id": 758,
+    "name": "Abacate Refogado(a) com Mel",
+    "calories_per_100g": 270.4,
+    "protein_g": 1.8,
+    "carbs_g": 18.7,
+    "fat_g": 37.5
+  },
+  {
+    "id": 759,
+    "name": "Abacate Refogado(a) ao Alho",
+    "calories_per_100g": 228.8,
+    "protein_g": 1.8,
+    "carbs_g": 10.3,
+    "fat_g": 45.0
+  },
+  {
+    "id": 760,
+    "name": "Abacate Refogado(a) com Ervas",
+    "calories_per_100g": 208.0,
+    "protein_g": 1.8,
+    "carbs_g": 9.4,
+    "fat_g": 37.5
+  },
+  {
+    "id": 761,
+    "name": "Abacate Em Conserva",
+    "calories_per_100g": 144.0,
+    "protein_g": 1.6,
+    "carbs_g": 7.7,
+    "fat_g": 12.0
+  },
+  {
+    "id": 762,
+    "name": "Abacate Em Conserva com Sal",
+    "calories_per_100g": 144.0,
+    "protein_g": 1.6,
+    "carbs_g": 7.7,
+    "fat_g": 12.0
+  },
+  {
+    "id": 763,
+    "name": "Abacate Em Conserva com Açúcar",
+    "calories_per_100g": 201.6,
+    "protein_g": 1.6,
+    "carbs_g": 15.3,
+    "fat_g": 12.0
+  },
+  {
+    "id": 764,
+    "name": "Abacate Em Conserva Temperado(a)",
+    "calories_per_100g": 158.4,
+    "protein_g": 1.6,
+    "carbs_g": 8.4,
+    "fat_g": 14.4
+  },
+  {
+    "id": 765,
+    "name": "Abacate Em Conserva com Azeite",
+    "calories_per_100g": 216.0,
+    "protein_g": 1.6,
+    "carbs_g": 7.7,
+    "fat_g": 36.0
+  },
+  {
+    "id": 766,
+    "name": "Abacate Em Conserva com Queijo",
+    "calories_per_100g": 259.2,
+    "protein_g": 2.4,
+    "carbs_g": 9.2,
+    "fat_g": 24.0
+  },
+  {
+    "id": 767,
+    "name": "Abacate Em Conserva com Molho de Tomate",
+    "calories_per_100g": 172.8,
+    "protein_g": 1.8,
+    "carbs_g": 11.5,
+    "fat_g": 13.2
+  },
+  {
+    "id": 768,
+    "name": "Abacate Em Conserva com Mel",
+    "calories_per_100g": 187.2,
+    "protein_g": 1.6,
+    "carbs_g": 15.3,
+    "fat_g": 12.0
+  },
+  {
+    "id": 769,
+    "name": "Abacate Em Conserva ao Alho",
+    "calories_per_100g": 158.4,
+    "protein_g": 1.6,
+    "carbs_g": 8.4,
+    "fat_g": 14.4
+  },
+  {
+    "id": 770,
+    "name": "Abacate Em Conserva com Ervas",
+    "calories_per_100g": 144.0,
+    "protein_g": 1.6,
+    "carbs_g": 7.7,
+    "fat_g": 12.0
+  },
+  {
+    "id": 771,
+    "name": "Abacate Desidratado(a)",
+    "calories_per_100g": 480.0,
+    "protein_g": 6.0,
+    "carbs_g": 25.5,
+    "fat_g": 45.0
+  },
+  {
+    "id": 772,
+    "name": "Abacate Desidratado(a) com Sal",
+    "calories_per_100g": 480.0,
+    "protein_g": 6.0,
+    "carbs_g": 25.5,
+    "fat_g": 45.0
+  },
+  {
+    "id": 773,
+    "name": "Abacate Desidratado(a) com Açúcar",
+    "calories_per_100g": 672.0,
+    "protein_g": 6.0,
+    "carbs_g": 51.0,
+    "fat_g": 45.0
+  },
+  {
+    "id": 774,
+    "name": "Abacate Desidratado(a) Temperado(a)",
+    "calories_per_100g": 528.0,
+    "protein_g": 6.0,
+    "carbs_g": 28.1,
+    "fat_g": 54.0
+  },
+  {
+    "id": 775,
+    "name": "Abacate Desidratado(a) com Azeite",
+    "calories_per_100g": 720.0,
+    "protein_g": 6.0,
+    "carbs_g": 25.5,
+    "fat_g": 135.0
+  },
+  {
+    "id": 776,
+    "name": "Abacate Desidratado(a) com Queijo",
+    "calories_per_100g": 864.0,
+    "protein_g": 9.0,
+    "carbs_g": 30.6,
+    "fat_g": 90.0
+  },
+  {
+    "id": 777,
+    "name": "Abacate Desidratado(a) com Molho de Tomate",
+    "calories_per_100g": 576.0,
+    "protein_g": 6.6,
+    "carbs_g": 38.2,
+    "fat_g": 49.5
+  },
+  {
+    "id": 778,
+    "name": "Abacate Desidratado(a) com Mel",
+    "calories_per_100g": 624.0,
+    "protein_g": 6.0,
+    "carbs_g": 51.0,
+    "fat_g": 45.0
+  },
+  {
+    "id": 779,
+    "name": "Abacate Desidratado(a) ao Alho",
+    "calories_per_100g": 528.0,
+    "protein_g": 6.0,
+    "carbs_g": 28.1,
+    "fat_g": 54.0
+  },
+  {
+    "id": 780,
+    "name": "Abacate Desidratado(a) com Ervas",
+    "calories_per_100g": 480.0,
+    "protein_g": 6.0,
+    "carbs_g": 25.5,
+    "fat_g": 45.0
+  },
+  {
+    "id": 781,
+    "name": "Abacate Em Pó",
+    "calories_per_100g": 640.0,
+    "protein_g": 8.0,
+    "carbs_g": 34.0,
+    "fat_g": 60.0
+  },
+  {
+    "id": 782,
+    "name": "Abacate Em Pó com Sal",
+    "calories_per_100g": 640.0,
+    "protein_g": 8.0,
+    "carbs_g": 34.0,
+    "fat_g": 60.0
+  },
+  {
+    "id": 783,
+    "name": "Abacate Em Pó com Açúcar",
+    "calories_per_100g": 896.0,
+    "protein_g": 8.0,
+    "carbs_g": 68.0,
+    "fat_g": 60.0
+  },
+  {
+    "id": 784,
+    "name": "Abacate Em Pó Temperado(a)",
+    "calories_per_100g": 704.0,
+    "protein_g": 8.0,
+    "carbs_g": 37.4,
+    "fat_g": 72.0
+  },
+  {
+    "id": 785,
+    "name": "Abacate Em Pó com Azeite",
+    "calories_per_100g": 960.0,
+    "protein_g": 8.0,
+    "carbs_g": 34.0,
+    "fat_g": 180.0
+  },
+  {
+    "id": 786,
+    "name": "Abacate Em Pó com Queijo",
+    "calories_per_100g": 1152.0,
+    "protein_g": 12.0,
+    "carbs_g": 40.8,
+    "fat_g": 120.0
+  },
+  {
+    "id": 787,
+    "name": "Abacate Em Pó com Molho de Tomate",
+    "calories_per_100g": 768.0,
+    "protein_g": 8.8,
+    "carbs_g": 51.0,
+    "fat_g": 66.0
+  },
+  {
+    "id": 788,
+    "name": "Abacate Em Pó com Mel",
+    "calories_per_100g": 832.0,
+    "protein_g": 8.0,
+    "carbs_g": 68.0,
+    "fat_g": 60.0
+  },
+  {
+    "id": 789,
+    "name": "Abacate Em Pó ao Alho",
+    "calories_per_100g": 704.0,
+    "protein_g": 8.0,
+    "carbs_g": 37.4,
+    "fat_g": 72.0
+  },
+  {
+    "id": 790,
+    "name": "Abacate Em Pó com Ervas",
+    "calories_per_100g": 640.0,
+    "protein_g": 8.0,
+    "carbs_g": 34.0,
+    "fat_g": 60.0
+  },
+  {
+    "id": 791,
+    "name": "Pasta de Abacate",
+    "calories_per_100g": 560.0,
+    "protein_g": 3.0,
+    "carbs_g": 10.2,
+    "fat_g": 90.0
+  },
+  {
+    "id": 792,
+    "name": "Pasta de Abacate com Sal",
+    "calories_per_100g": 560.0,
+    "protein_g": 3.0,
+    "carbs_g": 10.2,
+    "fat_g": 90.0
+  },
+  {
+    "id": 793,
+    "name": "Pasta de Abacate com Açúcar",
+    "calories_per_100g": 784.0,
+    "protein_g": 3.0,
+    "carbs_g": 20.4,
+    "fat_g": 90.0
+  },
+  {
+    "id": 794,
+    "name": "Pasta de Abacate Temperado(a)",
+    "calories_per_100g": 616.0,
+    "protein_g": 3.0,
+    "carbs_g": 11.2,
+    "fat_g": 108.0
+  },
+  {
+    "id": 795,
+    "name": "Pasta de Abacate com Azeite",
+    "calories_per_100g": 840.0,
+    "protein_g": 3.0,
+    "carbs_g": 10.2,
+    "fat_g": 270.0
+  },
+  {
+    "id": 796,
+    "name": "Pasta de Abacate com Queijo",
+    "calories_per_100g": 1008.0,
+    "protein_g": 4.5,
+    "carbs_g": 12.2,
+    "fat_g": 180.0
+  },
+  {
+    "id": 797,
+    "name": "Pasta de Abacate com Molho de Tomate",
+    "calories_per_100g": 672.0,
+    "protein_g": 3.3,
+    "carbs_g": 15.3,
+    "fat_g": 99.0
+  },
+  {
+    "id": 798,
+    "name": "Pasta de Abacate com Mel",
+    "calories_per_100g": 728.0,
+    "protein_g": 3.0,
+    "carbs_g": 20.4,
+    "fat_g": 90.0
+  },
+  {
+    "id": 799,
+    "name": "Pasta de Abacate ao Alho",
+    "calories_per_100g": 616.0,
+    "protein_g": 3.0,
+    "carbs_g": 11.2,
+    "fat_g": 108.0
+  },
+  {
+    "id": 800,
+    "name": "Pasta de Abacate com Ervas",
+    "calories_per_100g": 560.0,
+    "protein_g": 3.0,
+    "carbs_g": 10.2,
+    "fat_g": 90.0
+  },
+  {
+    "id": 801,
+    "name": "Limão",
+    "calories_per_100g": 29.0,
+    "protein_g": 1.1,
+    "carbs_g": 9.3,
+    "fat_g": 0.3
+  },
+  {
+    "id": 802,
+    "name": "Limão com Sal",
+    "calories_per_100g": 29.0,
+    "protein_g": 1.1,
+    "carbs_g": 9.3,
+    "fat_g": 0.3
+  },
+  {
+    "id": 803,
+    "name": "Limão com Açúcar",
+    "calories_per_100g": 40.6,
+    "protein_g": 1.1,
+    "carbs_g": 18.6,
+    "fat_g": 0.3
+  },
+  {
+    "id": 804,
+    "name": "Limão Temperado(a)",
+    "calories_per_100g": 31.9,
+    "protein_g": 1.1,
+    "carbs_g": 10.2,
+    "fat_g": 0.4
+  },
+  {
+    "id": 805,
+    "name": "Limão com Azeite",
+    "calories_per_100g": 43.5,
+    "protein_g": 1.1,
+    "carbs_g": 9.3,
+    "fat_g": 0.9
+  },
+  {
+    "id": 806,
+    "name": "Limão com Queijo",
+    "calories_per_100g": 52.2,
+    "protein_g": 1.7,
+    "carbs_g": 11.2,
+    "fat_g": 0.6
+  },
+  {
+    "id": 807,
+    "name": "Limão com Molho de Tomate",
+    "calories_per_100g": 34.8,
+    "protein_g": 1.2,
+    "carbs_g": 14.0,
+    "fat_g": 0.3
+  },
+  {
+    "id": 808,
+    "name": "Limão com Mel",
+    "calories_per_100g": 37.7,
+    "protein_g": 1.1,
+    "carbs_g": 18.6,
+    "fat_g": 0.3
+  },
+  {
+    "id": 809,
+    "name": "Limão ao Alho",
+    "calories_per_100g": 31.9,
+    "protein_g": 1.1,
+    "carbs_g": 10.2,
+    "fat_g": 0.4
+  },
+  {
+    "id": 810,
+    "name": "Limão com Ervas",
+    "calories_per_100g": 29.0,
+    "protein_g": 1.1,
+    "carbs_g": 9.3,
+    "fat_g": 0.3
+  },
+  {
+    "id": 811,
+    "name": "Limão Cozido(a)",
+    "calories_per_100g": 23.2,
+    "protein_g": 1.0,
+    "carbs_g": 7.4,
+    "fat_g": 0.3
+  },
+  {
+    "id": 812,
+    "name": "Limão Cozido(a) com Sal",
+    "calories_per_100g": 23.2,
+    "protein_g": 1.0,
+    "carbs_g": 7.4,
+    "fat_g": 0.3
+  },
+  {
+    "id": 813,
+    "name": "Limão Cozido(a) com Açúcar",
+    "calories_per_100g": 32.5,
+    "protein_g": 1.0,
+    "carbs_g": 14.9,
+    "fat_g": 0.3
+  },
+  {
+    "id": 814,
+    "name": "Limão Cozido(a) Temperado(a)",
+    "calories_per_100g": 25.5,
+    "protein_g": 1.0,
+    "carbs_g": 8.2,
+    "fat_g": 0.3
+  },
+  {
+    "id": 815,
+    "name": "Limão Cozido(a) com Azeite",
+    "calories_per_100g": 34.8,
+    "protein_g": 1.0,
+    "carbs_g": 7.4,
+    "fat_g": 0.8
+  },
+  {
+    "id": 816,
+    "name": "Limão Cozido(a) com Queijo",
+    "calories_per_100g": 41.8,
+    "protein_g": 1.5,
+    "carbs_g": 8.9,
+    "fat_g": 0.5
+  },
+  {
+    "id": 817,
+    "name": "Limão Cozido(a) com Molho de Tomate",
+    "calories_per_100g": 27.8,
+    "protein_g": 1.1,
+    "carbs_g": 11.2,
+    "fat_g": 0.3
+  },
+  {
+    "id": 818,
+    "name": "Limão Cozido(a) com Mel",
+    "calories_per_100g": 30.2,
+    "protein_g": 1.0,
+    "carbs_g": 14.9,
+    "fat_g": 0.3
+  },
+  {
+    "id": 819,
+    "name": "Limão Cozido(a) ao Alho",
+    "calories_per_100g": 25.5,
+    "protein_g": 1.0,
+    "carbs_g": 8.2,
+    "fat_g": 0.3
+  },
+  {
+    "id": 820,
+    "name": "Limão Cozido(a) com Ervas",
+    "calories_per_100g": 23.2,
+    "protein_g": 1.0,
+    "carbs_g": 7.4,
+    "fat_g": 0.3
+  },
+  {
+    "id": 821,
+    "name": "Limão Assado(a)",
+    "calories_per_100g": 34.8,
+    "protein_g": 1.1,
+    "carbs_g": 10.2,
+    "fat_g": 0.3
+  },
+  {
+    "id": 822,
+    "name": "Limão Assado(a) com Sal",
+    "calories_per_100g": 34.8,
+    "protein_g": 1.1,
+    "carbs_g": 10.2,
+    "fat_g": 0.3
+  },
+  {
+    "id": 823,
+    "name": "Limão Assado(a) com Açúcar",
+    "calories_per_100g": 48.7,
+    "protein_g": 1.1,
+    "carbs_g": 20.5,
+    "fat_g": 0.3
+  },
+  {
+    "id": 824,
+    "name": "Limão Assado(a) Temperado(a)",
+    "calories_per_100g": 38.3,
+    "protein_g": 1.1,
+    "carbs_g": 11.3,
+    "fat_g": 0.4
+  },
+  {
+    "id": 825,
+    "name": "Limão Assado(a) com Azeite",
+    "calories_per_100g": 52.2,
+    "protein_g": 1.1,
+    "carbs_g": 10.2,
+    "fat_g": 0.9
+  },
+  {
+    "id": 826,
+    "name": "Limão Assado(a) com Queijo",
+    "calories_per_100g": 62.6,
+    "protein_g": 1.7,
+    "carbs_g": 12.3,
+    "fat_g": 0.6
+  },
+  {
+    "id": 827,
+    "name": "Limão Assado(a) com Molho de Tomate",
+    "calories_per_100g": 41.8,
+    "protein_g": 1.2,
+    "carbs_g": 15.3,
+    "fat_g": 0.3
+  },
+  {
+    "id": 828,
+    "name": "Limão Assado(a) com Mel",
+    "calories_per_100g": 45.2,
+    "protein_g": 1.1,
+    "carbs_g": 20.5,
+    "fat_g": 0.3
+  },
+  {
+    "id": 829,
+    "name": "Limão Assado(a) ao Alho",
+    "calories_per_100g": 38.3,
+    "protein_g": 1.1,
+    "carbs_g": 11.3,
+    "fat_g": 0.4
+  },
+  {
+    "id": 830,
+    "name": "Limão Assado(a) com Ervas",
+    "calories_per_100g": 34.8,
+    "protein_g": 1.1,
+    "carbs_g": 10.2,
+    "fat_g": 0.3
+  },
+  {
+    "id": 831,
+    "name": "Limão Frito(a)",
+    "calories_per_100g": 58.0,
+    "protein_g": 1.0,
+    "carbs_g": 14.0,
+    "fat_g": 1.5
+  },
+  {
+    "id": 832,
+    "name": "Limão Frito(a) com Sal",
+    "calories_per_100g": 58.0,
+    "protein_g": 1.0,
+    "carbs_g": 14.0,
+    "fat_g": 1.5
+  },
+  {
+    "id": 833,
+    "name": "Limão Frito(a) com Açúcar",
+    "calories_per_100g": 81.2,
+    "protein_g": 1.0,
+    "carbs_g": 27.9,
+    "fat_g": 1.5
+  },
+  {
+    "id": 834,
+    "name": "Limão Frito(a) Temperado(a)",
+    "calories_per_100g": 63.8,
+    "protein_g": 1.0,
+    "carbs_g": 15.3,
+    "fat_g": 1.8
+  },
+  {
+    "id": 835,
+    "name": "Limão Frito(a) com Azeite",
+    "calories_per_100g": 87.0,
+    "protein_g": 1.0,
+    "carbs_g": 14.0,
+    "fat_g": 4.5
+  },
+  {
+    "id": 836,
+    "name": "Limão Frito(a) com Queijo",
+    "calories_per_100g": 104.4,
+    "protein_g": 1.5,
+    "carbs_g": 16.7,
+    "fat_g": 3.0
+  },
+  {
+    "id": 837,
+    "name": "Limão Frito(a) com Molho de Tomate",
+    "calories_per_100g": 69.6,
+    "protein_g": 1.1,
+    "carbs_g": 20.9,
+    "fat_g": 1.7
+  },
+  {
+    "id": 838,
+    "name": "Limão Frito(a) com Mel",
+    "calories_per_100g": 75.4,
+    "protein_g": 1.0,
+    "carbs_g": 27.9,
+    "fat_g": 1.5
+  },
+  {
+    "id": 839,
+    "name": "Limão Frito(a) ao Alho",
+    "calories_per_100g": 63.8,
+    "protein_g": 1.0,
+    "carbs_g": 15.3,
+    "fat_g": 1.8
+  },
+  {
+    "id": 840,
+    "name": "Limão Frito(a) com Ervas",
+    "calories_per_100g": 58.0,
+    "protein_g": 1.0,
+    "carbs_g": 14.0,
+    "fat_g": 1.5
+  },
+  {
+    "id": 841,
+    "name": "Limão Grelhado(a)",
+    "calories_per_100g": 31.9,
+    "protein_g": 1.1,
+    "carbs_g": 9.3,
+    "fat_g": 0.4
+  },
+  {
+    "id": 842,
+    "name": "Limão Grelhado(a) com Sal",
+    "calories_per_100g": 31.9,
+    "protein_g": 1.1,
+    "carbs_g": 9.3,
+    "fat_g": 0.4
+  },
+  {
+    "id": 843,
+    "name": "Limão Grelhado(a) com Açúcar",
+    "calories_per_100g": 44.7,
+    "protein_g": 1.1,
+    "carbs_g": 18.6,
+    "fat_g": 0.4
+  },
+  {
+    "id": 844,
+    "name": "Limão Grelhado(a) Temperado(a)",
+    "calories_per_100g": 35.1,
+    "protein_g": 1.1,
+    "carbs_g": 10.2,
+    "fat_g": 0.4
+  },
+  {
+    "id": 845,
+    "name": "Limão Grelhado(a) com Azeite",
+    "calories_per_100g": 47.9,
+    "protein_g": 1.1,
+    "carbs_g": 9.3,
+    "fat_g": 1.1
+  },
+  {
+    "id": 846,
+    "name": "Limão Grelhado(a) com Queijo",
+    "calories_per_100g": 57.4,
+    "protein_g": 1.7,
+    "carbs_g": 11.2,
+    "fat_g": 0.7
+  },
+  {
+    "id": 847,
+    "name": "Limão Grelhado(a) com Molho de Tomate",
+    "calories_per_100g": 38.3,
+    "protein_g": 1.2,
+    "carbs_g": 14.0,
+    "fat_g": 0.4
+  },
+  {
+    "id": 848,
+    "name": "Limão Grelhado(a) com Mel",
+    "calories_per_100g": 41.5,
+    "protein_g": 1.1,
+    "carbs_g": 18.6,
+    "fat_g": 0.4
+  },
+  {
+    "id": 849,
+    "name": "Limão Grelhado(a) ao Alho",
+    "calories_per_100g": 35.1,
+    "protein_g": 1.1,
+    "carbs_g": 10.2,
+    "fat_g": 0.4
+  },
+  {
+    "id": 850,
+    "name": "Limão Grelhado(a) com Ervas",
+    "calories_per_100g": 31.9,
+    "protein_g": 1.1,
+    "carbs_g": 9.3,
+    "fat_g": 0.4
+  },
+  {
+    "id": 851,
+    "name": "Limão Refogado(a)",
+    "calories_per_100g": 37.7,
+    "protein_g": 1.0,
+    "carbs_g": 10.2,
+    "fat_g": 0.8
+  },
+  {
+    "id": 852,
+    "name": "Limão Refogado(a) com Sal",
+    "calories_per_100g": 37.7,
+    "protein_g": 1.0,
+    "carbs_g": 10.2,
+    "fat_g": 0.8
+  },
+  {
+    "id": 853,
+    "name": "Limão Refogado(a) com Açúcar",
+    "calories_per_100g": 52.8,
+    "protein_g": 1.0,
+    "carbs_g": 20.5,
+    "fat_g": 0.8
+  },
+  {
+    "id": 854,
+    "name": "Limão Refogado(a) Temperado(a)",
+    "calories_per_100g": 41.5,
+    "protein_g": 1.0,
+    "carbs_g": 11.3,
+    "fat_g": 0.9
+  },
+  {
+    "id": 855,
+    "name": "Limão Refogado(a) com Azeite",
+    "calories_per_100g": 56.6,
+    "protein_g": 1.0,
+    "carbs_g": 10.2,
+    "fat_g": 2.2
+  },
+  {
+    "id": 856,
+    "name": "Limão Refogado(a) com Queijo",
+    "calories_per_100g": 67.9,
+    "protein_g": 1.5,
+    "carbs_g": 12.3,
+    "fat_g": 1.5
+  },
+  {
+    "id": 857,
+    "name": "Limão Refogado(a) com Molho de Tomate",
+    "calories_per_100g": 45.2,
+    "protein_g": 1.1,
+    "carbs_g": 15.3,
+    "fat_g": 0.8
+  },
+  {
+    "id": 858,
+    "name": "Limão Refogado(a) com Mel",
+    "calories_per_100g": 49.0,
+    "protein_g": 1.0,
+    "carbs_g": 20.5,
+    "fat_g": 0.8
+  },
+  {
+    "id": 859,
+    "name": "Limão Refogado(a) ao Alho",
+    "calories_per_100g": 41.5,
+    "protein_g": 1.0,
+    "carbs_g": 11.3,
+    "fat_g": 0.9
+  },
+  {
+    "id": 860,
+    "name": "Limão Refogado(a) com Ervas",
+    "calories_per_100g": 37.7,
+    "protein_g": 1.0,
+    "carbs_g": 10.2,
+    "fat_g": 0.8
+  },
+  {
+    "id": 861,
+    "name": "Limão Em Conserva",
+    "calories_per_100g": 26.1,
+    "protein_g": 0.9,
+    "carbs_g": 8.4,
+    "fat_g": 0.2
+  },
+  {
+    "id": 862,
+    "name": "Limão Em Conserva com Sal",
+    "calories_per_100g": 26.1,
+    "protein_g": 0.9,
+    "carbs_g": 8.4,
+    "fat_g": 0.2
+  },
+  {
+    "id": 863,
+    "name": "Limão Em Conserva com Açúcar",
+    "calories_per_100g": 36.5,
+    "protein_g": 0.9,
+    "carbs_g": 16.7,
+    "fat_g": 0.2
+  },
+  {
+    "id": 864,
+    "name": "Limão Em Conserva Temperado(a)",
+    "calories_per_100g": 28.7,
+    "protein_g": 0.9,
+    "carbs_g": 9.2,
+    "fat_g": 0.3
+  },
+  {
+    "id": 865,
+    "name": "Limão Em Conserva com Azeite",
+    "calories_per_100g": 39.2,
+    "protein_g": 0.9,
+    "carbs_g": 8.4,
+    "fat_g": 0.7
+  },
+  {
+    "id": 866,
+    "name": "Limão Em Conserva com Queijo",
+    "calories_per_100g": 47.0,
+    "protein_g": 1.3,
+    "carbs_g": 10.0,
+    "fat_g": 0.5
+  },
+  {
+    "id": 867,
+    "name": "Limão Em Conserva com Molho de Tomate",
+    "calories_per_100g": 31.3,
+    "protein_g": 1.0,
+    "carbs_g": 12.6,
+    "fat_g": 0.3
+  },
+  {
+    "id": 868,
+    "name": "Limão Em Conserva com Mel",
+    "calories_per_100g": 33.9,
+    "protein_g": 0.9,
+    "carbs_g": 16.7,
+    "fat_g": 0.2
+  },
+  {
+    "id": 869,
+    "name": "Limão Em Conserva ao Alho",
+    "calories_per_100g": 28.7,
+    "protein_g": 0.9,
+    "carbs_g": 9.2,
+    "fat_g": 0.3
+  },
+  {
+    "id": 870,
+    "name": "Limão Em Conserva com Ervas",
+    "calories_per_100g": 26.1,
+    "protein_g": 0.9,
+    "carbs_g": 8.4,
+    "fat_g": 0.2
+  },
+  {
+    "id": 871,
+    "name": "Limão Desidratado(a)",
+    "calories_per_100g": 87.0,
+    "protein_g": 3.3,
+    "carbs_g": 27.9,
+    "fat_g": 0.9
+  },
+  {
+    "id": 872,
+    "name": "Limão Desidratado(a) com Sal",
+    "calories_per_100g": 87.0,
+    "protein_g": 3.3,
+    "carbs_g": 27.9,
+    "fat_g": 0.9
+  },
+  {
+    "id": 873,
+    "name": "Limão Desidratado(a) com Açúcar",
+    "calories_per_100g": 121.8,
+    "protein_g": 3.3,
+    "carbs_g": 55.8,
+    "fat_g": 0.9
+  },
+  {
+    "id": 874,
+    "name": "Limão Desidratado(a) Temperado(a)",
+    "calories_per_100g": 95.7,
+    "protein_g": 3.3,
+    "carbs_g": 30.7,
+    "fat_g": 1.1
+  },
+  {
+    "id": 875,
+    "name": "Limão Desidratado(a) com Azeite",
+    "calories_per_100g": 130.5,
+    "protein_g": 3.3,
+    "carbs_g": 27.9,
+    "fat_g": 2.7
+  },
+  {
+    "id": 876,
+    "name": "Limão Desidratado(a) com Queijo",
+    "calories_per_100g": 156.6,
+    "protein_g": 5.0,
+    "carbs_g": 33.5,
+    "fat_g": 1.8
+  },
+  {
+    "id": 877,
+    "name": "Limão Desidratado(a) com Molho de Tomate",
+    "calories_per_100g": 104.4,
+    "protein_g": 3.6,
+    "carbs_g": 41.9,
+    "fat_g": 1.0
+  },
+  {
+    "id": 878,
+    "name": "Limão Desidratado(a) com Mel",
+    "calories_per_100g": 113.1,
+    "protein_g": 3.3,
+    "carbs_g": 55.8,
+    "fat_g": 0.9
+  },
+  {
+    "id": 879,
+    "name": "Limão Desidratado(a) ao Alho",
+    "calories_per_100g": 95.7,
+    "protein_g": 3.3,
+    "carbs_g": 30.7,
+    "fat_g": 1.1
+  },
+  {
+    "id": 880,
+    "name": "Limão Desidratado(a) com Ervas",
+    "calories_per_100g": 87.0,
+    "protein_g": 3.3,
+    "carbs_g": 27.9,
+    "fat_g": 0.9
+  },
+  {
+    "id": 881,
+    "name": "Limão Em Pó",
+    "calories_per_100g": 116.0,
+    "protein_g": 4.4,
+    "carbs_g": 37.2,
+    "fat_g": 1.2
+  },
+  {
+    "id": 882,
+    "name": "Limão Em Pó com Sal",
+    "calories_per_100g": 116.0,
+    "protein_g": 4.4,
+    "carbs_g": 37.2,
+    "fat_g": 1.2
+  },
+  {
+    "id": 883,
+    "name": "Limão Em Pó com Açúcar",
+    "calories_per_100g": 162.4,
+    "protein_g": 4.4,
+    "carbs_g": 74.4,
+    "fat_g": 1.2
+  },
+  {
+    "id": 884,
+    "name": "Limão Em Pó Temperado(a)",
+    "calories_per_100g": 127.6,
+    "protein_g": 4.4,
+    "carbs_g": 40.9,
+    "fat_g": 1.4
+  },
+  {
+    "id": 885,
+    "name": "Limão Em Pó com Azeite",
+    "calories_per_100g": 174.0,
+    "protein_g": 4.4,
+    "carbs_g": 37.2,
+    "fat_g": 3.6
+  },
+  {
+    "id": 886,
+    "name": "Limão Em Pó com Queijo",
+    "calories_per_100g": 208.8,
+    "protein_g": 6.6,
+    "carbs_g": 44.6,
+    "fat_g": 2.4
+  },
+  {
+    "id": 887,
+    "name": "Limão Em Pó com Molho de Tomate",
+    "calories_per_100g": 139.2,
+    "protein_g": 4.8,
+    "carbs_g": 55.8,
+    "fat_g": 1.3
+  },
+  {
+    "id": 888,
+    "name": "Limão Em Pó com Mel",
+    "calories_per_100g": 150.8,
+    "protein_g": 4.4,
+    "carbs_g": 74.4,
+    "fat_g": 1.2
+  },
+  {
+    "id": 889,
+    "name": "Limão Em Pó ao Alho",
+    "calories_per_100g": 127.6,
+    "protein_g": 4.4,
+    "carbs_g": 40.9,
+    "fat_g": 1.4
+  },
+  {
+    "id": 890,
+    "name": "Limão Em Pó com Ervas",
+    "calories_per_100g": 116.0,
+    "protein_g": 4.4,
+    "carbs_g": 37.2,
+    "fat_g": 1.2
+  },
+  {
+    "id": 891,
+    "name": "Pasta de Limão",
+    "calories_per_100g": 101.5,
+    "protein_g": 1.7,
+    "carbs_g": 11.2,
+    "fat_g": 1.8
+  },
+  {
+    "id": 892,
+    "name": "Pasta de Limão com Sal",
+    "calories_per_100g": 101.5,
+    "protein_g": 1.7,
+    "carbs_g": 11.2,
+    "fat_g": 1.8
+  },
+  {
+    "id": 893,
+    "name": "Pasta de Limão com Açúcar",
+    "calories_per_100g": 142.1,
+    "protein_g": 1.7,
+    "carbs_g": 22.3,
+    "fat_g": 1.8
+  },
+  {
+    "id": 894,
+    "name": "Pasta de Limão Temperado(a)",
+    "calories_per_100g": 111.7,
+    "protein_g": 1.7,
+    "carbs_g": 12.3,
+    "fat_g": 2.2
+  },
+  {
+    "id": 895,
+    "name": "Pasta de Limão com Azeite",
+    "calories_per_100g": 152.2,
+    "protein_g": 1.7,
+    "carbs_g": 11.2,
+    "fat_g": 5.4
+  },
+  {
+    "id": 896,
+    "name": "Pasta de Limão com Queijo",
+    "calories_per_100g": 182.7,
+    "protein_g": 2.5,
+    "carbs_g": 13.4,
+    "fat_g": 3.6
+  },
+  {
+    "id": 897,
+    "name": "Pasta de Limão com Molho de Tomate",
+    "calories_per_100g": 121.8,
+    "protein_g": 1.8,
+    "carbs_g": 16.7,
+    "fat_g": 2.0
+  },
+  {
+    "id": 898,
+    "name": "Pasta de Limão com Mel",
+    "calories_per_100g": 132.0,
+    "protein_g": 1.7,
+    "carbs_g": 22.3,
+    "fat_g": 1.8
+  },
+  {
+    "id": 899,
+    "name": "Pasta de Limão ao Alho",
+    "calories_per_100g": 111.7,
+    "protein_g": 1.7,
+    "carbs_g": 12.3,
+    "fat_g": 2.2
+  },
+  {
+    "id": 900,
+    "name": "Pasta de Limão com Ervas",
+    "calories_per_100g": 101.5,
+    "protein_g": 1.7,
+    "carbs_g": 11.2,
+    "fat_g": 1.8
+  },
+  {
+    "id": 901,
+    "name": "Abacaxi",
+    "calories_per_100g": 50.0,
+    "protein_g": 0.5,
+    "carbs_g": 13.0,
+    "fat_g": 0.1
+  },
+  {
+    "id": 902,
+    "name": "Abacaxi com Sal",
+    "calories_per_100g": 50.0,
+    "protein_g": 0.5,
+    "carbs_g": 13.0,
+    "fat_g": 0.1
+  },
+  {
+    "id": 903,
+    "name": "Abacaxi com Açúcar",
+    "calories_per_100g": 70.0,
+    "protein_g": 0.5,
+    "carbs_g": 26.0,
+    "fat_g": 0.1
+  },
+  {
+    "id": 904,
+    "name": "Abacaxi Temperado(a)",
+    "calories_per_100g": 55.0,
+    "protein_g": 0.5,
+    "carbs_g": 14.3,
+    "fat_g": 0.1
+  },
+  {
+    "id": 905,
+    "name": "Abacaxi com Azeite",
+    "calories_per_100g": 75.0,
+    "protein_g": 0.5,
+    "carbs_g": 13.0,
+    "fat_g": 0.3
+  },
+  {
+    "id": 906,
+    "name": "Abacaxi com Queijo",
+    "calories_per_100g": 90.0,
+    "protein_g": 0.8,
+    "carbs_g": 15.6,
+    "fat_g": 0.2
+  },
+  {
+    "id": 907,
+    "name": "Abacaxi com Molho de Tomate",
+    "calories_per_100g": 60.0,
+    "protein_g": 0.6,
+    "carbs_g": 19.5,
+    "fat_g": 0.1
+  },
+  {
+    "id": 908,
+    "name": "Abacaxi com Mel",
+    "calories_per_100g": 65.0,
+    "protein_g": 0.5,
+    "carbs_g": 26.0,
+    "fat_g": 0.1
+  },
+  {
+    "id": 909,
+    "name": "Abacaxi ao Alho",
+    "calories_per_100g": 55.0,
+    "protein_g": 0.5,
+    "carbs_g": 14.3,
+    "fat_g": 0.1
+  },
+  {
+    "id": 910,
+    "name": "Abacaxi com Ervas",
+    "calories_per_100g": 50.0,
+    "protein_g": 0.5,
+    "carbs_g": 13.0,
+    "fat_g": 0.1
+  },
+  {
+    "id": 911,
+    "name": "Abacaxi Cozido(a)",
+    "calories_per_100g": 40.0,
+    "protein_g": 0.5,
+    "carbs_g": 10.4,
+    "fat_g": 0.1
+  },
+  {
+    "id": 912,
+    "name": "Abacaxi Cozido(a) com Sal",
+    "calories_per_100g": 40.0,
+    "protein_g": 0.5,
+    "carbs_g": 10.4,
+    "fat_g": 0.1
+  },
+  {
+    "id": 913,
+    "name": "Abacaxi Cozido(a) com Açúcar",
+    "calories_per_100g": 56.0,
+    "protein_g": 0.5,
+    "carbs_g": 20.8,
+    "fat_g": 0.1
+  },
+  {
+    "id": 914,
+    "name": "Abacaxi Cozido(a) Temperado(a)",
+    "calories_per_100g": 44.0,
+    "protein_g": 0.5,
+    "carbs_g": 11.4,
+    "fat_g": 0.1
+  },
+  {
+    "id": 915,
+    "name": "Abacaxi Cozido(a) com Azeite",
+    "calories_per_100g": 60.0,
+    "protein_g": 0.5,
+    "carbs_g": 10.4,
+    "fat_g": 0.3
+  },
+  {
+    "id": 916,
+    "name": "Abacaxi Cozido(a) com Queijo",
+    "calories_per_100g": 72.0,
+    "protein_g": 0.7,
+    "carbs_g": 12.5,
+    "fat_g": 0.2
+  },
+  {
+    "id": 917,
+    "name": "Abacaxi Cozido(a) com Molho de Tomate",
+    "calories_per_100g": 48.0,
+    "protein_g": 0.5,
+    "carbs_g": 15.6,
+    "fat_g": 0.1
+  },
+  {
+    "id": 918,
+    "name": "Abacaxi Cozido(a) com Mel",
+    "calories_per_100g": 52.0,
+    "protein_g": 0.5,
+    "carbs_g": 20.8,
+    "fat_g": 0.1
+  },
+  {
+    "id": 919,
+    "name": "Abacaxi Cozido(a) ao Alho",
+    "calories_per_100g": 44.0,
+    "protein_g": 0.5,
+    "carbs_g": 11.4,
+    "fat_g": 0.1
+  },
+  {
+    "id": 920,
+    "name": "Abacaxi Cozido(a) com Ervas",
+    "calories_per_100g": 40.0,
+    "protein_g": 0.5,
+    "carbs_g": 10.4,
+    "fat_g": 0.1
+  },
+  {
+    "id": 921,
+    "name": "Abacaxi Assado(a)",
+    "calories_per_100g": 60.0,
+    "protein_g": 0.5,
+    "carbs_g": 14.3,
+    "fat_g": 0.1
+  },
+  {
+    "id": 922,
+    "name": "Abacaxi Assado(a) com Sal",
+    "calories_per_100g": 60.0,
+    "protein_g": 0.5,
+    "carbs_g": 14.3,
+    "fat_g": 0.1
+  },
+  {
+    "id": 923,
+    "name": "Abacaxi Assado(a) com Açúcar",
+    "calories_per_100g": 84.0,
+    "protein_g": 0.5,
+    "carbs_g": 28.6,
+    "fat_g": 0.1
+  },
+  {
+    "id": 924,
+    "name": "Abacaxi Assado(a) Temperado(a)",
+    "calories_per_100g": 66.0,
+    "protein_g": 0.5,
+    "carbs_g": 15.7,
+    "fat_g": 0.1
+  },
+  {
+    "id": 925,
+    "name": "Abacaxi Assado(a) com Azeite",
+    "calories_per_100g": 90.0,
+    "protein_g": 0.5,
+    "carbs_g": 14.3,
+    "fat_g": 0.3
+  },
+  {
+    "id": 926,
+    "name": "Abacaxi Assado(a) com Queijo",
+    "calories_per_100g": 108.0,
+    "protein_g": 0.8,
+    "carbs_g": 17.2,
+    "fat_g": 0.2
+  },
+  {
+    "id": 927,
+    "name": "Abacaxi Assado(a) com Molho de Tomate",
+    "calories_per_100g": 72.0,
+    "protein_g": 0.6,
+    "carbs_g": 21.5,
+    "fat_g": 0.1
+  },
+  {
+    "id": 928,
+    "name": "Abacaxi Assado(a) com Mel",
+    "calories_per_100g": 78.0,
+    "protein_g": 0.5,
+    "carbs_g": 28.6,
+    "fat_g": 0.1
+  },
+  {
+    "id": 929,
+    "name": "Abacaxi Assado(a) ao Alho",
+    "calories_per_100g": 66.0,
+    "protein_g": 0.5,
+    "carbs_g": 15.7,
+    "fat_g": 0.1
+  },
+  {
+    "id": 930,
+    "name": "Abacaxi Assado(a) com Ervas",
+    "calories_per_100g": 60.0,
+    "protein_g": 0.5,
+    "carbs_g": 14.3,
+    "fat_g": 0.1
+  },
+  {
+    "id": 931,
+    "name": "Abacaxi Frito(a)",
+    "calories_per_100g": 100.0,
+    "protein_g": 0.5,
+    "carbs_g": 19.5,
+    "fat_g": 0.5
+  },
+  {
+    "id": 932,
+    "name": "Abacaxi Frito(a) com Sal",
+    "calories_per_100g": 100.0,
+    "protein_g": 0.5,
+    "carbs_g": 19.5,
+    "fat_g": 0.5
+  },
+  {
+    "id": 933,
+    "name": "Abacaxi Frito(a) com Açúcar",
+    "calories_per_100g": 140.0,
+    "protein_g": 0.5,
+    "carbs_g": 39.0,
+    "fat_g": 0.5
+  },
+  {
+    "id": 934,
+    "name": "Abacaxi Frito(a) Temperado(a)",
+    "calories_per_100g": 110.0,
+    "protein_g": 0.5,
+    "carbs_g": 21.5,
+    "fat_g": 0.6
+  },
+  {
+    "id": 935,
+    "name": "Abacaxi Frito(a) com Azeite",
+    "calories_per_100g": 150.0,
+    "protein_g": 0.5,
+    "carbs_g": 19.5,
+    "fat_g": 1.5
+  },
+  {
+    "id": 936,
+    "name": "Abacaxi Frito(a) com Queijo",
+    "calories_per_100g": 180.0,
+    "protein_g": 0.7,
+    "carbs_g": 23.4,
+    "fat_g": 1.0
+  },
+  {
+    "id": 937,
+    "name": "Abacaxi Frito(a) com Molho de Tomate",
+    "calories_per_100g": 120.0,
+    "protein_g": 0.5,
+    "carbs_g": 29.2,
+    "fat_g": 0.6
+  },
+  {
+    "id": 938,
+    "name": "Abacaxi Frito(a) com Mel",
+    "calories_per_100g": 130.0,
+    "protein_g": 0.5,
+    "carbs_g": 39.0,
+    "fat_g": 0.5
+  },
+  {
+    "id": 939,
+    "name": "Abacaxi Frito(a) ao Alho",
+    "calories_per_100g": 110.0,
+    "protein_g": 0.5,
+    "carbs_g": 21.5,
+    "fat_g": 0.6
+  },
+  {
+    "id": 940,
+    "name": "Abacaxi Frito(a) com Ervas",
+    "calories_per_100g": 100.0,
+    "protein_g": 0.5,
+    "carbs_g": 19.5,
+    "fat_g": 0.5
+  },
+  {
+    "id": 941,
+    "name": "Abacaxi Grelhado(a)",
+    "calories_per_100g": 55.0,
+    "protein_g": 0.5,
+    "carbs_g": 13.0,
+    "fat_g": 0.1
+  },
+  {
+    "id": 942,
+    "name": "Abacaxi Grelhado(a) com Sal",
+    "calories_per_100g": 55.0,
+    "protein_g": 0.5,
+    "carbs_g": 13.0,
+    "fat_g": 0.1
+  },
+  {
+    "id": 943,
+    "name": "Abacaxi Grelhado(a) com Açúcar",
+    "calories_per_100g": 77.0,
+    "protein_g": 0.5,
+    "carbs_g": 26.0,
+    "fat_g": 0.1
+  },
+  {
+    "id": 944,
+    "name": "Abacaxi Grelhado(a) Temperado(a)",
+    "calories_per_100g": 60.5,
+    "protein_g": 0.5,
+    "carbs_g": 14.3,
+    "fat_g": 0.1
+  },
+  {
+    "id": 945,
+    "name": "Abacaxi Grelhado(a) com Azeite",
+    "calories_per_100g": 82.5,
+    "protein_g": 0.5,
+    "carbs_g": 13.0,
+    "fat_g": 0.4
+  },
+  {
+    "id": 946,
+    "name": "Abacaxi Grelhado(a) com Queijo",
+    "calories_per_100g": 99.0,
+    "protein_g": 0.8,
+    "carbs_g": 15.6,
+    "fat_g": 0.2
+  },
+  {
+    "id": 947,
+    "name": "Abacaxi Grelhado(a) com Molho de Tomate",
+    "calories_per_100g": 66.0,
+    "protein_g": 0.6,
+    "carbs_g": 19.5,
+    "fat_g": 0.1
+  },
+  {
+    "id": 948,
+    "name": "Abacaxi Grelhado(a) com Mel",
+    "calories_per_100g": 71.5,
+    "protein_g": 0.5,
+    "carbs_g": 26.0,
+    "fat_g": 0.1
+  },
+  {
+    "id": 949,
+    "name": "Abacaxi Grelhado(a) ao Alho",
+    "calories_per_100g": 60.5,
+    "protein_g": 0.5,
+    "carbs_g": 14.3,
+    "fat_g": 0.1
+  },
+  {
+    "id": 950,
+    "name": "Abacaxi Grelhado(a) com Ervas",
+    "calories_per_100g": 55.0,
+    "protein_g": 0.5,
+    "carbs_g": 13.0,
+    "fat_g": 0.1
+  },
+  {
+    "id": 951,
+    "name": "Abacaxi Refogado(a)",
+    "calories_per_100g": 65.0,
+    "protein_g": 0.5,
+    "carbs_g": 14.3,
+    "fat_g": 0.2
+  },
+  {
+    "id": 952,
+    "name": "Abacaxi Refogado(a) com Sal",
+    "calories_per_100g": 65.0,
+    "protein_g": 0.5,
+    "carbs_g": 14.3,
+    "fat_g": 0.2
+  },
+  {
+    "id": 953,
+    "name": "Abacaxi Refogado(a) com Açúcar",
+    "calories_per_100g": 91.0,
+    "protein_g": 0.5,
+    "carbs_g": 28.6,
+    "fat_g": 0.2
+  },
+  {
+    "id": 954,
+    "name": "Abacaxi Refogado(a) Temperado(a)",
+    "calories_per_100g": 71.5,
+    "protein_g": 0.5,
+    "carbs_g": 15.7,
+    "fat_g": 0.3
+  },
+  {
+    "id": 955,
+    "name": "Abacaxi Refogado(a) com Azeite",
+    "calories_per_100g": 97.5,
+    "protein_g": 0.5,
+    "carbs_g": 14.3,
+    "fat_g": 0.8
+  },
+  {
+    "id": 956,
+    "name": "Abacaxi Refogado(a) com Queijo",
+    "calories_per_100g": 117.0,
+    "protein_g": 0.7,
+    "carbs_g": 17.2,
+    "fat_g": 0.5
+  },
+  {
+    "id": 957,
+    "name": "Abacaxi Refogado(a) com Molho de Tomate",
+    "calories_per_100g": 78.0,
+    "protein_g": 0.5,
+    "carbs_g": 21.5,
+    "fat_g": 0.3
+  },
+  {
+    "id": 958,
+    "name": "Abacaxi Refogado(a) com Mel",
+    "calories_per_100g": 84.5,
+    "protein_g": 0.5,
+    "carbs_g": 28.6,
+    "fat_g": 0.2
+  },
+  {
+    "id": 959,
+    "name": "Abacaxi Refogado(a) ao Alho",
+    "calories_per_100g": 71.5,
+    "protein_g": 0.5,
+    "carbs_g": 15.7,
+    "fat_g": 0.3
+  },
+  {
+    "id": 960,
+    "name": "Abacaxi Refogado(a) com Ervas",
+    "calories_per_100g": 65.0,
+    "protein_g": 0.5,
+    "carbs_g": 14.3,
+    "fat_g": 0.2
+  },
+  {
+    "id": 961,
+    "name": "Abacaxi Em Conserva",
+    "calories_per_100g": 45.0,
+    "protein_g": 0.4,
+    "carbs_g": 11.7,
+    "fat_g": 0.1
+  },
+  {
+    "id": 962,
+    "name": "Abacaxi Em Conserva com Sal",
+    "calories_per_100g": 45.0,
+    "protein_g": 0.4,
+    "carbs_g": 11.7,
+    "fat_g": 0.1
+  },
+  {
+    "id": 963,
+    "name": "Abacaxi Em Conserva com Açúcar",
+    "calories_per_100g": 63.0,
+    "protein_g": 0.4,
+    "carbs_g": 23.4,
+    "fat_g": 0.1
+  },
+  {
+    "id": 964,
+    "name": "Abacaxi Em Conserva Temperado(a)",
+    "calories_per_100g": 49.5,
+    "protein_g": 0.4,
+    "carbs_g": 12.9,
+    "fat_g": 0.1
+  },
+  {
+    "id": 965,
+    "name": "Abacaxi Em Conserva com Azeite",
+    "calories_per_100g": 67.5,
+    "protein_g": 0.4,
+    "carbs_g": 11.7,
+    "fat_g": 0.2
+  },
+  {
+    "id": 966,
+    "name": "Abacaxi Em Conserva com Queijo",
+    "calories_per_100g": 81.0,
+    "protein_g": 0.6,
+    "carbs_g": 14.0,
+    "fat_g": 0.2
+  },
+  {
+    "id": 967,
+    "name": "Abacaxi Em Conserva com Molho de Tomate",
+    "calories_per_100g": 54.0,
+    "protein_g": 0.4,
+    "carbs_g": 17.6,
+    "fat_g": 0.1
+  },
+  {
+    "id": 968,
+    "name": "Abacaxi Em Conserva com Mel",
+    "calories_per_100g": 58.5,
+    "protein_g": 0.4,
+    "carbs_g": 23.4,
+    "fat_g": 0.1
+  },
+  {
+    "id": 969,
+    "name": "Abacaxi Em Conserva ao Alho",
+    "calories_per_100g": 49.5,
+    "protein_g": 0.4,
+    "carbs_g": 12.9,
+    "fat_g": 0.1
+  },
+  {
+    "id": 970,
+    "name": "Abacaxi Em Conserva com Ervas",
+    "calories_per_100g": 45.0,
+    "protein_g": 0.4,
+    "carbs_g": 11.7,
+    "fat_g": 0.1
+  },
+  {
+    "id": 971,
+    "name": "Abacaxi Desidratado(a)",
+    "calories_per_100g": 150.0,
+    "protein_g": 1.5,
+    "carbs_g": 39.0,
+    "fat_g": 0.3
+  },
+  {
+    "id": 972,
+    "name": "Abacaxi Desidratado(a) com Sal",
+    "calories_per_100g": 150.0,
+    "protein_g": 1.5,
+    "carbs_g": 39.0,
+    "fat_g": 0.3
+  },
+  {
+    "id": 973,
+    "name": "Abacaxi Desidratado(a) com Açúcar",
+    "calories_per_100g": 210.0,
+    "protein_g": 1.5,
+    "carbs_g": 78.0,
+    "fat_g": 0.3
+  },
+  {
+    "id": 974,
+    "name": "Abacaxi Desidratado(a) Temperado(a)",
+    "calories_per_100g": 165.0,
+    "protein_g": 1.5,
+    "carbs_g": 42.9,
+    "fat_g": 0.4
+  },
+  {
+    "id": 975,
+    "name": "Abacaxi Desidratado(a) com Azeite",
+    "calories_per_100g": 225.0,
+    "protein_g": 1.5,
+    "carbs_g": 39.0,
+    "fat_g": 0.9
+  },
+  {
+    "id": 976,
+    "name": "Abacaxi Desidratado(a) com Queijo",
+    "calories_per_100g": 270.0,
+    "protein_g": 2.2,
+    "carbs_g": 46.8,
+    "fat_g": 0.6
+  },
+  {
+    "id": 977,
+    "name": "Abacaxi Desidratado(a) com Molho de Tomate",
+    "calories_per_100g": 180.0,
+    "protein_g": 1.7,
+    "carbs_g": 58.5,
+    "fat_g": 0.3
+  },
+  {
+    "id": 978,
+    "name": "Abacaxi Desidratado(a) com Mel",
+    "calories_per_100g": 195.0,
+    "protein_g": 1.5,
+    "carbs_g": 78.0,
+    "fat_g": 0.3
+  },
+  {
+    "id": 979,
+    "name": "Abacaxi Desidratado(a) ao Alho",
+    "calories_per_100g": 165.0,
+    "protein_g": 1.5,
+    "carbs_g": 42.9,
+    "fat_g": 0.4
+  },
+  {
+    "id": 980,
+    "name": "Abacaxi Desidratado(a) com Ervas",
+    "calories_per_100g": 150.0,
+    "protein_g": 1.5,
+    "carbs_g": 39.0,
+    "fat_g": 0.3
+  },
+  {
+    "id": 981,
+    "name": "Abacaxi Em Pó",
+    "calories_per_100g": 200.0,
+    "protein_g": 2.0,
+    "carbs_g": 52.0,
+    "fat_g": 0.4
+  },
+  {
+    "id": 982,
+    "name": "Abacaxi Em Pó com Sal",
+    "calories_per_100g": 200.0,
+    "protein_g": 2.0,
+    "carbs_g": 52.0,
+    "fat_g": 0.4
+  },
+  {
+    "id": 983,
+    "name": "Abacaxi Em Pó com Açúcar",
+    "calories_per_100g": 280.0,
+    "protein_g": 2.0,
+    "carbs_g": 104.0,
+    "fat_g": 0.4
+  },
+  {
+    "id": 984,
+    "name": "Abacaxi Em Pó Temperado(a)",
+    "calories_per_100g": 220.0,
+    "protein_g": 2.0,
+    "carbs_g": 57.2,
+    "fat_g": 0.5
+  },
+  {
+    "id": 985,
+    "name": "Abacaxi Em Pó com Azeite",
+    "calories_per_100g": 300.0,
+    "protein_g": 2.0,
+    "carbs_g": 52.0,
+    "fat_g": 1.2
+  },
+  {
+    "id": 986,
+    "name": "Abacaxi Em Pó com Queijo",
+    "calories_per_100g": 360.0,
+    "protein_g": 3.0,
+    "carbs_g": 62.4,
+    "fat_g": 0.8
+  },
+  {
+    "id": 987,
+    "name": "Abacaxi Em Pó com Molho de Tomate",
+    "calories_per_100g": 240.0,
+    "protein_g": 2.2,
+    "carbs_g": 78.0,
+    "fat_g": 0.4
+  },
+  {
+    "id": 988,
+    "name": "Abacaxi Em Pó com Mel",
+    "calories_per_100g": 260.0,
+    "protein_g": 2.0,
+    "carbs_g": 104.0,
+    "fat_g": 0.4
+  },
+  {
+    "id": 989,
+    "name": "Abacaxi Em Pó ao Alho",
+    "calories_per_100g": 220.0,
+    "protein_g": 2.0,
+    "carbs_g": 57.2,
+    "fat_g": 0.5
+  },
+  {
+    "id": 990,
+    "name": "Abacaxi Em Pó com Ervas",
+    "calories_per_100g": 200.0,
+    "protein_g": 2.0,
+    "carbs_g": 52.0,
+    "fat_g": 0.4
+  },
+  {
+    "id": 991,
+    "name": "Pasta de Abacaxi",
+    "calories_per_100g": 175.0,
+    "protein_g": 0.8,
+    "carbs_g": 15.6,
+    "fat_g": 0.6
+  },
+  {
+    "id": 992,
+    "name": "Pasta de Abacaxi com Sal",
+    "calories_per_100g": 175.0,
+    "protein_g": 0.8,
+    "carbs_g": 15.6,
+    "fat_g": 0.6
+  },
+  {
+    "id": 993,
+    "name": "Pasta de Abacaxi com Açúcar",
+    "calories_per_100g": 245.0,
+    "protein_g": 0.8,
+    "carbs_g": 31.2,
+    "fat_g": 0.6
+  },
+  {
+    "id": 994,
+    "name": "Pasta de Abacaxi Temperado(a)",
+    "calories_per_100g": 192.5,
+    "protein_g": 0.8,
+    "carbs_g": 17.2,
+    "fat_g": 0.7
+  },
+  {
+    "id": 995,
+    "name": "Pasta de Abacaxi com Azeite",
+    "calories_per_100g": 262.5,
+    "protein_g": 0.8,
+    "carbs_g": 15.6,
+    "fat_g": 1.8
+  },
+  {
+    "id": 996,
+    "name": "Pasta de Abacaxi com Queijo",
+    "calories_per_100g": 315.0,
+    "protein_g": 1.1,
+    "carbs_g": 18.7,
+    "fat_g": 1.2
+  },
+  {
+    "id": 997,
+    "name": "Pasta de Abacaxi com Molho de Tomate",
+    "calories_per_100g": 210.0,
+    "protein_g": 0.8,
+    "carbs_g": 23.4,
+    "fat_g": 0.7
+  },
+  {
+    "id": 998,
+    "name": "Pasta de Abacaxi com Mel",
+    "calories_per_100g": 227.5,
+    "protein_g": 0.8,
+    "carbs_g": 31.2,
+    "fat_g": 0.6
+  },
+  {
+    "id": 999,
+    "name": "Pasta de Abacaxi ao Alho",
+    "calories_per_100g": 192.5,
+    "protein_g": 0.8,
+    "carbs_g": 17.2,
+    "fat_g": 0.7
+  },
+  {
+    "id": 1000,
+    "name": "Pasta de Abacaxi com Ervas",
+    "calories_per_100g": 175.0,
+    "protein_g": 0.8,
+    "carbs_g": 15.6,
+    "fat_g": 0.6
+  }
+]
