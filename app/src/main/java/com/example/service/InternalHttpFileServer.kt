@@ -15,11 +15,20 @@ import java.net.ServerSocket
 import java.net.Socket
 import java.util.UUID
 import java.util.concurrent.ConcurrentHashMap
+import java.util.concurrent.Semaphore
 
 object InternalHttpFileServer {
     private const val TAG = "CastHttp"
     private var serverSocket: ServerSocket? = null
     private var isRunning = false
+
+    // Thread-per-connection without a cap let any LAN peer pin one thread +
+    // FD per socket (slowloris). Bounded slots refuse extra clients outright.
+    private const val MAX_CONNECTIONS = 32
+    private val connectionSlots = Semaphore(MAX_CONNECTIONS)
+    // Per-read soTimeout resets on every byte, so a dribbled head could stall
+    // a handler forever — enforce a total wall-clock budget for the head.
+    private const val HEAD_DEADLINE_MS = 30_000L
 
     private data class HostedEntry(
         val file: File,
@@ -216,10 +225,12 @@ object InternalHttpFileServer {
      * or exceeded the byte budget.
      */
     private fun readRequestHead(input: InputStream): ByteArray? {
+        val deadline = System.currentTimeMillis() + HEAD_DEADLINE_MS
         val buf = ByteArrayOutputStream(2048)
         val chunk = ByteArray(2048)
         var matchLen = 0
         while (buf.size() < MAX_REQUEST_HEAD_BYTES) {
+            if (System.currentTimeMillis() > deadline) return null // dribbled head = slowloris
             val n = input.read(chunk, 0, minOf(chunk.size, MAX_REQUEST_HEAD_BYTES - buf.size()))
             if (n <= 0) break
             for (i in 0 until n) {
@@ -245,7 +256,17 @@ object InternalHttpFileServer {
     }
 
     private fun handleClient(client: Socket) {
-        Thread { serveClient(client) }.start()
+        if (!connectionSlots.tryAcquire()) {
+            try { client.close() } catch (_: Exception) {}
+            return
+        }
+        Thread {
+            try {
+                serveClient(client)
+            } finally {
+                connectionSlots.release()
+            }
+        }.start()
     }
 
     private fun serveClient(client: Socket) {
@@ -285,9 +306,13 @@ object InternalHttpFileServer {
             }
 
             Log.d(TAG, "request from ${client.inetAddress.hostAddress}: $requestLine")
-            if (requestLine != null && (requestLine.startsWith("GET") || requestLine.startsWith("HEAD"))) {
-                val parts = requestLine.split(" ")
-                val headOnly = parts.firstOrNull()?.equals("HEAD", ignoreCase = true) == true
+            val parts = requestLine?.split(" ") ?: emptyList()
+            // Exact method match: a startsWith prefix let invented methods like
+            // GETX or HEADER run a real GET (M2 fuzz finding).
+            val isGet = parts.firstOrNull() == "GET"
+            val isHead = parts.firstOrNull() == "HEAD"
+            if (isGet || isHead) {
+                val headOnly = isHead
                 if (parts.size >= 2) {
                     val path = parts[1]
                     val token = path.substringBefore("?").removePrefix("/download/")
@@ -315,53 +340,67 @@ object InternalHttpFileServer {
                             val start = range.first
                             val end = range.last
                             val rangeLength = end - start + 1
-                            val headers = "HTTP/1.1 206 Partial Content\r\n" +
-                                    "Content-Type: $mimeType\r\n" +
-                                    "Content-Range: bytes $start-$end/$fileLength\r\n" +
-                                    "Content-Length: $rangeLength\r\n" +
-                                    "Accept-Ranges: bytes\r\n" +
-                                    "Access-Control-Allow-Origin: *\r\n" +
-                                    "Connection: close\r\n\r\n"
-                            out.write(headers.toByteArray(Charsets.ISO_8859_1))
+                            // Open the file BEFORE committing headers: cleanupExpired
+                            // may unlink a temp file between our exists() check and
+                            // the open — a held FD still streams; a missing one 404s
+                            // cleanly instead of a truncated 206 (M3 fuzz finding).
+                            try {
+                                val raf = if (!headOnly) RandomAccessFile(file, "r") else null
+                                val headers = "HTTP/1.1 206 Partial Content\r\n" +
+                                        "Content-Type: $mimeType\r\n" +
+                                        "Content-Range: bytes $start-$end/$fileLength\r\n" +
+                                        "Content-Length: $rangeLength\r\n" +
+                                        "Accept-Ranges: bytes\r\n" +
+                                        "Access-Control-Allow-Origin: *\r\n" +
+                                        "Connection: close\r\n\r\n"
+                                out.write(headers.toByteArray(Charsets.ISO_8859_1))
 
-                            if (!headOnly) {
-                                RandomAccessFile(file, "r").use { raf ->
-                                    raf.seek(start)
-                                    val buffer = ByteArray(32768)
-                                    var remaining = rangeLength
-                                    while (remaining > 0) {
-                                        val n = raf.read(
-                                            buffer, 0,
-                                            minOf(buffer.size.toLong(), remaining).toInt()
-                                        )
-                                        if (n < 0) break
-                                        out.write(buffer, 0, n)
-                                        remaining -= n
+                                if (raf != null) {
+                                    raf.use {
+                                        it.seek(start)
+                                        val buffer = ByteArray(32768)
+                                        var remaining = rangeLength
+                                        while (remaining > 0) {
+                                            val n = it.read(
+                                                buffer, 0,
+                                                minOf(buffer.size.toLong(), remaining).toInt()
+                                            )
+                                            if (n < 0) break
+                                            out.write(buffer, 0, n)
+                                            remaining -= n
+                                        }
                                     }
-                                    out.flush()
                                 }
-                            } else {
+                                out.flush()
+                            } catch (e: java.io.FileNotFoundException) {
+                                val notFound = "HTTP/1.1 404 Not Found\r\nContent-Length: 0\r\nAccess-Control-Allow-Origin: *\r\nConnection: close\r\n\r\n"
+                                out.write(notFound.toByteArray(Charsets.ISO_8859_1))
                                 out.flush()
                             }
                         } else {
-                            val headers = "HTTP/1.1 200 OK\r\n" +
-                                    "Content-Type: $mimeType\r\n" +
-                                    "Content-Length: $fileLength\r\n" + // CHAT-R09
-                                    "Accept-Ranges: bytes\r\n" +
-                                    "Access-Control-Allow-Origin: *\r\n" +
-                                    "Connection: close\r\n\r\n"
-                            out.write(headers.toByteArray(Charsets.ISO_8859_1))
+                            try {
+                                val fileStream = if (!headOnly) file.inputStream() else null
+                                val headers = "HTTP/1.1 200 OK\r\n" +
+                                        "Content-Type: $mimeType\r\n" +
+                                        "Content-Length: $fileLength\r\n" + // CHAT-R09
+                                        "Accept-Ranges: bytes\r\n" +
+                                        "Access-Control-Allow-Origin: *\r\n" +
+                                        "Connection: close\r\n\r\n"
+                                out.write(headers.toByteArray(Charsets.ISO_8859_1))
 
-                            if (!headOnly) {
-                                file.inputStream().use { fileStream ->
-                                    val buffer = ByteArray(32768)
-                                    var bytesRead: Int
-                                    while (fileStream.read(buffer).also { bytesRead = it } != -1) {
-                                        out.write(buffer, 0, bytesRead)
+                                if (fileStream != null) {
+                                    fileStream.use {
+                                        val buffer = ByteArray(32768)
+                                        var bytesRead: Int
+                                        while (it.read(buffer).also { bytesRead = it } != -1) {
+                                            out.write(buffer, 0, bytesRead)
+                                        }
                                     }
-                                    out.flush()
                                 }
-                            } else {
+                                out.flush()
+                            } catch (e: java.io.FileNotFoundException) {
+                                val notFound = "HTTP/1.1 404 Not Found\r\nContent-Length: 0\r\nAccess-Control-Allow-Origin: *\r\nConnection: close\r\n\r\n"
+                                out.write(notFound.toByteArray(Charsets.ISO_8859_1))
                                 out.flush()
                             }
                         }
