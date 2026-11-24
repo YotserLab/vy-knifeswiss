@@ -1,0 +1,32 @@
+dominio: webdrop
+prefixo: WBD
+resumo: "Compartilhamento bidirecional de arquivos via navegador web local com PIN de 4 dígitos, QR code e streaming direto de até 2 GiB."
+entidades:
+  SessaoWebDrop: [porta, pin, status, enderecoHttp]
+  TransferenciaWebDrop: [id, nomeArquivo, tamanhoBytes, direcao, progresso, status]
+  ArquivoCompartilhado: [id, uri, nome, tamanhoBytes, mimeType]
+estados:
+  SessaoWebDrop: "parada -> ativa -> parada"
+  TransferenciaWebDrop: "pendente -> transmitindo -> concluida | erro"
+permissoes:
+  usuario: [iniciar servidor, parar servidor, selecionar arquivos locais, receber uploads]
+regras:
+  WBD-R01: "servidor HTTP WebDrop escuta na porta 8088 com bind no IP Wi-Fi local do dispositivo"
+  WBD-R02: "sessão WebDrop gera PIN numérico aleatório de 4 dígitos a cada inicialização do servidor"
+  WBD-R03: "UI do app exibe endereço HTTP e QR code com URL contendo o PIN como parâmetro"
+  WBD-R04: "navegador web autentica via PIN informado na URL ou digitado manualmente na página"
+  WBD-R05: "requisições web sem PIN válido ou sessão ativa recebem código HTTP 401 Unauthorized"
+  WBD-R06: "interface web permite arrastar e soltar ou selecionar arquivos para upload ao celular"
+  WBD-R07: "upload web grava arquivo via streaming direto em disco na pasta Download/WebDrop/"
+  WBD-R08: "tamanho máximo por arquivo transferido no WebDrop é de 2 GiB; excedente é rejeitado"
+  WBD-R09: "usuário seleciona arquivos locais do aparelho para disponibilizar para download na web"
+  WBD-R10: "página web lista arquivos disponibilizados pelo app com link direto de download"
+  WBD-R11: "falhas de rede ou interrupção de streaming abortam transferência e apagam temporário"
+casos_de_uso:
+  CU01: "usuário inicia WebDrop e escaneia QR code no navegador -> WBD-R01, WBD-R02, WBD-R03, WBD-R04"
+  CU02: "usuário envia arquivo do navegador para o celular via drag-and-drop -> WBD-R06, WBD-R07, WBD-R08"
+  CU03: "usuário disponibiliza arquivos do celular para download na web -> WBD-R09, WBD-R10"
+bordas:
+  - "PIN incorreto ou ausente -> WBD-R05"
+  - "arquivo excede 2 GiB -> WBD-R08"
+  - "conexão interrompida durante streaming -> WBD-R11"

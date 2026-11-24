@@ -13,27 +13,27 @@ base.09: "sim NF04"   # Como o app é configurado e implantado (variáveis, segr
 base.10: "sim P02"   # Qual o critério de pronto do MVP (o que precisa funcionar para entregar)?
 
 # --- pack seguranca: sempre (todo app)
-seguranca.01: "sim ARQ-R13, DLK-R03, DLK-R02"   # Toda entrada externa é validada no servidor (tipo, tamanho, formato)?
-seguranca.02: "sim ARQ-R03, ARQ-R04, DLK-R07"   # Autorização é checada por recurso/ação no backend, e não só escondida na UI?
+seguranca.01: "sim ARQ-R13, DLK-R03, DLK-R02, WBD-R08"   # Toda entrada externa é validada no servidor (tipo, tamanho, formato)?
+seguranca.02: "sim ARQ-R03, ARQ-R04, DLK-R07, WBD-R05"   # Autorização é checada por recurso/ação no backend, e não só escondida na UI?
 seguranca.03: "sim COF-R02"   # Segredos e chaves ficam fora do código e do repositório?
 seguranca.04: "sim DOC-R04, DLK-R03"   # Proteção contra injeção (SQL/comando) e XSS nas saídas renderizadas?
-seguranca.05: "na: servidores locais são HTTP/FTP sem cookies nem sessão web; auth por senha"   # CSRF/CORS/cookies (HttpOnly, Secure, SameSite) definidos para a forma de sessão usada?
+seguranca.05: "na: servidores locais são HTTP/FTP sem cookies nem sessão web; auth por senha ou PIN"   # CSRF/CORS/cookies (HttpOnly, Secure, SameSite) definidos para a forma de sessão usada?
 seguranca.06: "na: servidores sob demanda só na LAN; sem endpoints públicos"   # Rate limit ou proteção contra abuso nos endpoints sensíveis?
 seguranca.07: "sim COF-R07"   # Dados sensíveis são mascarados em logs e respostas de erro?
 seguranca.08: "sim NF01"   # Dependências são fixadas e há plano para atualizar vulnerabilidades?
 
 # --- pack api: backend expõe API (REST/GraphQL) para clientes
 api.01: "sim DLK-R02"   # Versionamento e política de mudanças incompatíveis?
-api.02: "sim ARQ-R03, ARQ-R04, CHAT-R09"   # Formato padrão de erro (código, mensagem, campos inválidos) e códigos HTTP?
-api.03: "sim ARQ-R03, ARQ-R04, ARQ-R14"   # Autenticação e escopos por endpoint?
+api.02: "sim ARQ-R03, ARQ-R04, CHAT-R09, WBD-R05"   # Formato padrão de erro (código, mensagem, campos inválidos) e códigos HTTP?
+api.03: "sim ARQ-R03, ARQ-R04, ARQ-R14, WBD-R05"   # Autenticação e escopos por endpoint?
 api.04: "na: servidores de arquivo sem coleções paginadas"   # Paginação, filtros e limites máximos padronizados?
 api.05: "na: LAN sob demanda; sem rate limit"   # Rate limit e cabeçalhos informativos?
 api.06: "na: sem operações de criação via API"   # Idempotency-Key em operações de criação/pagamento?
 api.07: "na: servidores mínimos embarcados, sem API pública"   # Documentação (OpenAPI) mantida junto do código?
 
 # --- pack arquivos: upload, download ou geração de arquivos
-arquivos.01: "sim CHAT-R07, CHAT-R08, MED-R05"   # Tipos, extensões e tamanho máximo aceitos?
-arquivos.02: "sim CHAT-R08, ARQ-R14"   # Onde são armazenados e como o acesso é protegido (URL assinada, permissão)?
+arquivos.01: "sim CHAT-R07, CHAT-R08, MED-R05, WBD-R08"   # Tipos, extensões e tamanho máximo aceitos?
+arquivos.02: "sim CHAT-R08, ARQ-R14, WBD-R07"   # Onde são armazenados e como o acesso é protegido (URL assinada, permissão)?
 arquivos.03: "na: arquivos do próprio usuário no aparelho; sem antivírus"   # Validação do conteúdo real (não só a extensão) e varredura de malware?
 arquivos.04: "na: sem pipeline assíncrono de processamento de arquivos"   # Processamento assíncrono (miniaturas, OCR, conversão): estados e falhas?
 arquivos.05: "na: usuário único sem quotas"   # Limites por usuário/plano e o que acontece ao exceder?

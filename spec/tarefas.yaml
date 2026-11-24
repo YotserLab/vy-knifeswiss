@@ -193,3 +193,19 @@ T12:
   titulo: 'DroidLink: comentários de regra no código + testes'
 
 T13: {titulo: "Ferramentas auxiliares (guia power-off, bubble, busca global, equalizador, screen record, wifi monitor, network info, sobre)", regras: [EXT-R01, EXT-R02, EXT-R03, EXT-R04, EXT-R05, EXT-R06, EXT-R07, EXT-R08, EXT-R09, EXT-R10, EXT-R11, EXT-R12, EXT-R13, EXT-R14, EXT-R15]}
+
+T14:
+  titulo: 'WebDrop: servidor HTTP local, autenticação por PIN/QR code e transferência bidirecional de arquivos'
+  regras:
+  - WBD-R01
+  - WBD-R02
+  - WBD-R03
+  - WBD-R04
+  - WBD-R05
+  - WBD-R06
+  - WBD-R07
+  - WBD-R08
+  - WBD-R09
+  - WBD-R10
+  - WBD-R11
+

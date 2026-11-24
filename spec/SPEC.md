@@ -4,7 +4,7 @@
 
 **Usuários:** usuario: dono do dispositivo; único ator; sem contas nem papéis remotos
 
-**Escopo:** ferramentas de rede local (scanner, ping, Wi-Fi, speed test); gerenciador de arquivos com servidores FTP/WebDAV e clientes remotos; mídia: player, gravadores, transcrição e cast DLNA/Chromecast/Roku; cofre de senhas e TOTP com biometria; informações e testes de hardware do dispositivo; scanner OBD-II via adaptador ELM327 Bluetooth; produtividade: notas, kanban, compras, alarmes, calculadoras; documentos: PDF, EPUB, editor de texto, quadro branco; comunicação: SMS, QR code, chat local P2P, mesh, controle remoto droidlink; plataforma: dashboard, plugins/miniapps, deep links, histórico, configurações
+**Escopo:** ferramentas de rede local (scanner, ping, Wi-Fi, speed test); gerenciador de arquivos com servidores FTP/WebDAV e clientes remotos; mídia: player, gravadores, transcrição e cast DLNA/Chromecast/Roku; cofre de senhas e TOTP com biometria; informações e testes de hardware do dispositivo; scanner OBD-II via adaptador ELM327 Bluetooth; produtividade: notas, kanban, compras, alarmes, calculadoras; documentos: PDF, EPUB, editor de texto, quadro branco; comunicação: SMS, QR code, chat local P2P, mesh, controle remoto droidlink; transferência web local (WebDrop): HTTP porta 8088 com PIN e QR code; plataforma: dashboard, plugins/miniapps, deep links, histórico, configurações
 
 **Fora de escopo:** contas, login ou sincronização multiusuário em servidor próprio; publicação/distribuição (Play Store) e telemetria de uso; backend ou API pública para clientes externos; suporte a iOS ou desktop
 
@@ -257,6 +257,24 @@
 - `EXT-R13` histórico do chat local persiste peers e mensagens via LocalChatStorage
 - `EXT-R14` servidor HTTP interno renova o TTL do token hospedado via renew() durante a sessão
 - `EXT-R15` download de arquivo grava em .tmp e só renomeia para o nome final quando completo
+
+## webdrop (WBD) - Compartilhamento bidirecional de arquivos via navegador web local com PIN de 4 dígitos, QR code e streaming direto de até 2 GiB.
+- **SessaoWebDrop**: porta, pin, status, enderecoHttp
+- **TransferenciaWebDrop**: id, nomeArquivo, tamanhoBytes, direcao, progresso, status
+- **ArquivoCompartilhado**: id, uri, nome, tamanhoBytes, mimeType
+- Estados SessaoWebDrop: parada -> ativa -> parada
+- Estados TransferenciaWebDrop: pendente -> transmitindo -> concluida | erro
+- `WBD-R01` servidor HTTP WebDrop escuta na porta 8088 com bind no IP Wi-Fi local do dispositivo
+- `WBD-R02` sessão WebDrop gera PIN numérico aleatório de 4 dígitos a cada inicialização do servidor
+- `WBD-R03` UI do app exibe endereço HTTP e QR code com URL contendo o PIN como parâmetro
+- `WBD-R04` navegador web autentica via PIN informado na URL ou digitado manualmente na página
+- `WBD-R05` requisições web sem PIN válido ou sessão ativa recebem código HTTP 401 Unauthorized
+- `WBD-R06` interface web permite arrastar e soltar ou selecionar arquivos para upload ao celular
+- `WBD-R07` upload web grava arquivo via streaming direto em disco na pasta Download/WebDrop/
+- `WBD-R08` tamanho máximo por arquivo transferido no WebDrop é de 2 GiB; excedente é rejeitado
+- `WBD-R09` usuário seleciona arquivos locais do aparelho para disponibilizar para download na web
+- `WBD-R10` página web lista arquivos disponibilizados pelo app com link direto de download
+- `WBD-R11` falhas de rede ou interrupção de streaming abortam transferência e apagam temporário
 
 ## Não funcionais
 - `NF01` minSdk 24 e targetSdk 36; app nativo Android em Kotlin + Jetpack Compose

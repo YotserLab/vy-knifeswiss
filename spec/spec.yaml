@@ -13,13 +13,14 @@ escopo:
   - "produtividade: notas, kanban, compras, alarmes, calculadoras"
   - "documentos: PDF, EPUB, editor de texto, quadro branco"
   - "comunicação: SMS, QR code, chat local P2P, mesh, controle remoto droidlink"
+  - "transferência web local (WebDrop): HTTP porta 8088 com PIN e QR code"
   - "plataforma: dashboard, plugins/miniapps, deep links, histórico, configurações"
 fora_de_escopo:
   - "contas, login ou sincronização multiusuário em servidor próprio"
   - "publicação/distribuição (Play Store) e telemetria de uso"
   - "backend ou API pública para clientes externos"
   - "suporte a iOS ou desktop"
-dominios: [plataforma, rede, chat, arquivos, midia, cofre, dispositivo, obd2, produtividade, documentos, comunicacao, droidlink, extras]
+dominios: [plataforma, rede, chat, arquivos, midia, cofre, dispositivo, obd2, produtividade, documentos, comunicacao, droidlink, extras, webdrop]
 nao_funcionais:
   NF01: "minSdk 24 e targetSdk 36; app nativo Android em Kotlin + Jetpack Compose"
   NF02: "funciona offline; internet só é usada por integrações opt-in (Drive, Mailtrap, speed test)"
